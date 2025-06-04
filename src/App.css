@@ -1,0 +1,20 @@
+body, #body {
+  background-color: rgba(0, 0, 0, 0.959);
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  z-index: 0;
+}
+
+.fondo-destello {
+  position: fixed;
+  top: 90%;
+  left: 10%;
+  width: 95%;
+  height: 80px;
+  background: linear-gradient(transparent, #1fd75f88, transparent);
+  filter: blur(90px);
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: -1;
+}

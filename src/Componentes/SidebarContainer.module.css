@@ -1,0 +1,21 @@
+.SidebarContenedor { 
+ 
+  position: absolute;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.055);
+  color: white;
+  padding: 10px;  
+  height: calc(150vh);
+  top: 8vh; 
+  border-radius: 25px;
+}
+
+.Titulo {
+position: relative;
+font-weight: bold;
+font-family: Arial; 
+font-size:30px;
+color: #1ED760;
+left: 30px;
+top: 20px;
+}

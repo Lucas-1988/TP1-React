@@ -1,0 +1,92 @@
+.Cancion {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  padding: 2px;
+  margin-bottom: 4px;
+}
+
+.Año {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300; 
+  font-size: 12px;
+  margin-top: 0%;
+}
+
+.Contenedor {
+  position: relative;
+  left: 6%;
+  border: 0.1rem solid rgba(77, 77, 77, 0);
+  border-color: #3333338f;
+  padding: 5px;
+  border-radius: 15px; 
+  transition: all 0.3s ease;  
+}
+
+.Contenedor:hover {
+  cursor: pointer;
+  transform: scale(1.1); 
+  filter:     
+    brightness(2); 
+}
+
+.Titulo {
+  align-content: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-style: Roboto light;
+}
+
+.Arte {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.Likes {
+  position: absolute;
+  font-size: 20px;
+  right: 15px;
+  top: 15px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+.Liked {
+  color: #1fd75f; 
+}
+
+.NotLiked {
+  color: gray;
+}
+
+.HeartIcon {
+  top: 1px;  
+  cursor: pointer;
+  transition: all 0.3s ease; 
+}
+
+
+.HeartIcon:hover {
+  transform: scale(1.2); 
+}
+
+.HeartIcon:active {
+  transform: scale(0.9);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+.HeartIcon:hover {
+  animation: pulse 0.5s infinite;
+}

@@ -1,0 +1,32 @@
+.iconosContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  padding: 15px;
+  top: 50px;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.menuItem:hover {
+  opacity: 0.5;
+}
+
+.icon {
+  width: 30px; 
+  height: 30px;
+}
+
+.texto {
+  color: #B3B3B3; 
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}

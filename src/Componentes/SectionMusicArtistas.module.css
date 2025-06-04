@@ -1,0 +1,54 @@
+.Contenedor {
+  position: relative;
+  left: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 250px; 
+  margin-bottom: 20px; 
+}
+
+.Artista {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease; 
+}
+
+.Artista:hover {
+  cursor: pointer;
+  transform: scale(1.1); 
+  filter:     
+    brightness(2); 
+}
+
+.Titulo {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 1%; 
+}
+
+.Año {
+  .Titulo {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 1%; 
+}
+}
+
+.Reproducciones {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300; 
+  font-size: 12px;
+  margin-top: 0%;
+}
+
+
