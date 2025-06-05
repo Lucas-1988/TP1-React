@@ -1,10 +1,6 @@
 **♫ PROYECTO SPOTIFY CON REACT + VITE + TYPESCRIPT - ENTREGA 1**
 
-
-
-
 **DESCRIPCIÓN:**
-
 
 **Este proyecto es un clon simple de la interfaz de Spotify creado con Vite + React y TypeScript. La aplicación muestra una lista de álbumes favoritos y artistas, como muestra la captura de pantalla proporcionada.**
 
@@ -16,9 +12,10 @@
 
 * Maldonado, Tania Elizabeth
 
+
 Profesor: Iván Sevilla
   
-  
+
 ---
 
 **Estructura del proyecto**  
@@ -29,22 +26,26 @@ Profesor: Iván Sevilla
 ---
 
 **Componentes principales**  
-1. **Navbar:** Barra de navegación superior
+
+1. **Encabezado:** Barra de navegación superior
 2. **Sidebar:** Menú lateral con secciones de contenido
-3. **AlbumList:** Listado de álbumes favoritos (6 ítems)
-4. **ArtistList:** Listado de artistas (6 ítems)
-5. **Container:** Componente reutilizable para contenedores
+3. **SectionMusic:** Listado de álbumes favoritos (6 ítems)
+4. **SectionMusicArtistas:** Listado de artistas (6 ítems)
+5. **SectionMusicMasEscuchados:** Listado de canciones mas escuchadas (6 ítems)
+6. **Containers:** Componentes reutilizables para contenedores
 
 ---
 
 **Requisitos cumplidos**
 - Proyecto con Vite + React + TypeScript
-- UI con componentes reutilizables (Navbar, listas)
-- Dos listados renderizados (Álbumes y Artistas)
+
+=======
+- UI con componentes reutilizables (Sidebar y listas)
+- Tres listados renderizados (Tus Albumes Favoritos, Artistas y Los Mas Escuchados)
 - Tipado TypeScript para todas las estructuras de datos
--Estilos con CSS Modules
--Componente Container reutilizable que acepta children
--Cada ítem renderizado como componente individual
+- Estilos con CSS Modules
+- Componente Container reutilizable que acepta children
+- Cada ítem renderizado como componente individual
 
 ---
 
@@ -62,32 +63,34 @@ type SectionMusic = {
 
 ---
 
-**Instalación**  
-Sigue estos pasos para instalar y ejecutar el proyecto en tu máquina local:
+**Para poder ver el proyecto**  
+Segí estos pasos para instalar npm y poder ejecutar el proyecto de manera local:
 
 1. **Clonar el repositorio:**
 
+```bash
+git clone https://github.com/Lucas-1988/TP1-React.git
+```
 
-2. **Ejecutar** 
-   ```bash
-   npm install 
-   ```
+1. **Instalar** 
+   
+```bash
+npm install
+```
 
-3. **Ejecutar**
-   ```bash
-   npm run dev
-   ```
+1. **Ejecutar**
+   
+```bash
+npm run dev
+```
 
 ---
 
 **Capturas de la interfaz**  
-- ![Browser principal](./media/Browser_1.JPG)
+
+![Browser principal](./media/Browser_1.JPG)
   
-- ![Browser 2](./media/Browser_2.JPG) 
+![Browser 2](./media/Browser_2.JPG) 
 
 
-**Pull Request:**
-```bash
-  URL del PR:https://github.com/Lucas-1988/TP1-React.git
-   ```
 
