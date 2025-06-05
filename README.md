@@ -12,8 +12,10 @@
 
 * Maldonado, Tania Elizabeth
 
-Profesor: Iván Sevilla 
+
+Profesor: Iván Sevilla
   
+
 ---
 
 **Estructura del proyecto**  
@@ -24,6 +26,7 @@ Profesor: Iván Sevilla
 ---
 
 **Componentes principales**  
+
 1. **Encabezado:** Barra de navegación superior
 2. **Sidebar:** Menú lateral con secciones de contenido
 3. **SectionMusic:** Listado de álbumes favoritos (6 ítems)
@@ -59,7 +62,7 @@ type SectionMusic = {
 ---
 
 **Para poder ver el proyecto**  
-Segír estos pasos para instalar npm y poder ejecutar el proyecto de manera local:
+Segí estos pasos para instalar npm y poder ejecutar el proyecto de manera local:
 
 1. **Clonar el repositorio:**
 
@@ -82,8 +85,10 @@ npm run dev
 ---
 
 **Capturas de la interfaz**  
+
 ![Browser principal](./media/Browser_1.JPG)
   
 ![Browser 2](./media/Browser_2.JPG) 
+
 
 
