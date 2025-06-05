@@ -67,22 +67,23 @@ Segír estos pasos para instalar npm y poder ejecutar el proyecto de manera loca
 git clone https://github.com/Lucas-1988/TP1-React.git
 ```
 
-2. **Ejecutar** 
+1. **Instalar** 
    
-   ```bash
-  npm install
-   ```
+```bash
+npm install
+```
 
-3. **Ejecutar**
-   ```bash
-   npm run dev
-   ```
+1. **Ejecutar**
+   
+```bash
+npm run dev
+```
 
 ---
 
 **Capturas de la interfaz**  
-- ![Browser principal](./media/Browser_1.JPG)
+![Browser principal](./media/Browser_1.JPG)
   
-- ![Browser 2](./media/Browser_2.JPG) 
+![Browser 2](./media/Browser_2.JPG) 
 
 
