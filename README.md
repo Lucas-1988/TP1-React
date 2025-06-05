@@ -81,9 +81,9 @@ Sigue estos pasos para instalar y ejecutar el proyecto en tu máquina local:
 ---
 
 **Capturas de la interfaz**  
-- ![Browser principal](./media/Browser_1.jpg)
+- ![Browser principal](./media/Browser_1.JPG)
   
-- ![Browser 2](./media/Browser_2.jpg)
+- ![Browser 2](./media/Browser_2.JPG) 
 
 
 **Pull Request:**
