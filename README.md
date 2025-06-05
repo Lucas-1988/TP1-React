@@ -38,8 +38,6 @@ Profesor: Iván Sevilla
 
 **Requisitos cumplidos**
 - Proyecto con Vite + React + TypeScript
-
-=======
 - UI con componentes reutilizables (Sidebar y listas)
 - Tres listados renderizados (Tus Albumes Favoritos, Artistas y Los Mas Escuchados)
 - Tipado TypeScript para todas las estructuras de datos
