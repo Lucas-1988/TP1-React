@@ -42,9 +42,9 @@ function App() {
             Año="2000"        
           />
           <SectionMusic
-            Titulo="Lateralus - Tool"
-            Arte="https://lastfm.freetls.fastly.net/i/u/770x0/ec676167abeb99f85d6fee875d55251e.jpg#ec676167abeb99f85d6fee875d55251e"
-            Año="2001"       
+            Titulo="System of a Down"
+            Arte="https://t2.genius.com/unsafe/855x0/https%3A%2F%2Fimages.genius.com%2Face3783b3f24c4da2a2b1bc9a98f2fd3.1000x1000x1.png"
+            Año="1998"       
           />
           <SectionMusic
             Titulo="10,000 Days - Tool"
@@ -67,14 +67,14 @@ function App() {
       <section>
         <SectionMusicContainer Titulo="Artistas">
           <SectionMusicArtistas
-            Titulo="The Pineapple Thief"
-            Artista="https://www.therockpit.net/wp-content/uploads/2018/07/news-thepineapplethief2.jpg"
-            Likes={20}    
+            Titulo="System of a Down"
+            Artista="https://cdn.mos.cms.futurecdn.net/47N2NSZeQPCg9bMeEhVp7g.jpg"
+            Likes={50}    
           />
           <SectionMusicArtistas
             Titulo="Tool"
             Artista="https://cdn.theatlantic.com/thumbor/zMv-9_ru-2uEFRFfLcGIdwG8jIo=/0x200:1920x1280/976x549/media/img/mt/2019/08/unnamed_16/original.jpg"
-            Likes={10}
+            Likes={100}
           />
           <SectionMusicArtistas
             Titulo="Porcupine Tree"
@@ -89,12 +89,12 @@ function App() {
           <SectionMusicArtistas
             Titulo="Deftones"
             Artista="https://i.pinimg.com/736x/9d/d5/3d/9dd53d25fb2ddf28749b345a73114a61.jpg"
-            Likes={20}
+            Likes={50}
           />  
           <SectionMusicArtistas
             Titulo="Gojira"
             Artista="https://indierocks.sfo3.cdn.digitaloceanspaces.com/wp-content/uploads/bfi_thumb/Gojira-Band-3qy0hbhdhc8hrbpmhumk11ea0fuk5hg4s8vacgkl8swwqvkwhqf7x8q5jdkuf4.jpg"
-            Likes={20}
+            Likes={30}
           />
         </SectionMusicContainer>
       </section>
@@ -111,31 +111,31 @@ function App() {
             Cancion="Aenima"
             Autor="Tool"
             Imagen="https://lastfm.freetls.fastly.net/i/u/770x0/011b818d46c10cb5e15a4a7663fca054.jpg#011b818d46c10cb5e15a4a7663fca054"
-            Año="Publicado el 28/04/2006"        
+            Año="Publicado el 17/09/1996"        
           />
           <SectionMusicMasEscuchados
-            Cancion="Lateralus"
-            Autor="Tool"
-            Imagen="https://lastfm.freetls.fastly.net/i/u/770x0/ec676167abeb99f85d6fee875d55251e.jpg#ec676167abeb99f85d6fee875d55251e"
-            Año="Publicado el 28/04/2006"       
+            Cancion="Spiders"
+            Autor="System of a Down"
+            Imagen="https://images.genius.com/263bf7683bab544908e6fe6087d04a98.1000x1000x1.png"
+            Año="Publicado el 30/06/1998"       
           />
           <SectionMusicMasEscuchados
-            Cancion="10000 Days"
-            Autor="Tool"
-            Imagen="https://lastfm.freetls.fastly.net/i/u/770x0/f177da80ce97e79927b7c32c78463a33.jpg#f177da80ce97e79927b7c32c78463a33"
-            Año="Publicado el 28/04/2006"        
+            Cancion="The Chant"
+            Autor="Gojira"
+            Imagen="https://m.media-amazon.com/images/I/41Z-tcO9X7L._AC_UF1000,1000_QL80_.jpg"
+            Año="Publicado el 25/04/2021"        
           />
           <SectionMusicMasEscuchados
-            Cancion="Fear Inoculum"
-            Autor="Tool"
-            Imagen="https://lastfm.freetls.fastly.net/i/u/770x0/a8157f4aa80eff044aaf393a5d5a7073.jpg#a8157f4aa80eff044aaf393a5d5a7073"
-            Año="Publicado el 28/04/2006"       
+            Cancion="Flying Whales"
+            Autor="Gojira"
+            Imagen="https://i1.sndcdn.com/artworks-000162552693-ouc73j-t1080x1080.jpg"
+            Año="Publicado el 07/09/2006"       
           />
             <SectionMusicMasEscuchados
             Cancion="Armenia"
             Autor="Anomia"
             Imagen="../Public/Armenia.jpg"
-            Año="Publicado el 28/04/2006"       
+            Año="Publicado el 18/08/2018"       
           />
         </SectionMusicContainer>
       </section>
