@@ -83,8 +83,8 @@ npm run dev
 ---
 
 **Capturas de la interfaz**  
-![Browser principal](./media/Browser_1.JPG)
+![Browser principal](./media/Captura_1.JPG)
   
-![Browser 2](./media/Browser_2.JPG) 
+![Browser 2](./media/Captura_2.JPG) 
 
 
