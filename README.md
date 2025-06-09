@@ -82,7 +82,7 @@ npm run dev
 
 ---
 
-**Capturas de la interfaz**  
+**Capturas del proyecto**  
 ![Browser principal](./media/Captura_1.JPG)
   
 ![Browser 2](./media/Captura_2.JPG) 
