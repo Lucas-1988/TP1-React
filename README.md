@@ -29,7 +29,8 @@ Profesor: Iván Sevilla
 3. **SectionMusic:** Listado de álbumes favoritos (6 ítems)
 4. **SectionMusicArtistas:** Listado de artistas (6 ítems)
 5. **SectionMusicMasEscuchados:** Listado de canciones mas escuchadas (6 ítems)
-6. **Containers:** Componentes reutilizables para contenedores
+6. **Barra de Reproducción** Reproductor de musica con varias opciones 
+7. **Containers:** Componentes reutilizables para contenedores
 
 ---
 
@@ -61,7 +62,7 @@ type SectionMusic = {
 **Para poder ver el proyecto**  
 Segír estos pasos para instalar npm y poder ejecutar el proyecto de manera local:
 
-1. **Clonar el repositorio:**
+1. **Clonar el repositorio desde VSCode:**
 
 ```bash
 git clone https://github.com/Lucas-1988/TP1-React.git
