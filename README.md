@@ -2,7 +2,7 @@
 
 **DESCRIPCIÓN:**
 
-**Este proyecto es un clon simple de la interfaz de Spotify creado con Vite + React y TypeScript. La aplicación muestra una lista de álbumes favoritos y artistas, como muestra la captura de pantalla proporcionada.**
+**Este proyecto es un clon simple de la interfaz de Spotify creado con Vite + React y TypeScript. La aplicación muestra una lista de álbumes favoritos, artistas y canciones mas escuchadas como muestra la captura de pantalla proporcionada.**
 
 ---
 
