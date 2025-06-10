@@ -17,7 +17,7 @@ function App() {
         Logo="../Public/logo.png"
         inicioSesion="Iniciar Sesion"
       >
-        <MusicBuscador placeholder="Buscar música, nada de cumbia y esas cosas" />
+        <MusicBuscador placeholder="Buscar música, albums y artistass" />
       </EncabezadoMusic>
       
       <SidebarContainer 

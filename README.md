@@ -2,7 +2,7 @@
 
 **DESCRIPCIÓN:**
 
-**Este proyecto es un clon simple de la interfaz de Spotify creado con Vite + React y TypeScript. La aplicación muestra una lista de álbumes favoritos y artistas, como muestra la captura de pantalla proporcionada.**
+**Este proyecto es un clon simple de la interfaz de Spotify creado con Vite + React y TypeScript. La aplicación muestra una lista de álbumes favoritos, artistas y canciones mas escuchadas como muestra la captura de pantalla proporcionada.**
 
 ---
 
@@ -32,7 +32,8 @@ Profesor: Iván Sevilla
 3. **SectionMusic:** Listado de álbumes favoritos (6 ítems)
 4. **SectionMusicArtistas:** Listado de artistas (6 ítems)
 5. **SectionMusicMasEscuchados:** Listado de canciones mas escuchadas (6 ítems)
-6. **Containers:** Componentes reutilizables para contenedores
+6. **Barra de Reproducción** Reproductor de musica con varias opciones 
+7. **Containers:** Componentes reutilizables para contenedores
 
 ---
 
@@ -64,7 +65,7 @@ type SectionMusic = {
 **Para poder ver el proyecto**  
 Segí estos pasos para instalar npm y poder ejecutar el proyecto de manera local:
 
-1. **Clonar el repositorio:**
+1. **Clonar el repositorio desde VSCode:**
 
 ```bash
 git clone https://github.com/Lucas-1988/TP1-React.git
@@ -84,11 +85,11 @@ npm run dev
 
 ---
 
-**Capturas de la interfaz**  
 
-![Browser principal](./media/Browser_1.JPG)
+**Capturas del proyecto**  
+![Browser principal](./media/Captura_1.JPG)
   
-![Browser 2](./media/Browser_2.JPG) 
+![Browser 2](./media/Captura_2.JPG) 
 
 
 
