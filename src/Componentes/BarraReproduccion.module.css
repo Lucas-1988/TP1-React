@@ -103,3 +103,17 @@
 .BotonPlay:hover, .BotonSiguiente:hover, .BotonAnterior:hover, .BotonAleatorio:hover, .BotonRepetir:hover {
   transform: scale(1.1);
 }
+
+.TituloCancion {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #fff;
+  max-width: 90vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  user-select: none;
+}
+
