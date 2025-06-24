@@ -35,4 +35,3 @@ function SectionMusic(props: SectionMusic) {
 }
 
 export default SectionMusic;
-

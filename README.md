@@ -90,6 +90,3 @@ npm run dev
 ![Browser principal](./media/Captura_1.JPG)
   
 ![Browser 2](./media/Captura_2.JPG) 
-
-
-
