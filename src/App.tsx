@@ -41,10 +41,10 @@ function App() {
       año: "2001",
     },
     {
-      titulo: "The Pot - Tool",
-      audioUrl: "/Musica/The Pot.mp3",
-      arte: "https://lastfm.freetls.fastly.net/i/u/770x0/f177da80ce97e79927b7c32c78463a33.jpg",
-      año: "2006",
+      titulo: "Birds of feather - Billie Eilish",
+      audioUrl: "/Musica/BIRDS OF A FEATHER.mp3",
+      arte: "https://cdn-images.dzcdn.net/images/cover/5d284b31cb9ddeb1a0c79aede5a94e1c/500x500-000000-80-0-0.jpg",
+      año: "2024",
     },
     {
       titulo: "Digital Bath - Deftones",
