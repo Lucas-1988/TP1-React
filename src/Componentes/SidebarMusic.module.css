@@ -30,3 +30,11 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
 }
+
+.Arte {
+  object-position: center;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}

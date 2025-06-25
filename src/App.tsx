@@ -117,11 +117,12 @@ const filteredArtistas = searchTerm
         />
       </EncabezadoMusic>
 
-      <SidebarContainer Titulo="Tu Contenido">
+      <SidebarContainer>
         <SidebarMusic
-          Principal="../Public/home.png"
+          Principal="../Public/Armenia.jpg"
           Biblioteca="../Public/Biblioteca.png"
           Playlists="../Public/Playlist.png"
+          Podcast="../Public/Playlist.png"
         />
       </SidebarContainer>
 
