@@ -119,10 +119,17 @@ const filteredArtistas = searchTerm
 
       <SidebarContainer>
         <SidebarMusic
-          Principal="../Public/Armenia.jpg"
           Biblioteca="../Public/Biblioteca.png"
-          Playlists="../Public/Playlist.png"
-          Podcast="../Public/Playlist.png"
+          PlayList="../Public/playlist.png"
+          TusMeGusta="../Public/tus_me_gusta.png"
+          Podcast="../Public/tus episodios.png"
+          Disco_1="../Public/The Emptiness Machine.png"
+          Disco_2="../Public/ramen_para_dos.png"
+          Disco_3="../Public/red_hot.png"
+          Disco_4="../Public/gojira.png"
+          Disco_5="../Public/gorillaz.png"
+          Disco_6="../Public/nirvana.png"
+          Playlist_Lucas="../Public/play_list.png"
         />
       </SidebarContainer>
 
