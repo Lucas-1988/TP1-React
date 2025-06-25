@@ -19,6 +19,7 @@ function App() {
   } | null>(null);
 
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  const [searchTerm, setSearchTerm] = useState(''); 
 
   const canciones = [
     {
@@ -59,13 +60,61 @@ function App() {
     },
   ];
 
+  const filteredCanciones = searchTerm 
+    ? canciones.filter(cancion =>
+        cancion.titulo.toLowerCase().includes(searchTerm.toLowerCase().trim())
+      )
+    : canciones;
+
+  const artistas = [
+  {
+    nombre: "The Pineapple Thief",
+    imagen: "https://www.therockpit.net/wp-content/uploads/2018/07/news-thepineapplethief2.jpg",
+    likes: 20
+  },
+  {
+    nombre: "Tool",
+    imagen: "https://cdn.theatlantic.com/thumbor/zMv-9_ru-2uEFRFfLcGIdwG8jIo=/0x200:1920x1280/976x549/media/img/mt/2019/08/unnamed_16/original.jpg",
+    likes: 10
+  },
+  {
+    nombre: "Porcupine Tree",
+    imagen: "https://porcupinetree.com/wp-content/uploads/2023/11/CleanShot-2023-11-05-at-12%E2%80%AF.55.41.jpg",
+    likes: 20
+  },
+  {
+    nombre: "Anomia",
+    imagen: "../Public/Anomia.jpg",
+    likes: 20
+  },
+  {
+    nombre: "Deftones",
+    imagen: "https://i.pinimg.com/736x/9d/d5/3d/9dd53d25fb2ddf28749b345a73114a61.jpg",
+    likes: 20
+  },
+  {
+    nombre: "Gojira",
+    imagen: "https://indierocks.sfo3.cdn.digitaloceanspaces.com/wp-content/uploads/bfi_thumb/Gojira-Band-3qy0hbhdhc8hrbpmhumk11ea0fuk5hg4s8vacgkl8swwqvkwhqf7x8q5jdkuf4.jpg",
+    likes: 20
+  }
+];
+
+const filteredArtistas = searchTerm 
+  ? artistas.filter(artista =>
+      artista.nombre.toLowerCase().includes(searchTerm.toLowerCase().trim())
+    )
+  : artistas;
+
   return (
     <>
       <EncabezadoMusic
         Logo="../Public/logo.png"
         inicioSesion="Iniciar Sesion"
       >
-        <MusicBuscador placeholder="Buscar música, albums y artistass" />
+        <MusicBuscador 
+        placeholder="Buscar canciones, artistas y albumes" 
+        onSearch={setSearchTerm} 
+        />
       </EncabezadoMusic>
 
       <SidebarContainer Titulo="Tu Contenido">
@@ -77,9 +126,8 @@ function App() {
       </SidebarContainer>
 
       <section>
-        <SectionMusicContainer Titulo="Tus Albumes Favoritos">
-
-          {canciones.map((cancion, index) => (
+        <SectionMusicContainer Titulo="Tus Canciones Favoritas">
+          {filteredCanciones.map((cancion, index) => (
             <SectionMusic
               key={index}
               Titulo={cancion.titulo}
@@ -93,40 +141,16 @@ function App() {
 
       <section>
         <SectionMusicContainer Titulo="Artistas">
-          <SectionMusicArtistas
 
-            Titulo="The Pineapple Thief"
-            Artista="https://www.therockpit.net/wp-content/uploads/2018/07/news-thepineapplethief2.jpg"
-            Likes={20}
-
-          />
-          <SectionMusicArtistas
-            Titulo="Tool"
-            Artista="https://cdn.theatlantic.com/thumbor/zMv-9_ru-2uEFRFfLcGIdwG8jIo=/0x200:1920x1280/976x549/media/img/mt/2019/08/unnamed_16/original.jpg"
-            Likes={100}
-          />
-          <SectionMusicArtistas
-            Titulo="Porcupine Tree"
-            Artista="https://porcupinetree.com/wp-content/uploads/2023/11/CleanShot-2023-11-05-at-12%E2%80%AF.55.41.jpg"
-            Likes={20}
-          />
-          <SectionMusicArtistas
-            Titulo="Anomia"
-            Artista="../Public/Anomia.jpg"
-            Likes={20}
-          />
-          <SectionMusicArtistas
-            Titulo="Deftones"
-            Artista="https://i.pinimg.com/736x/9d/d5/3d/9dd53d25fb2ddf28749b345a73114a61.jpg"
-
-            Likes={20}
-          />
-          <SectionMusicArtistas
-            Titulo="Gojira"
-            Artista="https://indierocks.sfo3.cdn.digitaloceanspaces.com/wp-content/uploads/bfi_thumb/Gojira-Band-3qy0hbhdhc8hrbpmhumk11ea0fuk5hg4s8vacgkl8swwqvkwhqf7x8q5jdkuf4.jpg"
-            Likes={30}
-          />
-        </SectionMusicContainer>
+          {filteredArtistas.map((artista, index) => (
+            <SectionMusicArtistas
+              key={index}
+              Titulo={artista.nombre}
+              Artista={artista.imagen}
+              Likes={artista.likes}
+            />
+          ))}
+  </SectionMusicContainer>
       </section>
 
       <section>

@@ -1,5 +1,3 @@
-//import { Children } from "react";
-//import type SectionMusic from "./SectionMusic";
 import { type ReactNode } from 'react';
 import styles from './SidebarContainer.module.css';
 

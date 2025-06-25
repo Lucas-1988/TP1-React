@@ -15,8 +15,8 @@ type BarraReproduccionProps = {
   cancionActual: Cancion | null;
   setCancionActual: React.Dispatch<React.SetStateAction<Cancion | null>>;
   listaCanciones: Cancion[];
-  isPlaying: boolean;                        // Recibimos isPlaying desde App.tsx
-  setIsPlaying: React.Dispatch<React.SetStateAction<boolean>>; // Recibimos setIsPlaying desde App.tsx
+  isPlaying: boolean;                       
+  setIsPlaying: React.Dispatch<React.SetStateAction<boolean>>; 
 };
 
 function BarraReproduccion({
@@ -35,7 +35,6 @@ function BarraReproduccion({
   const [volume, setVolume] = useState(1);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  // Play/Pause sincronizado con isPlaying
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio || !cancionActual?.audioUrl) return;
@@ -47,7 +46,6 @@ function BarraReproduccion({
     }
   }, [isPlaying, cancionActual]);
 
-  // Tiempo actual
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
@@ -100,7 +98,7 @@ function BarraReproduccion({
     <section className={styles.Contenedor}>
 
     <div className={styles.TituloCancion}>
-      {cancionActual ? cancionActual.titulo : "No hay canción seleccionada"}
+      {cancionActual ? cancionActual.titulo : "No hay canción en reproducción"}
     </div>
 
       <div className={styles.Controles}>
