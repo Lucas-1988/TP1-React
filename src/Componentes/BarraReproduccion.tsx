@@ -135,9 +135,12 @@ function BarraReproduccion({
           value={currentTime}
           onChange={(e) => handleSeek(Number(e.target.value))}
           className={styles.BarraProgreso}
+          style={{
+            background: `linear-gradient(to right, #1ED760 0%, #1ED760 ${(currentTime / (audioRef.current?.duration || 1)) * 100}%, rgba(255,255,255,0.2) ${(currentTime / (audioRef.current?.duration || 1)) * 100}%, rgba(255,255,255,0.2) 100%)`
+          }}
         />
         <span className={styles.Tiempo}>
-          {formatTime(audioRef.current?.duration || 0)}
+          {formatTime(audioRef.current?.duration || 0)}          
         </span>
 
         <div className={styles.ContenedorVolumen}>
@@ -150,6 +153,9 @@ function BarraReproduccion({
             value={volume}
             onChange={(e) => handleVolumeChange(Number(e.target.value))}
             className={styles.BarraVolumen}
+              style={{
+            background: `linear-gradient(to right, #1ED760 0%, #1ED760 ${volume * 100}%, rgba(255,255,255,0.2) ${volume * 100}%, rgba(255,255,255,0.2) 100%)`
+            }}
           />
         </div>
       </div>

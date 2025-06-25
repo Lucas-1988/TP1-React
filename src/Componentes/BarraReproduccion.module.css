@@ -105,8 +105,8 @@
 }
 
 .TituloCancion {
-  font-weight: bold;
-  font-size: 1rem;
+  
+  font-size: 0.80rem;
   margin-bottom: 10px;
   text-align: center;
   color: #fff;
