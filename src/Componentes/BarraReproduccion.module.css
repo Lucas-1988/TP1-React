@@ -104,10 +104,8 @@
   transform: scale(1.1);
 }
 
-.TituloCancion {
-  
-  font-size: 0.80rem;
-  margin-bottom: 10px;
+.TituloCancion {  
+  font-size: 0.80rem;  
   text-align: center;
   color: #fff;
   max-width: 90vw;

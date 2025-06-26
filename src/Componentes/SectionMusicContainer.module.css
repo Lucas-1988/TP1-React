@@ -1,11 +1,13 @@
 .MusicContenedor {
+  position: relative;
   width: 100%;  
-  display: flex;
-  flex-wrap: wrap;  
+  display: flex;  
+  left: 0vh;  
   justify-content: center;
   gap: 16px;
   padding: 16px;
   font-family: Arial, sans-serif;
+  
 }
 
 .Titulo {

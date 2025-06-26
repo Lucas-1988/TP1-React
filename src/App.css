@@ -30,11 +30,5 @@ body, #body {
 .Layout {
   display: flex;
   flex: 1;
-}
-
-.SidebarContainer {
-  display: flex;
-  flex-direction: column;
-  height: fit-content;
-  position: relative;
+  height: 100vh;
 }

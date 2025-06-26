@@ -54,16 +54,11 @@ function App() {
     },
     {
       titulo: "El último de todos - Anomia",
-      audioUrl: "/Musica/armenia.mp3",
+      audioUrl: "/Musica/el_ultimo_de_todos.mp3",
       arte: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnEpwOoCFlWPXaGrK3rScKMyLeVezt0HEVdUJ1NPZyfPsfkaJU1O6hfD3DgDpfilDqmPc&usqp=CAU",
       año: "2022",
     },
-    {
-      titulo: "El último de todos - Anomia",
-      audioUrl: "/Musica/armenia.mp3",
-      arte: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnEpwOoCFlWPXaGrK3rScKMyLeVezt0HEVdUJ1NPZyfPsfkaJU1O6hfD3DgDpfilDqmPc&usqp=CAU",
-      año: "2022",
-    },
+
   ];
 
   const filteredCanciones = searchTerm 
@@ -114,33 +109,52 @@ function App() {
 
   return (
     <div className="Pagina">
-      <EncabezadoMusic
-        Logo="../Public/logo.png"
-        inicioSesion="Iniciar Sesion"
-      >
-        <MusicBuscador 
-          placeholder="Buscar canciones, artistas y álbumes" 
-          onSearch={setSearchTerm} 
-        />
-      </EncabezadoMusic>
+    <EncabezadoMusic
+      Logo="../Public/logo.png"
+      inicioSesion="Iniciar Sesión"
+      Login="https://accounts.spotify.com/es/login?continue=https%3A%2F%2Fopen.spotify.com%2Fintl-es"
+    >
+      <MusicBuscador 
+        placeholder="Buscar canciones, artistas y álbumes"
+        onSearch={setSearchTerm}
+      />
+    </EncabezadoMusic>
 
       <div className="Layout">
-       <SidebarContainer>
-         <SidebarMusic
-            Biblioteca="../Public/Biblioteca.png"
-            PlayList="../Public/playlist.png"
-            TusMeGusta="../Public/tus_me_gusta.png"
-            Podcast="../Public/tus episodios.png"
-            Disco_1="../Public/The Emptiness Machine.png"
-            Disco_2="../Public/ramen_para_dos.png"
-            Disco_3="../Public/red_hot.png"
-            Disco_4="../Public/gojira.png"
-            Disco_5="../Public/gorillaz.png"
-            Disco_6="../Public/nirvana.png"
-            Playlist_Lucas="../Public/play_list.png"
-            Playlist_Lucas2="../Public/play_list.png"
+        
+        <SidebarContainer 
+          Biblioteca="../Public/Biblioteca2.png"
+          Playlist="../Public/Playlist2.png"
+          >
+          <SidebarMusic
+          Lista="../Public/tus_me_gusta.png"
           />
-      </SidebarContainer>
+          <SidebarMusic
+          Lista="../Public/tus episodios.png"
+          />
+          <SidebarMusic
+          Lista="../Public/The Emptiness Machine.png"
+          />
+          <SidebarMusic
+          Lista="../Public/ramen_para_dos.png"
+          />
+          <SidebarMusic
+          Lista="../Public/red_hot.png"
+          />
+          <SidebarMusic
+          Lista="../Public/gojira.png"
+          />
+          <SidebarMusic
+          Lista="../Public/play_list.png"
+          />
+          <SidebarMusic
+          Lista="../Public/nirvana.png"
+          /> 
+          <SidebarMusic
+          Lista="../Public/gorillaz.png"
+          />      
+        </SidebarContainer>
+        
 
         <main className="Contenido">
           <section>
@@ -213,13 +227,7 @@ function App() {
             Año="Publicado el 18/08/2018"       
 
           />
-          <SectionMusicMasEscuchados
-            Cancion="Armenia"
-            Autor="Anomia"
-            Imagen="../Public/Armenia.jpg"
-            Año="Publicado el 28/04/2006"
-          />
-            </SectionMusicContainer>
+          </SectionMusicContainer>
           </section>
 
 

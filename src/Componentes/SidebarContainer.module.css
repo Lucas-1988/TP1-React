@@ -1,32 +1,15 @@
-.SidebarContainer {
-  flex-shrink: 0;
-  height: 100%; /* NO uses height: 100% ni 100vh */
+.SidebarContainer {  
+  width: 250px;
+  display: flex;
+  flex-direction: column;  
   background-color: #121212;
-}
-
-.Titulo {
-position: relative;
-font-weight: bold;
-font-family: Arial; 
-font-size:30px;
-color: #1ED760;
-left: 30px;
-top: 20px;
-}
-
-.Layout {
-  display: flex;
-  flex: 1;
-}
-
-.Pagina {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 .Contenido {
   flex: 1;
-  display: flex;
-  flex-direction: column;
+  overflow-y: auto;
 }
+
+
+
+

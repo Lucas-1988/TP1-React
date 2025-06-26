@@ -19,7 +19,7 @@
 
 .Contenedor {
   position: relative;
-  left: 6%;
+  left: 3vh;
   border: 0.1rem solid rgba(77, 77, 77, 0);
   border-color: #3333338f;
   padding: 5px;
@@ -31,7 +31,7 @@
   cursor: pointer;
   transform: scale(1.1); 
   filter:     
-    brightness(2); 
+    brightness(1.3); 
 }
 
 .Titulo {
