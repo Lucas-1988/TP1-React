@@ -58,6 +58,12 @@ function App() {
       arte: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnEpwOoCFlWPXaGrK3rScKMyLeVezt0HEVdUJ1NPZyfPsfkaJU1O6hfD3DgDpfilDqmPc&usqp=CAU",
       año: "2022",
     },
+    {
+      titulo: "El último de todos - Anomia",
+      audioUrl: "/Musica/armenia.mp3",
+      arte: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnEpwOoCFlWPXaGrK3rScKMyLeVezt0HEVdUJ1NPZyfPsfkaJU1O6hfD3DgDpfilDqmPc&usqp=CAU",
+      año: "2022",
+    },
   ];
 
   const filteredCanciones = searchTerm 
@@ -97,72 +103,79 @@ function App() {
     imagen: "https://indierocks.sfo3.cdn.digitaloceanspaces.com/wp-content/uploads/bfi_thumb/Gojira-Band-3qy0hbhdhc8hrbpmhumk11ea0fuk5hg4s8vacgkl8swwqvkwhqf7x8q5jdkuf4.jpg",
     likes: 20
   }
+  
 ];
 
-const filteredArtistas = searchTerm 
-  ? artistas.filter(artista =>
-      artista.nombre.toLowerCase().includes(searchTerm.toLowerCase().trim())
-    )
-  : artistas;
+  const filteredArtistas = searchTerm 
+    ? artistas.filter(artista =>
+        artista.nombre.toLowerCase().includes(searchTerm.toLowerCase().trim())
+      )
+    : artistas;
 
   return (
-    <>
+    <div className="Pagina">
       <EncabezadoMusic
         Logo="../Public/logo.png"
         inicioSesion="Iniciar Sesion"
       >
         <MusicBuscador 
-        placeholder="Buscar canciones, artistas y albumes" 
-        onSearch={setSearchTerm} 
+          placeholder="Buscar canciones, artistas y álbumes" 
+          onSearch={setSearchTerm} 
         />
       </EncabezadoMusic>
 
-      <SidebarContainer>
-        <SidebarMusic
-          Biblioteca="../Public/Biblioteca.png"
-          PlayList="../Public/playlist.png"
-          TusMeGusta="../Public/tus_me_gusta.png"
-          Podcast="../Public/tus episodios.png"
-          Disco_1="../Public/The Emptiness Machine.png"
-          Disco_2="../Public/ramen_para_dos.png"
-          Disco_3="../Public/red_hot.png"
-          Disco_4="../Public/gojira.png"
-          Disco_5="../Public/gorillaz.png"
-          Disco_6="../Public/nirvana.png"
-          Playlist_Lucas="../Public/play_list.png"
-        />
+      <div className="Layout">
+       <SidebarContainer>
+         <SidebarMusic
+            Biblioteca="../Public/Biblioteca.png"
+            PlayList="../Public/playlist.png"
+            TusMeGusta="../Public/tus_me_gusta.png"
+            Podcast="../Public/tus episodios.png"
+            Disco_1="../Public/The Emptiness Machine.png"
+            Disco_2="../Public/ramen_para_dos.png"
+            Disco_3="../Public/red_hot.png"
+            Disco_4="../Public/gojira.png"
+            Disco_5="../Public/gorillaz.png"
+            Disco_6="../Public/nirvana.png"
+            Playlist_Lucas="../Public/play_list.png"
+            Playlist_Lucas2="../Public/play_list.png"
+          />
       </SidebarContainer>
 
-      <section>
-        <SectionMusicContainer Titulo="Tus Canciones Favoritas">
-          {filteredCanciones.map((cancion, index) => (
-            <SectionMusic
-              key={index}
-              Titulo={cancion.titulo}
-              Arte={cancion.arte}
-              Año={cancion.año}
-            />
-          ))}
+        <main className="Contenido">
+          <section>
+            <SectionMusicContainer Titulo="Tus Canciones Favoritas">
+              {filteredCanciones.map((cancion, index) => (
+                <SectionMusic
+                  key={index}
+                  Titulo={cancion.titulo}
+                  Arte={cancion.arte}
+                  Año={cancion.año}
+                  onPlay={() => {
+                    setCancionActual(cancion);
+                    setIsPlaying(true);
+                  }}
+                />
+              ))}
+            </SectionMusicContainer>
+          </section>
 
-        </SectionMusicContainer>
-      </section>
+          <section>
+            <SectionMusicContainer Titulo="Artistas">
+              {filteredArtistas.map((artista, index) => (
+                <SectionMusicArtistas
+                  key={index}
+                  Titulo={artista.nombre}
+                  Artista={artista.imagen}
+                  Likes={artista.likes}
+                />
+              ))}
+            </SectionMusicContainer>
+          </section>
 
-      <section>
-        <SectionMusicContainer Titulo="Artistas">
+          <section>
+            <SectionMusicContainer Titulo="Los más escuchados">
 
-          {filteredArtistas.map((artista, index) => (
-            <SectionMusicArtistas
-              key={index}
-              Titulo={artista.nombre}
-              Artista={artista.imagen}
-              Likes={artista.likes}
-            />
-          ))}
-  </SectionMusicContainer>
-      </section>
-
-      <section>
-        <SectionMusicContainer Titulo="Los más escuchados">
           <SectionMusicMasEscuchados
             Cancion="The Pot"
             Autor="Tool"
@@ -200,30 +213,39 @@ const filteredArtistas = searchTerm
             Año="Publicado el 18/08/2018"       
 
           />
-        </SectionMusicContainer>
-      </section>
+          <SectionMusicMasEscuchados
+            Cancion="Armenia"
+            Autor="Anomia"
+            Imagen="../Public/Armenia.jpg"
+            Año="Publicado el 28/04/2006"
+          />
+            </SectionMusicContainer>
+          </section>
 
-      <BarraReproduccion
-        BotonAleatorio="../Public/Aleatorio.png"
-        BotonPlay="../Public/Play.png"
-        BotonSiguiente="../Public/Siguiente.png"
-        BotonAnterior="../Public/Anterior.png"
-        BotonRepetir="../Public/Repetir.png"
-        cancionActual={cancionActual}
-        setCancionActual={setCancionActual}
-        isPlaying={isPlaying}
-        setIsPlaying={setIsPlaying}
-        listaCanciones={canciones}
-      />
+
+          <BarraReproduccion
+            BotonAleatorio="../Public/Aleatorio.png"
+            BotonPlay="../Public/Play.png"
+            BotonSiguiente="../Public/Siguiente.png"
+            BotonAnterior="../Public/Anterior.png"
+            BotonRepetir="../Public/Repetir.png"
+            cancionActual={cancionActual}
+            setCancionActual={setCancionActual}
+            isPlaying={isPlaying}
+            setIsPlaying={setIsPlaying}
+            listaCanciones={canciones}
+          />
+        </main>
+      </div>
+
+
       <PiePagina
         Logo="../Public/logo.png"
         Texto="© AntiCopyright ningún derecho reservado"
         Texto2="Hecho por Lucas Leonczyk y Tania Maldonado para Informatorio"
       />
-    </>
+    </div>
   );
 }
 export default App;
-
-
 

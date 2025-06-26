@@ -4,6 +4,8 @@ body, #body {
   position: relative;
   min-height: 100vh;
   z-index: 0;
+  height: 100%;
+  margin: 0;
 }
 
 .fondo-destello {
@@ -17,4 +19,22 @@ body, #body {
   opacity: 0.9;
   pointer-events: none;
   z-index: -1;
+}
+
+.Pagina {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.Layout {
+  display: flex;
+  flex: 1;
+}
+
+.SidebarContainer {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  position: relative;
 }

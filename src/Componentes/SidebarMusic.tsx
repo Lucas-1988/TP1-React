@@ -12,19 +12,20 @@ type SidebarMusicProps = {
   Disco_5: string;
   Disco_6: string;
   Playlist_Lucas: string;
+  Playlist_Lucas2: string;
 
 };
 
 function SidebarMusic(props: SidebarMusicProps) {
-  const {  Biblioteca, PlayList, TusMeGusta, Podcast,Disco_1, Disco_2, Disco_3, Disco_4, Disco_5, Disco_6, Playlist_Lucas} = props;
+  const {  Biblioteca, PlayList, TusMeGusta, Podcast,Disco_1, Disco_2, Disco_3, Disco_4, Disco_5, Disco_6, Playlist_Lucas, Playlist_Lucas2} = props;
   
   return (
     <section className={styles.iconosContainer}>
       
     
-      <div className={styles.menuItem}>
-        <img src={Biblioteca} alt="Biblioteca" className={styles.Arte} />
-        <span className={styles.texto}></span>
+      <div className={styles.Biblioteca}>
+        <img src={Biblioteca} alt="Biblioteca" className={styles.Biblioteca} />
+        
       </div>
 
        <div className={styles.menuItem}>
@@ -74,6 +75,11 @@ function SidebarMusic(props: SidebarMusicProps) {
 
       <div className={styles.menuItem}>
         <img src={Playlist_Lucas} alt="Album Lucas" className={styles.Arte} />
+        <span className={styles.texto}></span>
+      </div>
+
+      <div className={styles.menuItem}>
+        <img src={Playlist_Lucas2} alt="Album Lucas" className={styles.Arte} />
         <span className={styles.texto}></span>
       </div>
     </section>

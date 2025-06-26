@@ -11,7 +11,7 @@ function SidebarMusicContainer(props: SidebarMusicContainerProps) {
     const { children} = props;
     return (
         <section>
-            <div className={styles.SidebarContenedor}>{children}</div>
+            <div className={styles.SidebarContainer}>{children}</div>
         </section>
            
     );

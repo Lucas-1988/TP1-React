@@ -1,10 +1,10 @@
 .iconosContainer {
-  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 20px; 
+  gap: 20px;
   padding: 15px;
-  top: 50px;
+  margin-top: 20px; /* si querés espacio arriba */
+  max-height: 100%;
 }
 
 .menuItem {
@@ -33,8 +33,13 @@
 
 .Arte {
   object-position: center;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   object-fit: cover;
   border-radius: 4px;
 }
+
+.Biblioteca {  
+  width: 80px;
+  height: 90px;  
+  }
