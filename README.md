@@ -1,4 +1,4 @@
-**♫ PROYECTO SPOTIFY CON REACT + VITE + TYPESCRIPT - ENTREGA 1**
+**♫ PROYECTO SPOTIFY CON REACT + VITE + TYPESCRIPT - ENTREGA 2**
 
 **DESCRIPCIÓN:**
 
@@ -26,25 +26,28 @@ Profesor: Iván Sevilla
 ---
 
 **Componentes principales**  
-
-1. **Encabezado:** Barra de navegación superior
+1. **Navbar:** Barra de navegación superior con fitro de busqueda de canciones
 2. **Sidebar:** Menú lateral con secciones de contenido
-3. **SectionMusic:** Listado de álbumes favoritos (6 ítems)
-4. **SectionMusicArtistas:** Listado de artistas (6 ítems)
-5. **SectionMusicMasEscuchados:** Listado de canciones mas escuchadas (6 ítems)
-6. **Barra de Reproducción** Reproductor de musica con varias opciones 
-7. **Containers:** Componentes reutilizables para contenedores
+3. **AlbumList:** Listado de álbumes favoritos (6 ítems)
+4. **ArtistList:** Listado de artistas (6 ítems)
+5. **Container:** Componente reutilizable para contenedores
+5. **Barra de reproduccion:** Player fijo que muestra:
+   - Reproducción en curso,
+   - Botones de play, Pausa, Siguiente, Anterior, Aleatorio y Repetir,
+   - Slider de avance y retroceso de la canción,
+   - Slider de volúmen.
+
 
 ---
 
-**Requisitos cumplidos**
-- Proyecto con Vite + React + TypeScript
-- UI con componentes reutilizables (Sidebar y listas)
-- Tres listados renderizados (Tus Albumes Favoritos, Artistas y Los Mas Escuchados)
-- Tipado TypeScript para todas las estructuras de datos
-- Estilos con CSS Modules
-- Componente Container reutilizable que acepta children
-- Cada ítem renderizado como componente individual
+**Requisitos cumplidos en esta segunda entrega**
+- Buscador de canciones:
+   -Filtro por nombre
+- Al hacer click en una canción:
+   -Muestra un player fijo abajo
+   - El player debe mostrar el nombre del tema y un botón de "pausar"/"reproducir".
+- El player está siempre visible.
+- Slider para avanzar/retroceder la canción.
 
 ---
 
@@ -85,9 +88,14 @@ npm run dev
 
 ---
 
+**Link del video de recorrido del proyecto**
 
-**Capturas del proyecto**  
-![Browser principal](./media/Captura_1.JPG) 
+https://drive.google.com/file/d/1S4DeN1gJDCeUPvZKPgNjJWKxTtL7q-ps/view?usp=sharing
 
-- ![Browser 2](./media/Browser_2.JPG) 
+**Capturas de la interfaz**  
+![Browser principal](./media/Browser_1.JPG)
+  
+![Browser 2](./media/Browser_2.JPG)
+
+
 
