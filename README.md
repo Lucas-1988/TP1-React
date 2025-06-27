@@ -41,11 +41,8 @@ Profesor: Iván Sevilla
 ---
 
 **Requisitos cumplidos en esta segunda entrega**
-- Buscador de canciones:
-   -Filtro por nombre
-- Al hacer click en una canción:
-   -Muestra un player fijo abajo
-   - El player debe mostrar el nombre del tema y un botón de "pausar"/"reproducir".
+- Buscador de canciones con filtro por nombre
+- Al hacer click en una canción el player muestra el nombre de la cancion y un botón de pausar y reproducir.
 - El player está siempre visible.
 - Slider para avanzar/retroceder la canción.
 
