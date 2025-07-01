@@ -85,7 +85,7 @@ function App() {
   },
   {
     nombre: "Anomia",
-    imagen: "../Public/Anomia.jpg",
+    imagen: "/Public/Anomia.jpg",
     likes: 20
   },
   {
@@ -223,7 +223,7 @@ function App() {
           <SectionMusicMasEscuchados
             Cancion="Armenia"
             Autor="Anomia"
-            Imagen="../Public/Armenia.jpg"
+            Imagen="/Public/Armenia.jpg"
             Año="Publicado el 18/08/2018"       
 
           />
@@ -232,11 +232,11 @@ function App() {
 
 
           <BarraReproduccion
-            BotonAleatorio="../Public/Aleatorio.png"
-            BotonPlay="../Public/Play.png"
-            BotonSiguiente="../Public/Siguiente.png"
-            BotonAnterior="../Public/Anterior.png"
-            BotonRepetir="../Public/Repetir.png"
+            BotonAleatorio="/Public/Aleatorio.png"
+            BotonPlay="/Public/Play.png"
+            BotonSiguiente="/Public/Siguiente.png"
+            BotonAnterior="/Public/Anterior.png"
+            BotonRepetir="/Public/Repetir.png"
             cancionActual={cancionActual}
             setCancionActual={setCancionActual}
             isPlaying={isPlaying}
@@ -248,7 +248,7 @@ function App() {
 
 
       <PiePagina
-        Logo="../Public/logo.png"
+        Logo="/Public/logo.png"
         Texto="© AntiCopyright ningún derecho reservado"
         Texto2="Hecho por Lucas Leonczyk y Tania Maldonado para Informatorio"
       />
