@@ -110,7 +110,7 @@ function BarraReproduccion({
           onClick={handleAnterior}
         />
         <img
-          src={isPlaying ? '/Pausa.png' : BotonPlay}
+          src={isPlaying ? `${import.meta.env.BASE_URL}Pausa.png` : BotonPlay}
           alt={isPlaying ? 'Pausa' : 'Play'}
           className={styles.BotonPlay}
           onClick={() => setIsPlaying(!isPlaying)}
@@ -142,7 +142,7 @@ function BarraReproduccion({
         </span>
 
         <div className={styles.ContenedorVolumen}>
-          <img src="/Volumen.png" alt="Volumen" width={12} height={12} />
+          <img src={`${import.meta.env.BASE_URL}Volumen.png`} alt="Volumen" width={12} height={12} />
           <input
             type="range"
             min={0}

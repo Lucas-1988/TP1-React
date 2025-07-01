@@ -21,7 +21,7 @@ const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       <div 
         className={`${styles.Container} ${isExpanded ? styles['Container--expanded'] : ''}`}
       >
-        <img src="/Lupita.png" alt="Buscar" className={styles.Lupa} />
+        <img src={`${import.meta.env.BASE_URL}Lupita.png`} alt="Buscar" className={styles.Lupa} />
         <input
           type="text"
           className={styles.Input}

@@ -11,6 +11,7 @@ import BarraReproduccion from './Componentes/BarraReproduccion';
 import SectionMusicMasEscuchados from './Componentes/SectionMusicMasEscuchados';
 import PiePagina from './Componentes/PiePagina';
 
+
 function App() {
 
   const [cancionActual, setCancionActual] = useState<{
@@ -19,42 +20,43 @@ function App() {
   } | null>(null);
 
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
-  const [searchTerm, setSearchTerm] = useState(''); 
+  const [searchTerm, setSearchTerm] = useState('');
+  const base = import.meta.env.BASE_URL; 
 
   const canciones = [
     {
       titulo: "The Incident - Porcupine Tree",
-      audioUrl: "/Musica/porcupine_tree__the_incident.mp3",
+      audioUrl: `${base}Musica/porcupine_tree__the_incident.mp3`,
       arte: "https://m.media-amazon.com/images/I/41kBPpqJbiL._SX300_SY300_QL70_FMwebp_.jpg",
       año: "2009",
     },
     {
       titulo: "Sex Tape - Deftones",
-      audioUrl: "/Musica/Sextape.mp3",
+      audioUrl: `${base}Musica/Sextape.mp3`,
       arte: "https://images.squarespace-cdn.com/content/v1/5147d98fe4b0e61bb0ab60ec/1363845787383-JGAGB2GKWBGOEL08VMHZ/Deftones+DE+Cover+300+rgb.jpg?format=1500w",
       año: "2000",
     },
     {
       titulo: "Parabola - Tool",
-      audioUrl: "/Musica/Parabola.mp3",
+      audioUrl: `${base}Musica/Parabola.mp3`,
       arte: "https://lastfm.freetls.fastly.net/i/u/770x0/ec676167abeb99f85d6fee875d55251e.jpg",
       año: "2001",
     },
     {
       titulo: "Birds of feather - Billie Eilish",
-      audioUrl: "/Musica/BIRDS OF A FEATHER.mp3",
+      audioUrl: `${base}Musica/BIRDS OF A FEATHER.mp3`,
       arte: "https://cdn-images.dzcdn.net/images/cover/5d284b31cb9ddeb1a0c79aede5a94e1c/500x500-000000-80-0-0.jpg",
       año: "2024",
     },
     {
       titulo: "Digital Bath - Deftones",
-      audioUrl: "/Musica/DigitalBath.mp3",
+      audioUrl: `${base}Musica/DigitalBath.mp3`,
       arte: "https://cdn-images.dzcdn.net/images/cover/c2942294fe29f749ca9ed2d1b25bb247/500x500-000000-80-0-0.jpg",
       año: "2021",
     },
     {
       titulo: "El último de todos - Anomia",
-      audioUrl: "/Musica/el_ultimo_de_todos.mp3",
+      audioUrl: `${base}Musica/el_ultimo_de_todos.mp3`,
       arte: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnEpwOoCFlWPXaGrK3rScKMyLeVezt0HEVdUJ1NPZyfPsfkaJU1O6hfD3DgDpfilDqmPc&usqp=CAU",
       año: "2022",
     },
@@ -66,7 +68,7 @@ function App() {
         cancion.titulo.toLowerCase().includes(searchTerm.toLowerCase().trim())
       )
     : canciones;
-
+  
   const artistas = [
   {
     nombre: "The Pineapple Thief",
@@ -85,7 +87,7 @@ function App() {
   },
   {
     nombre: "Anomia",
-    imagen: "../Public/Anomia.jpg",
+    imagen: `${base}Anomia.JPG`,
     likes: 20
   },
   {
@@ -105,12 +107,12 @@ function App() {
     ? artistas.filter(artista =>
         artista.nombre.toLowerCase().includes(searchTerm.toLowerCase().trim())
       )
-    : artistas;
+    : artistas;  
 
   return (
     <div className="Pagina">
     <EncabezadoMusic
-      Logo="../Public/logo.png"
+      Logo={`${import.meta.env.BASE_URL}logo.png`}
       inicioSesion="Iniciar Sesión"
       Login="https://accounts.spotify.com/es/login?continue=https%3A%2F%2Fopen.spotify.com%2Fintl-es"
     >
@@ -123,35 +125,35 @@ function App() {
       <div className="Layout">
         
         <SidebarContainer 
-          Biblioteca="../Public/Biblioteca2.png"
-          Playlist="../Public/Playlist2.png"
+          Biblioteca={`${import.meta.env.BASE_URL}Biblioteca2.png`}
+          Playlist={`${import.meta.env.BASE_URL}Playlist2.png`}
           >
           <SidebarMusic
-          Lista="../Public/tus_me_gusta.png"
+          Lista={`${import.meta.env.BASE_URL}tus_me_gusta.png`}
           />
           <SidebarMusic
-          Lista="../Public/tus episodios.png"
+          Lista={`${import.meta.env.BASE_URL}tus episodios.png`}
           />
           <SidebarMusic
-          Lista="../Public/The Emptiness Machine.png"
+          Lista={`${import.meta.env.BASE_URL}The Emptiness Machine.png`}
           />
           <SidebarMusic
-          Lista="../Public/ramen_para_dos.png"
+          Lista={`${import.meta.env.BASE_URL}ramen_para_dos.png`}
           />
           <SidebarMusic
-          Lista="../Public/red_hot.png"
+          Lista={`${import.meta.env.BASE_URL}red_hot.png`}
           />
           <SidebarMusic
-          Lista="../Public/gojira.png"
+          Lista={`${import.meta.env.BASE_URL}gojira.png`}
           />
           <SidebarMusic
-          Lista="../Public/play_list.png"
+          Lista={`${import.meta.env.BASE_URL}play_list.png`}
           />
           <SidebarMusic
-          Lista="../Public/nirvana.png"
+          Lista={`${import.meta.env.BASE_URL}nirvana.png`}
           /> 
           <SidebarMusic
-          Lista="../Public/gorillaz.png"
+          Lista={`${import.meta.env.BASE_URL}gorillaz.png`}
           />      
         </SidebarContainer>
         
@@ -223,7 +225,7 @@ function App() {
           <SectionMusicMasEscuchados
             Cancion="Armenia"
             Autor="Anomia"
-            Imagen="../Public/Armenia.jpg"
+            Imagen={`${import.meta.env.BASE_URL}Armenia.jpg`}
             Año="Publicado el 18/08/2018"       
 
           />
@@ -232,11 +234,11 @@ function App() {
 
 
           <BarraReproduccion
-            BotonAleatorio="../Public/Aleatorio.png"
-            BotonPlay="../Public/Play.png"
-            BotonSiguiente="../Public/Siguiente.png"
-            BotonAnterior="../Public/Anterior.png"
-            BotonRepetir="../Public/Repetir.png"
+            BotonAleatorio={`${import.meta.env.BASE_URL}Aleatorio.png`}
+            BotonPlay={`${import.meta.env.BASE_URL}Play.png`}
+            BotonSiguiente={`${import.meta.env.BASE_URL}Siguiente.png`}
+            BotonAnterior={`${import.meta.env.BASE_URL}Anterior.png`}
+            BotonRepetir={`${import.meta.env.BASE_URL}Repetir.png`}
             cancionActual={cancionActual}
             setCancionActual={setCancionActual}
             isPlaying={isPlaying}
@@ -248,7 +250,7 @@ function App() {
 
 
       <PiePagina
-        Logo="../Public/logo.png"
+        Logo={`${import.meta.env.BASE_URL}logo.png`}
         Texto="© AntiCopyright ningún derecho reservado"
         Texto2="Hecho por Lucas Leonczyk y Tania Maldonado para Informatorio"
       />
