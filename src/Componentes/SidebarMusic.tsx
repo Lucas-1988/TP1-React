@@ -1,34 +1,18 @@
 import styles from './SidebarMusic.module.css';
+import { type FC } from 'react';
 
 type SidebarMusicProps = {
-  Principal: string;
-  Biblioteca: string;
-  Playlists: string;
+  Lista: string;  
 };
 
-function SidebarMusic(props: SidebarMusicProps) {
-  const { Principal, Biblioteca, Playlists } = props;
-  
+const SidebarMusic: FC<SidebarMusicProps> = ({ Lista }) => {
   return (
-    <section className={styles.iconosContainer}>
-      
-      <div className={styles.menuItem}>
-        <img src={Principal} alt="Inicio" className={styles.icon} />
-        <span className={styles.texto}>Home</span>
-      </div>
-      
-      <div className={styles.menuItem}>
-        <img src={Biblioteca} alt="Biblioteca" className={styles.icon} />
-        <span className={styles.texto}>Biblioteca</span>
-      </div>
-      
-      <div className={styles.menuItem}>
-        <img src={Playlists} alt="Playlists" className={styles.icon} />
-        <span className={styles.texto}>Playlists</span>
-      </div>
-    </section>
+    <div className={styles.Biblioteca}>
+      <img src={Lista} alt="Arte" className={styles.Arte}/>    
+    </div>
   );
-}
+};
 
 export default SidebarMusic;
+
 

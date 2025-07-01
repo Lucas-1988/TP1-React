@@ -1,4 +1,5 @@
 import './App.css';
+import { useState } from 'react';
 import SectionMusic from './Componentes/SectionMusic';
 import SectionMusicContainer from './Componentes/SectionMusicContainer';
 import EncabezadoMusic from './Componentes/EncabezadoMusic';
@@ -11,101 +12,189 @@ import SectionMusicMasEscuchados from './Componentes/SectionMusicMasEscuchados';
 import PiePagina from './Componentes/PiePagina';
 
 function App() {
+
+  const [cancionActual, setCancionActual] = useState<{
+    titulo: string;
+    audioUrl: string;
+  } | null>(null);
+
+  const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  const [searchTerm, setSearchTerm] = useState(''); 
+
+  const canciones = [
+    {
+      titulo: "The Incident - Porcupine Tree",
+      audioUrl: "/Musica/porcupine_tree__the_incident.mp3",
+      arte: "https://m.media-amazon.com/images/I/41kBPpqJbiL._SX300_SY300_QL70_FMwebp_.jpg",
+      año: "2009",
+    },
+    {
+      titulo: "Sex Tape - Deftones",
+      audioUrl: "/Musica/Sextape.mp3",
+      arte: "https://images.squarespace-cdn.com/content/v1/5147d98fe4b0e61bb0ab60ec/1363845787383-JGAGB2GKWBGOEL08VMHZ/Deftones+DE+Cover+300+rgb.jpg?format=1500w",
+      año: "2000",
+    },
+    {
+      titulo: "Parabola - Tool",
+      audioUrl: "/Musica/Parabola.mp3",
+      arte: "https://lastfm.freetls.fastly.net/i/u/770x0/ec676167abeb99f85d6fee875d55251e.jpg",
+      año: "2001",
+    },
+    {
+      titulo: "Birds of feather - Billie Eilish",
+      audioUrl: "/Musica/BIRDS OF A FEATHER.mp3",
+      arte: "https://cdn-images.dzcdn.net/images/cover/5d284b31cb9ddeb1a0c79aede5a94e1c/500x500-000000-80-0-0.jpg",
+      año: "2024",
+    },
+    {
+      titulo: "Digital Bath - Deftones",
+      audioUrl: "/Musica/DigitalBath.mp3",
+      arte: "https://cdn-images.dzcdn.net/images/cover/c2942294fe29f749ca9ed2d1b25bb247/500x500-000000-80-0-0.jpg",
+      año: "2021",
+    },
+    {
+      titulo: "El último de todos - Anomia",
+      audioUrl: "/Musica/el_ultimo_de_todos.mp3",
+      arte: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnEpwOoCFlWPXaGrK3rScKMyLeVezt0HEVdUJ1NPZyfPsfkaJU1O6hfD3DgDpfilDqmPc&usqp=CAU",
+      año: "2022",
+    },
+
+  ];
+
+  const filteredCanciones = searchTerm 
+    ? canciones.filter(cancion =>
+        cancion.titulo.toLowerCase().includes(searchTerm.toLowerCase().trim())
+      )
+    : canciones;
+
+  const artistas = [
+  {
+    nombre: "The Pineapple Thief",
+    imagen: "https://www.therockpit.net/wp-content/uploads/2018/07/news-thepineapplethief2.jpg",
+    likes: 20
+  },
+  {
+    nombre: "Tool",
+    imagen: "https://cdn.theatlantic.com/thumbor/zMv-9_ru-2uEFRFfLcGIdwG8jIo=/0x200:1920x1280/976x549/media/img/mt/2019/08/unnamed_16/original.jpg",
+    likes: 10
+  },
+  {
+    nombre: "Porcupine Tree",
+    imagen: "https://porcupinetree.com/wp-content/uploads/2023/11/CleanShot-2023-11-05-at-12%E2%80%AF.55.41.jpg",
+    likes: 20
+  },
+  {
+    nombre: "Anomia",
+    imagen: "../Public/Anomia.jpg",
+    likes: 20
+  },
+  {
+    nombre: "Deftones",
+    imagen: "https://i.pinimg.com/736x/9d/d5/3d/9dd53d25fb2ddf28749b345a73114a61.jpg",
+    likes: 20
+  },
+  {
+    nombre: "Gojira",
+    imagen: "https://indierocks.sfo3.cdn.digitaloceanspaces.com/wp-content/uploads/bfi_thumb/Gojira-Band-3qy0hbhdhc8hrbpmhumk11ea0fuk5hg4s8vacgkl8swwqvkwhqf7x8q5jdkuf4.jpg",
+    likes: 20
+  }
+  
+];
+
+  const filteredArtistas = searchTerm 
+    ? artistas.filter(artista =>
+        artista.nombre.toLowerCase().includes(searchTerm.toLowerCase().trim())
+      )
+    : artistas;
+
   return (
-    <>
-      <EncabezadoMusic  
-        Logo="../Public/logo.png"
-        inicioSesion="Iniciar Sesion"
-      >
-        <MusicBuscador placeholder="Buscar música, albums y artistass" />
-      </EncabezadoMusic>
-      
-      <SidebarContainer 
-          Titulo="Tu Contenido">    
-        <SidebarMusic
-          Principal='../Public/home.png'
-          Biblioteca='../Public/Biblioteca.png'
-          Playlists='../Public/Playlist.png'
-        />
-      </SidebarContainer>
-      
-      <section>
-        <SectionMusicContainer Titulo="Tus Albumes Favoritos">
-          <SectionMusic
-            Titulo="The Incident - Porcupine Tree"
-            Arte="https://m.media-amazon.com/images/I/41kBPpqJbiL._SX300_SY300_QL70_FMwebp_.jpg"
-            Año="2009"       
+    <div className="Pagina">
+    <EncabezadoMusic
+      Logo="../Public/logo.png"
+      inicioSesion="Iniciar Sesión"
+      Login="https://accounts.spotify.com/es/login?continue=https%3A%2F%2Fopen.spotify.com%2Fintl-es"
+    >
+      <MusicBuscador 
+        placeholder="Buscar canciones, artistas y álbumes"
+        onSearch={setSearchTerm}
+      />
+    </EncabezadoMusic>
+
+      <div className="Layout">
+        
+        <SidebarContainer 
+          Biblioteca="../Public/Biblioteca2.png"
+          Playlist="../Public/Playlist2.png"
+          >
+          <SidebarMusic
+          Lista="../Public/tus_me_gusta.png"
           />
-          <SectionMusic
-            Titulo="White Pony - Deftones"
-            Arte="https://cdn-images.dzcdn.net/images/cover/c2942294fe29f749ca9ed2d1b25bb247/500x500-000000-80-0-0.jpg"
-            Año="2000"        
+          <SidebarMusic
+          Lista="../Public/tus episodios.png"
           />
-          <SectionMusic
-            Titulo="System of a Down"
-            Arte="https://t2.genius.com/unsafe/855x0/https%3A%2F%2Fimages.genius.com%2Face3783b3f24c4da2a2b1bc9a98f2fd3.1000x1000x1.png"
-            Año="1998"       
+          <SidebarMusic
+          Lista="../Public/The Emptiness Machine.png"
           />
-          <SectionMusic
-            Titulo="10,000 Days - Tool"
-            Arte="https://lastfm.freetls.fastly.net/i/u/770x0/f177da80ce97e79927b7c32c78463a33.jpg#f177da80ce97e79927b7c32c78463a33"
-            Año="2006"        
+          <SidebarMusic
+          Lista="../Public/ramen_para_dos.png"
           />
-          <SectionMusic
-            Titulo="Fortitude - Gojira"
-            Arte="https://icarusmusicstore.com/28936-medium_default/gojira-fortitude-cd.jpg"
-            Año="2021"       
+          <SidebarMusic
+          Lista="../Public/red_hot.png"
           />
-          <SectionMusic
-            Titulo="El último de todos - Anomia"
-            Arte="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnEpwOoCFlWPXaGrK3rScKMyLeVezt0HEVdUJ1NPZyfPsfkaJU1O6hfD3DgDpfilDqmPc&usqp=CAU"
-            Año="2022"        
+          <SidebarMusic
+          Lista="../Public/gojira.png"
           />
-        </SectionMusicContainer>
-      </section>
-      
-      <section>
-        <SectionMusicContainer Titulo="Artistas">
-          <SectionMusicArtistas
-            Titulo="System of a Down"
-            Artista="https://cdn.mos.cms.futurecdn.net/47N2NSZeQPCg9bMeEhVp7g.jpg"
-            Likes={50}    
+          <SidebarMusic
+          Lista="../Public/play_list.png"
           />
-          <SectionMusicArtistas
-            Titulo="Tool"
-            Artista="https://cdn.theatlantic.com/thumbor/zMv-9_ru-2uEFRFfLcGIdwG8jIo=/0x200:1920x1280/976x549/media/img/mt/2019/08/unnamed_16/original.jpg"
-            Likes={100}
-          />
-          <SectionMusicArtistas
-            Titulo="Porcupine Tree"
-            Artista="https://porcupinetree.com/wp-content/uploads/2023/11/CleanShot-2023-11-05-at-12%E2%80%AF.55.41.jpg"
-            Likes={20}
-          />
-          <SectionMusicArtistas
-            Titulo="Anomia"
-            Artista="../Public/Anomia.jpg"
-            Likes={20}
-          />
-          <SectionMusicArtistas
-            Titulo="Deftones"
-            Artista="https://i.pinimg.com/736x/9d/d5/3d/9dd53d25fb2ddf28749b345a73114a61.jpg"
-            Likes={50}
-          />  
-          <SectionMusicArtistas
-            Titulo="Gojira"
-            Artista="https://indierocks.sfo3.cdn.digitaloceanspaces.com/wp-content/uploads/bfi_thumb/Gojira-Band-3qy0hbhdhc8hrbpmhumk11ea0fuk5hg4s8vacgkl8swwqvkwhqf7x8q5jdkuf4.jpg"
-            Likes={30}
-          />
-        </SectionMusicContainer>
-      </section>
-      
-      <section>
-        <SectionMusicContainer Titulo="Los mas escuchados">
+          <SidebarMusic
+          Lista="../Public/nirvana.png"
+          /> 
+          <SidebarMusic
+          Lista="../Public/gorillaz.png"
+          />      
+        </SidebarContainer>
+        
+
+        <main className="Contenido">
+          <section>
+            <SectionMusicContainer Titulo="Tus Canciones Favoritas">
+              {filteredCanciones.map((cancion, index) => (
+                <SectionMusic
+                  key={index}
+                  Titulo={cancion.titulo}
+                  Arte={cancion.arte}
+                  Año={cancion.año}
+                  onPlay={() => {
+                    setCancionActual(cancion);
+                    setIsPlaying(true);
+                  }}
+                />
+              ))}
+            </SectionMusicContainer>
+          </section>
+
+          <section>
+            <SectionMusicContainer Titulo="Artistas">
+              {filteredArtistas.map((artista, index) => (
+                <SectionMusicArtistas
+                  key={index}
+                  Titulo={artista.nombre}
+                  Artista={artista.imagen}
+                  Likes={artista.likes}
+                />
+              ))}
+            </SectionMusicContainer>
+          </section>
+
+          <section>
+            <SectionMusicContainer Titulo="Los más escuchados">
+
           <SectionMusicMasEscuchados
             Cancion="The Pot"
             Autor="Tool"
             Imagen="https://cdn-images.dzcdn.net/images/cover/c7a6f1259a8f9df284168a28988b8ad7/500x500-000000-80-0-0.jpg"
-            Año="Publicado el 28/04/2006"       
+            Año="Publicado el 28/04/2006"
           />
           <SectionMusicMasEscuchados
             Cancion="Aenima"
@@ -129,32 +218,42 @@ function App() {
             Cancion="Flying Whales"
             Autor="Gojira"
             Imagen="https://i1.sndcdn.com/artworks-000162552693-ouc73j-t1080x1080.jpg"
-            Año="Publicado el 07/09/2006"       
+            Año="Publicado el 07/09/2006"   
           />
-            <SectionMusicMasEscuchados
+          <SectionMusicMasEscuchados
             Cancion="Armenia"
             Autor="Anomia"
             Imagen="../Public/Armenia.jpg"
             Año="Publicado el 18/08/2018"       
+
           />
-        </SectionMusicContainer>
-      </section>
-      
-      <BarraReproduccion
-        BotonAleatorio="../Public/Aleatorio.png"  
-        BotonPlay="../Public/Play.png"
-        BotonSiguiente="../Public/Siguiente.png"
-        BotonAnterior="../Public/Anterior.png" 
-        BotonRepetir="../Public/Repetir.png" 
-      />
-      
-      <PiePagina  
+          </SectionMusicContainer>
+          </section>
+
+
+          <BarraReproduccion
+            BotonAleatorio="../Public/Aleatorio.png"
+            BotonPlay="../Public/Play.png"
+            BotonSiguiente="../Public/Siguiente.png"
+            BotonAnterior="../Public/Anterior.png"
+            BotonRepetir="../Public/Repetir.png"
+            cancionActual={cancionActual}
+            setCancionActual={setCancionActual}
+            isPlaying={isPlaying}
+            setIsPlaying={setIsPlaying}
+            listaCanciones={canciones}
+          />
+        </main>
+      </div>
+
+
+      <PiePagina
         Logo="../Public/logo.png"
         Texto="© AntiCopyright ningún derecho reservado"
         Texto2="Hecho por Lucas Leonczyk y Tania Maldonado para Informatorio"
       />
-    </>
+    </div>
   );
 }
-
 export default App;
+

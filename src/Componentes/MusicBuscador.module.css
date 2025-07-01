@@ -31,13 +31,14 @@
   padding: 10px 15px 10px 40px;
   text-align: left;
   border-radius: 20px;
-  border: 1.5px solid #4b4b4b31;
+  border: 1.8px solid #ffffffde;
   font-size: 1rem;
   color: #dbdbdb;
-  background-color: rgba(189, 189, 189, 0.363);
+  background-color: rgba(0, 0, 0, 0);
   outline: none;
 }
 
 .Input:focus {
-  border: 1.5px solid #1fd75f88;
+  border: 1.8px solid #1fd75f42;
+  transition: all 0.15s ease; 
 }

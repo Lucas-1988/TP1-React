@@ -1,6 +1,5 @@
 .Encabezado {
-  left: 20px;
-  background-color: rgba(255, 255, 255, 0.055);
+  left: 20px;  
   color: rgb(148, 148, 148);
   font-family: Arial;
   font-size: 8px;  
@@ -12,21 +11,24 @@
 
 .Logo {
   position: absolute;
-  height: 50px;
+  left: 2vh;
+  height: 40px;
   object-fit: cover;
 }
 
 .inicioSesion {
   background-color: #1fd75f;
-  font-family: 'Poppins', sans-serif;
+  font-family: sans-serif;
   font-size: 15px;
-  font-weight: 100;
-  padding: 10px;
+  font-weight: bold;
+  padding: 10px 30px;
   margin-left: auto;
   cursor: pointer;
   border-color: rgba(85, 85, 85, 0); 
   border-radius: 20px;
-  transition: all 0.3s ease;  
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: black;  
 }
 
 .inicioSesion:hover {

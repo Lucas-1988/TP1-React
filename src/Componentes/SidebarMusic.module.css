@@ -1,10 +1,13 @@
 .iconosContainer {
-  position: relative;
+  margin-left: 2vh;
   display: flex;
   flex-direction: column;
-  gap: 20px; 
+  gap: 20px;
   padding: 15px;
-  top: 50px;
+  margin-top: 10px;
+  max-height: 100%;
+  background-color: #171717;
+  border-radius: 2vh;
 }
 
 .menuItem {
@@ -25,8 +28,42 @@
 }
 
 .texto {
+  flex-direction: column;  
   color: #B3B3B3; 
   font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
 }
+
+.Biblioteca { 
+  scale: 90%;
+  transition: all 0.2s ease; 
+}
+
+.Biblioteca:hover {
+  cursor: pointer;
+  transform: scale(1.05); 
+}
+
+.Playlist {
+  scale: 80%;
+  transition: all 0.2s ease; 
+}
+
+.Playlist:hover {
+  cursor: pointer;
+  transform: scale(1.1); 
+}
+
+.Arte {
+  object-position: center;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.Biblioteca {  
+  width: 80px;
+  height: 90px;  
+  }
