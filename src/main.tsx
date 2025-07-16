@@ -1,21 +1,30 @@
-import { createElement } from 'react';
+import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'; 
 import './index.css';
-import App from './App.tsx';
-import SectionMusic from './Componentes/SectionMusic.tsx';
 
-const post = createElement (
-  SectionMusic,
-  { 
-    Titulo: 'album',
-    Arte: 'tapa del album',
-    Año: 'Año de publicación'
+import Home from './Paginas/Home.tsx';
+import Cancion from './Paginas/Cancion.tsx';
+import Playlist from './Paginas/Playlist.tsx';
+import Artista from './Paginas/Artista.tsx';
+import ArtistaDetalle from './Paginas/ArtistaDetalle.tsx';
+import Generos from './Paginas/Generos.tsx';
 
-  });
-
-  console.log(post);
-
-createRoot(document.getElementById('root')!).render(<App />)
-
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        
+        <Route path="/Playlist" element={<Playlist />} />
+        <Route path="/Cancion/:id" element={<Cancion />} />
+        <Route path="/Artista" element={<Artista />} />
+        <Route path="/Artista/:id" element={<ArtistaDetalle />} />
+        <Route path="/Generos" element={<Generos />} />
+        <Route path="*" element={<h4>Error: Pagina no encontrada</h4>} />
+      </Routes>
+    </BrowserRouter>
+  </StrictMode>
+);
 
 

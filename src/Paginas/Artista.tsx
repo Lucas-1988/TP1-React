@@ -1,17 +1,17 @@
-import './App.css';
+import '../Paginas/Home.css';
 import { useState } from 'react';
-import SectionMusic from './Componentes/SectionMusic';
-import SectionMusicContainer from './Componentes/SectionMusicContainer';
-import EncabezadoMusic from './Componentes/EncabezadoMusic';
-import SidebarMusic from './Componentes/SidebarMusic';
-import SidebarContainer from './Componentes/SidebarContainer';
-import SectionMusicArtistas from './Componentes/SectionMusicArtistas';
-import MusicBuscador from './Componentes/MusicBuscador';
-import BarraReproduccion from './Componentes/BarraReproduccion';
-import SectionMusicMasEscuchados from './Componentes/SectionMusicMasEscuchados';
-import PiePagina from './Componentes/PiePagina';
+import SectionMusic from '../Componentes/SectionMusic';
+import SectionMusicContainer from '../Componentes/SectionMusicContainer';
+import EncabezadoMusic from '../Componentes/EncabezadoMusic';
+import SidebarMusic from '../Componentes/SidebarMusic';
+import SidebarContainer from '../Componentes/SidebarContainer';
+import SectionMusicArtistas from '../Componentes/SectionMusicArtistas';
+import MusicBuscador from '../Componentes/MusicBuscador';
+import BarraReproduccion from '../Componentes/BarraReproduccion';
+import SectionMusicMasEscuchados from '../Componentes/SectionMusicMasEscuchados';
+import PiePagina from '../Componentes/PiePagina';
 
-function App() {
+function Artista() {
 
   const [cancionActual, setCancionActual] = useState<{
     titulo: string;
@@ -255,5 +255,4 @@ function App() {
     </div>
   );
 }
-export default App;
-
+export default Artista;
