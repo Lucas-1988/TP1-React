@@ -10,6 +10,8 @@ import MusicBuscador from '../Componentes/MusicBuscador';
 import BarraReproduccion from '../Componentes/BarraReproduccion';
 import SectionMusicMasEscuchados from '../Componentes/SectionMusicMasEscuchados';
 import PiePagina from '../Componentes/PiePagina';
+import { Link } from 'react-router-dom';
+
 
 
 function Home() {
@@ -112,6 +114,7 @@ function Home() {
     <div className="Pagina">
     <EncabezadoMusic
       Logo="../Public/logo.png"
+      LogoHome="../Public/home.png"
       inicioSesion="Iniciar Sesión"
       Login="https://accounts.spotify.com/es/login?continue=https%3A%2F%2Fopen.spotify.com%2Fintl-es"
     >
@@ -158,8 +161,13 @@ function Home() {
         
 
         <main className="Contenido">
-          <section>
-            <SectionMusicContainer Titulo="Tus Canciones Favoritas">
+          <section className="seccion-favoritos">
+            <div className="encabezado-seccion">
+              <h2 className="titulo-seccion">Tus Canciones Favoritas</h2>
+              <Link to="/Favoritos" className="link-ver-todo">Ver todas</Link>
+            </div>
+
+            <SectionMusicContainer Titulo="">
               {filteredCanciones.map((cancion, index) => (
                 <SectionMusic
                   key={index}
@@ -175,8 +183,13 @@ function Home() {
             </SectionMusicContainer>
           </section>
 
-          <section>
-            <SectionMusicContainer Titulo="Artistas">
+          <section className="seccion-artistas">
+            <div className="encabezado-seccion">
+              <h2 className="titulo-seccion">Artistas</h2>
+              <Link to="/Artista" className="link-ver-todo">Ver todos</Link>
+            </div>
+
+            <SectionMusicContainer Titulo="">
               {filteredArtistas.map((artista, index) => (
                 <SectionMusicArtistas
                   key={index}

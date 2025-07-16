@@ -32,3 +32,43 @@ body, #body {
   flex: 1;
   height: 100vh;
 }
+
+.seccion-favoritas {
+  margin-bottom: 2rem;
+}
+
+.seccion-artistas {
+  margin-bottom: 2rem;
+}
+
+.encabezado-seccion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.titulo-seccion {
+  position: relative;
+  left: 10vh;
+  color: #ffffff;
+  text-align: left;
+  margin: 24px 0 8px 24px;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: Arial; 
+}
+
+.link-ver-todo {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.2s ease;
+  font-family: Arial;
+}
+
+.link-ver-todo:hover {
+  color: #1ed760;
+  text-decoration: underline;
+}
+

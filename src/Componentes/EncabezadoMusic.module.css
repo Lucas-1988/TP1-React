@@ -7,13 +7,28 @@
   align-items: center;  
   padding: 10px;
   border-radius: 30px;  
+  gap: 20px;
 }
 
 .Logo {
-  position: absolute;
+  position: relative;
   left: 2vh;
   height: 40px;
   object-fit: cover;
+}
+
+.LogoHome {
+  position: relative;
+  left: 3vh;
+  height: 45px;
+  object-fit: cover;
+  transition: transform 0.3s ease;  
+}
+
+.LogoHome:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  filter: brightness(1.1);  
 }
 
 .inicioSesion {

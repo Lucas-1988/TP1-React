@@ -8,7 +8,7 @@ import Cancion from './Paginas/Cancion.tsx';
 import Playlist from './Paginas/Playlist.tsx';
 import Artista from './Paginas/Artista.tsx';
 import ArtistaDetalle from './Paginas/ArtistaDetalle.tsx';
-import Generos from './Paginas/Generos.tsx';
+import Favoritos from './Paginas/Favoritos.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -19,12 +19,12 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/Playlist" element={<Playlist />} />
         <Route path="/Cancion/:id" element={<Cancion />} />
         <Route path="/Artista" element={<Artista />} />
-        <Route path="/Artista/:id" element={<ArtistaDetalle />} />
-        <Route path="/Generos" element={<Generos />} />
+        <Route path="/Artista/:nombreArtista" element={<ArtistaDetalle />} />        
+        <Route path="/Favoritos" element={<Favoritos />} />
         <Route path="*" element={<h4>Error: Pagina no encontrada</h4>} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
 );
-
+//The%20Pineapple%20Thief
 

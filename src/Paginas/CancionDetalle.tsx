@@ -1,21 +1,12 @@
 import { useParams } from 'react-router-dom';
 import type { ReactNode } from 'react';
 import ThePineappleThief from './ThePineappleThief';
-import Anomia from './Anomia';
-import Tool from './Tool';
-import PorcupineTree from './PorcupineTree';
-import Deftones from './Deftones';
-import Gojira from './Gojira';
+
 
 function ArtistaDetalle() {
   const { nombreArtista } = useParams();  
   const componentesArtistas: Record<string, ReactNode> = {
     'The Pineapple Thief': <ThePineappleThief/>,
-    'Anomia': <Anomia />,
-    'Tool': <Tool />,    
-    'Porcupine Tree': <PorcupineTree />, 
-    'Gojira': <Gojira />, 
-    'Deftones': <Deftones />, 
   };
 
   const componente = componentesArtistas[nombreArtista || ''];
@@ -25,7 +16,7 @@ function ArtistaDetalle() {
       {componente ? (
         componente
       ) : (
-        <h2>No se encontró información para este artista</h2>
+        <h2>No se encontró información para esta cancion</h2>
       )}
     </div>
   );

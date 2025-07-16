@@ -9,7 +9,7 @@ import MusicBuscador from '../Componentes/MusicBuscador';
 import BarraReproduccion from '../Componentes/BarraReproduccion';
 import PiePagina from '../Componentes/PiePagina';
 
-function Home() {
+function Favoritos() {
 
   const [cancionActual, setCancionActual] = useState<{
     titulo: string;
@@ -131,7 +131,7 @@ function Home() {
 
         <main className="Contenido">
           <section>
-            <SectionMusicContainer Titulo="Artistas">
+            <SectionMusicContainer Titulo="Canciones">
               {filteredArtistas.map((artista, index) => (
                 <SectionMusicArtistas
                   key={index}
@@ -143,7 +143,7 @@ function Home() {
             </SectionMusicContainer>
           </section>
           <section>
-            <SectionMusicContainer Titulo="Artistas">
+            <SectionMusicContainer Titulo="Canciones">
               {filteredArtistas.map((artista, index) => (
                 <SectionMusicArtistas
                   key={index}
@@ -155,7 +155,7 @@ function Home() {
             </SectionMusicContainer>
           </section>
           <section>
-            <SectionMusicContainer Titulo="Artistas">
+            <SectionMusicContainer Titulo="Canciones">
               {filteredArtistas.map((artista, index) => (
                 <SectionMusicArtistas
                   key={index}
@@ -191,4 +191,5 @@ function Home() {
   );
 }
 
-export default Home;
+export default Favoritos;
+
