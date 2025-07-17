@@ -42,5 +42,78 @@ export const artistas = [
     descripcion: "Taking their name from the original Japanese pronunciation of Godzilla, French heavy metal quartet Gojira have gone from the utmost obscurity in the first half of their career to widespread global recognition in the second. Combining elements of thrash, death, math, groove, progressive, and post-metal with philosophical and environment-themed lyrics, the band found mainstream favor in 2012 with the release of their fifth long-player, L'Enfant Sauvage, and doubled-down on that success with 2016's Grammy-nominated Magma and 2021's hard-hitting and versatile Fortitude. In 2024, Gojira became the first heavy metal act to perform at an Olympic opening ceremony.Originating from the town of Bayonne on France's southernmost Atlantic Ocean coastline, Gojira recorded the first in a sequence of almost yearly demos in 1996, gradually honing their sound until the year 2000, when bandmembers Joe Duplantier (vocals/guitar), Christian Andreu (guitar), Jean-Michel Labadie (bass), and Mario Duplantier (drums), felt ready to record their first album, Terra Incognita, relying solely on their own devices. And despite its independent status, the aptly named LP made significant waves with its unpredictable blend of death, thrash, groove, progressive, and math metal - recalling bands as diverse as, Pantera,Meshuggah, Suffocation and Sepultura ",
     imagen: "../public/Gojira_portada.png", 
   },
+      
+  {
+    id: "Billie Eilish",
+    nombre: "Billie Eilish",
+    descripcion: "Billie Eilish remains one of the biggest stars to emerge in the 21st century. Her third studio album, HIT ME HARD AND SOFT features 10 tracks written and recorded in her hometown of Los Angeles, with her brother and producer FINNEAS. In 2019, her debut album WHEN WE ALL FALL ASLEEP, WHERE DO WE GO? debuted at No. 1 in 18 countries, and was the most streamed album of that year. In 2021, her sophomore album 'Happier Than Ever’ debuted at #1 in 20 countries. Both albums were critically acclaimed worldwide and were written, produced, and recorded entirely by Billie Eilish and FINNEAS. 9-time GRAMMY® Award-winning Billie Eilish has made history as the youngest artist to receive nominations and win in all the major GRAMMY® categories, receiving an award for Best New Artist, Album of the Year, Record of the Year, Song of the Year, and Best Pop Vocal Album, and is the youngest artist to write and record an official James Bond theme song, ‘No Time To Die,’ which won an Academy Award for Best Original Song in 2022. In 2023, Eilish also wrote and released the critically acclaimed song “What Was I Made For?” for the Greta Gerwig-directed motion picture Barbie, which also won Academy and Golden Globe Award for Best Original Song, two GRAMMY® Awards for Song of the Year and Best Song Written For Visual Media, and has solidified Billie Eilish yet again in the history books as the youngest person ever to win two Academy Awards.",
+    imagen: "../public/Billie Eilish.png", 
+  },
+
+      
+  {
+    id: "Gojira",
+    nombre: "Gojira",
+    descripcion: "Taking their name from the original Japanese pronunciation of Godzilla, French heavy metal quartet Gojira have gone from the utmost obscurity in the first half of their career to widespread global recognition in the second. Combining elements of thrash, death, math, groove, progressive, and post-metal with philosophical and environment-themed lyrics, the band found mainstream favor in 2012 with the release of their fifth long-player, L'Enfant Sauvage, and doubled-down on that success with 2016's Grammy-nominated Magma and 2021's hard-hitting and versatile Fortitude. In 2024, Gojira became the first heavy metal act to perform at an Olympic opening ceremony.Originating from the town of Bayonne on France's southernmost Atlantic Ocean coastline, Gojira recorded the first in a sequence of almost yearly demos in 1996, gradually honing their sound until the year 2000, when bandmembers Joe Duplantier (vocals/guitar), Christian Andreu (guitar), Jean-Michel Labadie (bass), and Mario Duplantier (drums), felt ready to record their first album, Terra Incognita, relying solely on their own devices. And despite its independent status, the aptly named LP made significant waves with its unpredictable blend of death, thrash, groove, progressive, and math metal - recalling bands as diverse as, Pantera,Meshuggah, Suffocation and Sepultura ",
+    imagen: "../public/Gojira_portada.png", 
+  },
+
+      
+  {
+    id: "Gojira",
+    nombre: "Gojira",
+    descripcion: "Taking their name from the original Japanese pronunciation of Godzilla, French heavy metal quartet Gojira have gone from the utmost obscurity in the first half of their career to widespread global recognition in the second. Combining elements of thrash, death, math, groove, progressive, and post-metal with philosophical and environment-themed lyrics, the band found mainstream favor in 2012 with the release of their fifth long-player, L'Enfant Sauvage, and doubled-down on that success with 2016's Grammy-nominated Magma and 2021's hard-hitting and versatile Fortitude. In 2024, Gojira became the first heavy metal act to perform at an Olympic opening ceremony.Originating from the town of Bayonne on France's southernmost Atlantic Ocean coastline, Gojira recorded the first in a sequence of almost yearly demos in 1996, gradually honing their sound until the year 2000, when bandmembers Joe Duplantier (vocals/guitar), Christian Andreu (guitar), Jean-Michel Labadie (bass), and Mario Duplantier (drums), felt ready to record their first album, Terra Incognita, relying solely on their own devices. And despite its independent status, the aptly named LP made significant waves with its unpredictable blend of death, thrash, groove, progressive, and math metal - recalling bands as diverse as, Pantera,Meshuggah, Suffocation and Sepultura ",
+    imagen: "../public/Gojira_portada.png", 
+  },
+
+      
+  {
+    id: "Gojira",
+    nombre: "Gojira",
+    descripcion: "Taking their name from the original Japanese pronunciation of Godzilla, French heavy metal quartet Gojira have gone from the utmost obscurity in the first half of their career to widespread global recognition in the second. Combining elements of thrash, death, math, groove, progressive, and post-metal with philosophical and environment-themed lyrics, the band found mainstream favor in 2012 with the release of their fifth long-player, L'Enfant Sauvage, and doubled-down on that success with 2016's Grammy-nominated Magma and 2021's hard-hitting and versatile Fortitude. In 2024, Gojira became the first heavy metal act to perform at an Olympic opening ceremony.Originating from the town of Bayonne on France's southernmost Atlantic Ocean coastline, Gojira recorded the first in a sequence of almost yearly demos in 1996, gradually honing their sound until the year 2000, when bandmembers Joe Duplantier (vocals/guitar), Christian Andreu (guitar), Jean-Michel Labadie (bass), and Mario Duplantier (drums), felt ready to record their first album, Terra Incognita, relying solely on their own devices. And despite its independent status, the aptly named LP made significant waves with its unpredictable blend of death, thrash, groove, progressive, and math metal - recalling bands as diverse as, Pantera,Meshuggah, Suffocation and Sepultura ",
+    imagen: "../public/Gojira_portada.png", 
+  },
+
+      
+  {
+    id: "Gojira",
+    nombre: "Gojira",
+    descripcion: "Taking their name from the original Japanese pronunciation of Godzilla, French heavy metal quartet Gojira have gone from the utmost obscurity in the first half of their career to widespread global recognition in the second. Combining elements of thrash, death, math, groove, progressive, and post-metal with philosophical and environment-themed lyrics, the band found mainstream favor in 2012 with the release of their fifth long-player, L'Enfant Sauvage, and doubled-down on that success with 2016's Grammy-nominated Magma and 2021's hard-hitting and versatile Fortitude. In 2024, Gojira became the first heavy metal act to perform at an Olympic opening ceremony.Originating from the town of Bayonne on France's southernmost Atlantic Ocean coastline, Gojira recorded the first in a sequence of almost yearly demos in 1996, gradually honing their sound until the year 2000, when bandmembers Joe Duplantier (vocals/guitar), Christian Andreu (guitar), Jean-Michel Labadie (bass), and Mario Duplantier (drums), felt ready to record their first album, Terra Incognita, relying solely on their own devices. And despite its independent status, the aptly named LP made significant waves with its unpredictable blend of death, thrash, groove, progressive, and math metal - recalling bands as diverse as, Pantera,Meshuggah, Suffocation and Sepultura ",
+    imagen: "../public/Gojira_portada.png", 
+  },
+
+      
+  {
+    id: "Gojira",
+    nombre: "Gojira",
+    descripcion: "Taking their name from the original Japanese pronunciation of Godzilla, French heavy metal quartet Gojira have gone from the utmost obscurity in the first half of their career to widespread global recognition in the second. Combining elements of thrash, death, math, groove, progressive, and post-metal with philosophical and environment-themed lyrics, the band found mainstream favor in 2012 with the release of their fifth long-player, L'Enfant Sauvage, and doubled-down on that success with 2016's Grammy-nominated Magma and 2021's hard-hitting and versatile Fortitude. In 2024, Gojira became the first heavy metal act to perform at an Olympic opening ceremony.Originating from the town of Bayonne on France's southernmost Atlantic Ocean coastline, Gojira recorded the first in a sequence of almost yearly demos in 1996, gradually honing their sound until the year 2000, when bandmembers Joe Duplantier (vocals/guitar), Christian Andreu (guitar), Jean-Michel Labadie (bass), and Mario Duplantier (drums), felt ready to record their first album, Terra Incognita, relying solely on their own devices. And despite its independent status, the aptly named LP made significant waves with its unpredictable blend of death, thrash, groove, progressive, and math metal - recalling bands as diverse as, Pantera,Meshuggah, Suffocation and Sepultura ",
+    imagen: "../public/Gojira_portada.png", 
+  },
+
+      
+  {
+    id: "Gojira",
+    nombre: "Gojira",
+    descripcion: "Taking their name from the original Japanese pronunciation of Godzilla, French heavy metal quartet Gojira have gone from the utmost obscurity in the first half of their career to widespread global recognition in the second. Combining elements of thrash, death, math, groove, progressive, and post-metal with philosophical and environment-themed lyrics, the band found mainstream favor in 2012 with the release of their fifth long-player, L'Enfant Sauvage, and doubled-down on that success with 2016's Grammy-nominated Magma and 2021's hard-hitting and versatile Fortitude. In 2024, Gojira became the first heavy metal act to perform at an Olympic opening ceremony.Originating from the town of Bayonne on France's southernmost Atlantic Ocean coastline, Gojira recorded the first in a sequence of almost yearly demos in 1996, gradually honing their sound until the year 2000, when bandmembers Joe Duplantier (vocals/guitar), Christian Andreu (guitar), Jean-Michel Labadie (bass), and Mario Duplantier (drums), felt ready to record their first album, Terra Incognita, relying solely on their own devices. And despite its independent status, the aptly named LP made significant waves with its unpredictable blend of death, thrash, groove, progressive, and math metal - recalling bands as diverse as, Pantera,Meshuggah, Suffocation and Sepultura ",
+    imagen: "../public/Gojira_portada.png", 
+  },
+
+      
+  {
+    id: "Gojira",
+    nombre: "Gojira",
+    descripcion: "Taking their name from the original Japanese pronunciation of Godzilla, French heavy metal quartet Gojira have gone from the utmost obscurity in the first half of their career to widespread global recognition in the second. Combining elements of thrash, death, math, groove, progressive, and post-metal with philosophical and environment-themed lyrics, the band found mainstream favor in 2012 with the release of their fifth long-player, L'Enfant Sauvage, and doubled-down on that success with 2016's Grammy-nominated Magma and 2021's hard-hitting and versatile Fortitude. In 2024, Gojira became the first heavy metal act to perform at an Olympic opening ceremony.Originating from the town of Bayonne on France's southernmost Atlantic Ocean coastline, Gojira recorded the first in a sequence of almost yearly demos in 1996, gradually honing their sound until the year 2000, when bandmembers Joe Duplantier (vocals/guitar), Christian Andreu (guitar), Jean-Michel Labadie (bass), and Mario Duplantier (drums), felt ready to record their first album, Terra Incognita, relying solely on their own devices. And despite its independent status, the aptly named LP made significant waves with its unpredictable blend of death, thrash, groove, progressive, and math metal - recalling bands as diverse as, Pantera,Meshuggah, Suffocation and Sepultura ",
+    imagen: "../public/Gojira_portada.png", 
+  },
+
+      
+  {
+    id: "Gojira",
+    nombre: "Gojira",
+    descripcion: "Taking their name from the original Japanese pronunciation of Godzilla, French heavy metal quartet Gojira have gone from the utmost obscurity in the first half of their career to widespread global recognition in the second. Combining elements of thrash, death, math, groove, progressive, and post-metal with philosophical and environment-themed lyrics, the band found mainstream favor in 2012 with the release of their fifth long-player, L'Enfant Sauvage, and doubled-down on that success with 2016's Grammy-nominated Magma and 2021's hard-hitting and versatile Fortitude. In 2024, Gojira became the first heavy metal act to perform at an Olympic opening ceremony.Originating from the town of Bayonne on France's southernmost Atlantic Ocean coastline, Gojira recorded the first in a sequence of almost yearly demos in 1996, gradually honing their sound until the year 2000, when bandmembers Joe Duplantier (vocals/guitar), Christian Andreu (guitar), Jean-Michel Labadie (bass), and Mario Duplantier (drums), felt ready to record their first album, Terra Incognita, relying solely on their own devices. And despite its independent status, the aptly named LP made significant waves with its unpredictable blend of death, thrash, groove, progressive, and math metal - recalling bands as diverse as, Pantera,Meshuggah, Suffocation and Sepultura ",
+    imagen: "../public/Gojira_portada.png", 
+  },
+
+
 
 ];
