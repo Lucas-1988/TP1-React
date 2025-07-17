@@ -203,45 +203,43 @@ function Home() {
 
           <section>
             <SectionMusicContainer Titulo="Los más escuchados">
-
-          <SectionMusicMasEscuchados
-            Cancion="The Pot"
-            Autor="Tool"
-            Imagen="https://cdn-images.dzcdn.net/images/cover/c7a6f1259a8f9df284168a28988b8ad7/500x500-000000-80-0-0.jpg"
-            Año="Publicado el 28/04/2006"
-          />
-          <SectionMusicMasEscuchados
-            Cancion="Aenima"
-            Autor="Tool"
-            Imagen="https://lastfm.freetls.fastly.net/i/u/770x0/011b818d46c10cb5e15a4a7663fca054.jpg#011b818d46c10cb5e15a4a7663fca054"
-            Año="Publicado el 17/09/1996"        
-          />
-          <SectionMusicMasEscuchados
-            Cancion="Spiders"
-            Autor="System of a Down"
-            Imagen="https://images.genius.com/263bf7683bab544908e6fe6087d04a98.1000x1000x1.png"
-            Año="Publicado el 30/06/1998"       
-          />
-          <SectionMusicMasEscuchados
-            Cancion="The Chant"
-            Autor="Gojira"
-            Imagen="https://m.media-amazon.com/images/I/41Z-tcO9X7L._AC_UF1000,1000_QL80_.jpg"
-            Año="Publicado el 25/04/2021"        
-          />
-          <SectionMusicMasEscuchados
-            Cancion="Flying Whales"
-            Autor="Gojira"
-            Imagen="https://i1.sndcdn.com/artworks-000162552693-ouc73j-t1080x1080.jpg"
-            Año="Publicado el 07/09/2006"   
-          />
-          <SectionMusicMasEscuchados
-            Cancion="Armenia"
-            Autor="Anomia"
-            Imagen="/Public/Armenia.jpg"
-            Año="Publicado el 18/08/2018"       
-
-          />
-          </SectionMusicContainer>
+              <SectionMusicMasEscuchados
+                Cancion="The Pot"
+                Autor="Tool"
+                Imagen="https://cdn-images.dzcdn.net/images/cover/c7a6f1259a8f9df284168a28988b8ad7/500x500-000000-80-0-0.jpg"
+                Año="Publicado el 28/04/2006"
+              />
+              <SectionMusicMasEscuchados
+                Cancion="Aenima"
+                Autor="Tool"
+                Imagen="https://lastfm.freetls.fastly.net/i/u/770x0/011b818d46c10cb5e15a4a7663fca054.jpg#011b818d46c10cb5e15a4a7663fca054"
+                Año="Publicado el 17/09/1996"        
+              />
+              <SectionMusicMasEscuchados
+                Cancion="Spiders"
+                Autor="System of a Down"
+                Imagen="https://images.genius.com/263bf7683bab544908e6fe6087d04a98.1000x1000x1.png"
+                Año="Publicado el 30/06/1998"       
+              />
+              <SectionMusicMasEscuchados
+                Cancion="The Chant"
+                Autor="Gojira"
+                Imagen="https://m.media-amazon.com/images/I/41Z-tcO9X7L._AC_UF1000,1000_QL80_.jpg"
+                Año="Publicado el 25/04/2021"        
+              />
+              <SectionMusicMasEscuchados
+                Cancion="Flying Whales"
+                Autor="Gojira"
+                Imagen="https://i1.sndcdn.com/artworks-000162552693-ouc73j-t1080x1080.jpg"
+                Año="Publicado el 07/09/2006"   
+              />
+              <SectionMusicMasEscuchados
+                Cancion="Armenia"
+                Autor="Anomia"
+                Imagen="/Public/Armenia.jpg"
+                Año="Publicado el 18/08/2018"    
+              />
+            </SectionMusicContainer>
           </section>
 
 

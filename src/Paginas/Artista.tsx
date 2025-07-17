@@ -1,8 +1,6 @@
 import '../Paginas/Home.css';
 import { useState } from 'react';
 
-import Portada from '../Componentes/Portada';
-import ContenedorPagina from '../Paginas/ContenedorPagina';
 import SectionMusicContainer from '../Componentes/SectionMusicContainer';
 import EncabezadoMusic from '../Componentes/EncabezadoMusic';
 import SidebarMusic from '../Componentes/SidebarMusic';
@@ -11,7 +9,6 @@ import SectionMusicArtistas from '../Componentes/SectionMusicArtistas';
 import MusicBuscador from '../Componentes/MusicBuscador';
 import BarraReproduccion from '../Componentes/BarraReproduccion';
 import PiePagina from '../Componentes/PiePagina';
-import styles from '../Paginas/Artista.module.css';
 
 function Home() {
 
@@ -99,70 +96,71 @@ function Home() {
     const artistas_MasEscuchados = [
     {
       nombre: "Billie Eilish",
-      imagen: "https://www.therockpit.net/wp-content/uploads/2018/07/news-thepineapplethief2.jpg",
-      likes: 20
+      imagen: "https://assets.dev-filo.dift.io/img/2019/04/03/bi_sq.jpg",
+      likes: 400
     },
     {
-      nombre: "Tool",
-      imagen: "https://cdn.theatlantic.com/thumbor/zMv-9_ru-2uEFRFfLcGIdwG8jIo=/0x200:1920x1280/976x549/media/img/mt/2019/08/unnamed_16/original.jpg",
-      likes: 10
+      nombre: "Jungle",
+      imagen: "https://d94thh4m1x8qv.cloudfront.net/eyJidWNrZXQiOiJkaXktbWFnYXppbmUiLCJrZXkiOiJkL2RpeS9BcnRpc3RzL0ovSlVOR0xFL2p1bmdsZV8yMDE0MDUyOV8wMV8yMDQ4eDEzNjUuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4Mn0sInJlc2l6ZSI6eyJ3aWR0aCI6MjQwMCwiaGVpZ2h0IjoxMzUwLCJmaXQiOiJjb3ZlciJ9LCJzaGFycGVuIjp0cnVlfX0=",
+      likes: 12
     },
     {
-      nombre: "Porcupine Tree",
-      imagen: "https://porcupinetree.com/wp-content/uploads/2023/11/CleanShot-2023-11-05-at-12%E2%80%AF.55.41.jpg",
-      likes: 20
+      nombre: "Anderson.Paak",
+      imagen: "https://www.mrporter.com/content/images/cms/ycm/resource/blob/664354/86073e87643af619344b5087a2060d05/bc803557-7a5d-4c88-8fdd-8540652758ab-data.jpg/w1500_q80.jpg",
+      likes: 50
     },
     {
-      nombre: "Anomia",
-      imagen: "/Public/Anomia.jpg",
-      likes: 20
+      nombre: "Linkin Park",
+      imagen: "https://www.impericon.com/cdn/shop/articles/20250117_lppress_1_8b81abfe-74e8-41a0-a808-1ec07367f66f.png?v=1742368672&width=1000",
+      likes: 25
     },
     {
-      nombre: "Deftones",
-      imagen: "https://i.pinimg.com/736x/9d/d5/3d/9dd53d25fb2ddf28749b345a73114a61.jpg",
-      likes: 20
+      nombre: "Red Hot Chili Pepers",
+      imagen: "https://i.pinimg.com/736x/3f/13/1f/3f131ff8d90c170af9f89588dc00434a.jpg",
+      likes: 350
     },
     {
-      nombre: "Gojira",
-      imagen: "https://indierocks.sfo3.cdn.digitaloceanspaces.com/wp-content/uploads/bfi_thumb/Gojira-Band-3qy0hbhdhc8hrbpmhumk11ea0fuk5hg4s8vacgkl8swwqvkwhqf7x8q5jdkuf4.jpg",
-      likes: 20
+      nombre: "María Becerra",
+      imagen: "https://tn.com.ar/resizer/v2/la-artista-presenta-su-nueva-era-fuente-prensa-FBTCWZ6LJFGGHMHLCS6FHSEG2M.jpg?auth=03869da871f72c4dcf9cc5b8d64ecbaeaec17c2d64ef96b78438da94c7a68374&width=1440",
+      likes: 500
     },
 
-  ];
+  ];  
 
     const EscuchadosRecientemente = [
     {
-      nombre: "Billie Eilish",
-      imagen: "https://www.therockpit.net/wp-content/uploads/2018/07/news-thepineapplethief2.jpg",
-      likes: 20
+      nombre: "Cardellino",
+      imagen: "https://billboard.ar/wp-content/uploads/2025/03/6740c2c937edc2da672d760a_cardellino.jpg",
+      likes: 400
     },
     {
-      nombre: "Tool",
-      imagen: "https://cdn.theatlantic.com/thumbor/zMv-9_ru-2uEFRFfLcGIdwG8jIo=/0x200:1920x1280/976x549/media/img/mt/2019/08/unnamed_16/original.jpg",
-      likes: 10
+      nombre: "Conociendo Rusia",
+      imagen: "https://i0.wp.com/es.rollingstone.com/wp-content/uploads/2024/06/Conociendo-Rusia-vence-la-distancia-en-Jet-Love.jpg?w=1280&ssl=1",
+      likes: 12
     },
     {
-      nombre: "Porcupine Tree",
-      imagen: "https://porcupinetree.com/wp-content/uploads/2023/11/CleanShot-2023-11-05-at-12%E2%80%AF.55.41.jpg",
-      likes: 20
+      nombre: "John Mayer",
+      imagen: "https://www.todomusica.org/imagenes/680x380/john_mayer.webp",
+      likes: 50
     },
     {
-      nombre: "Anomia",
-      imagen: "/Public/Anomia.jpg",
-      likes: 20
+      nombre: "Bersuit Vergarabat",
+      imagen: "https://cdn-images.dzcdn.net/images/artist/a29832fac03094740040ed78c8372ea2/500x500-000000-80-0-0.jpg",
+      likes: 25
     },
     {
-      nombre: "Deftones",
-      imagen: "https://i.pinimg.com/736x/9d/d5/3d/9dd53d25fb2ddf28749b345a73114a61.jpg",
-      likes: 20
+      nombre: "Dua Lipa",
+      imagen: "https://www.radiopuntorojo.com/wp-content/uploads/2025/05/dua-lipa-akbee75ukpi7cr1k-1024x576.jpg",
+      likes: 350
     },
     {
-      nombre: "Gojira",
-      imagen: "https://indierocks.sfo3.cdn.digitaloceanspaces.com/wp-content/uploads/bfi_thumb/Gojira-Band-3qy0hbhdhc8hrbpmhumk11ea0fuk5hg4s8vacgkl8swwqvkwhqf7x8q5jdkuf4.jpg",
-      likes: 20
+      nombre: "Doja Cat",
+      imagen: "https://ichef.bbci.co.uk/news/1024/cpsprodpb/10FFC/production/_112482696_doja-cat-1392x1044.jpg.webp",
+      likes: 500
     },
 
-  ]
+  ];
+  
 
   const filteredArtistas = searchTerm 
     ? artistas.filter(artista =>
@@ -180,7 +178,7 @@ function Home() {
     ? EscuchadosRecientemente.filter(EscuchadosRecientemente =>
         EscuchadosRecientemente.nombre.toLowerCase().includes(searchTerm.toLowerCase().trim())
       )
-    : EscuchadosRecientemente;
+    : EscuchadosRecientemente;    
 
   return (
     <div className="Pagina">
@@ -196,12 +194,7 @@ function Home() {
         />
       </EncabezadoMusic>
 
-      <Portada
-        imagen="../Public/ImagenPortada.png"
-        Titulo="Tus me gusta"      
-      />
-
-      <div className="Layout">
+    <div className="Layout">
 
         <SidebarContainer 
           Biblioteca="../Public/Biblioteca2.png"
@@ -219,40 +212,41 @@ function Home() {
         </SidebarContainer>
 
         <main className="Contenido">
-          <section className={styles.MusicContenedorArtistas}>
-            <ContenedorPagina>             
-              <SectionMusicContainer Titulo="Tus Artistas Favoritos">
-                  {filteredArtistas.map((artista, index) => (
-                    <SectionMusicArtistas
-                      key={index}
-                      Titulo={artista.nombre}
-                      Artista={artista.imagen}
-                      Likes={artista.likes}
-                    />
-                  ))}
-              </SectionMusicContainer>           
-              <SectionMusicContainer Titulo="Los Mas Escuchados">
-                  {filteredArtistas_MasEscuchados.map((artista, index) => (
-                    <SectionMusicArtistas
-                      key={index}
-                      Titulo={artista.nombre}
-                      Artista={artista.imagen}
-                      Likes={artista.likes}
-                    />
-                  ))}
-              </SectionMusicContainer>
-              <SectionMusicContainer Titulo="Escuchados recientemente">
-                  {filteredEscuchadosRecientemente.map((artista, index) => (
-                    <SectionMusicArtistas
-                      key={index}
-                      Titulo={artista.nombre}
-                      Artista={artista.imagen}
-                      Likes={artista.likes}
-                    />
-                  ))}
-              </SectionMusicContainer>
-             
-            </ContenedorPagina>
+          <section>
+            <SectionMusicContainer Titulo="Tus Artistas Favoritos">
+              {filteredArtistas.map((artista, index) => (
+                <SectionMusicArtistas
+                  key={index}
+                  Titulo={artista.nombre}
+                  Artista={artista.imagen}
+                  Likes={artista.likes}
+                />
+              ))}
+            </SectionMusicContainer>
+          </section>
+          <section>
+            <SectionMusicContainer Titulo="Los mas escuchados">
+              {filteredArtistas_MasEscuchados.map((artista, index) => (
+                <SectionMusicArtistas
+                  key={index}
+                  Titulo={artista.nombre}
+                  Artista={artista.imagen}
+                  Likes={artista.likes}
+                />
+              ))}
+            </SectionMusicContainer>
+          </section>
+          <section>
+            <SectionMusicContainer Titulo="Los mas odiados">
+              {filteredEscuchadosRecientemente.map((artista, index) => (
+                <SectionMusicArtistas
+                  key={index}
+                  Titulo={artista.nombre}
+                  Artista={artista.imagen}
+                  Likes={artista.likes}
+                />
+              ))}
+            </SectionMusicContainer>
           </section>
 
           <BarraReproduccion
