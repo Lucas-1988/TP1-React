@@ -95,33 +95,33 @@ function Home() {
     const artistasMasEscuchados = [
     {
       nombre: "Billie Eilish",
-      imagen: "https://www.therockpit.net/wp-content/uploads/2018/07/news-thepineapplethief2.jpg",
-      likes: 20
+      imagen: "https://assets.dev-filo.dift.io/img/2019/04/03/bi_sq.jpg",
+      likes: 400
     },
     {
-      nombre: "Tool",
-      imagen: "https://cdn.theatlantic.com/thumbor/zMv-9_ru-2uEFRFfLcGIdwG8jIo=/0x200:1920x1280/976x549/media/img/mt/2019/08/unnamed_16/original.jpg",
-      likes: 10
+      nombre: "Jungle",
+      imagen: "https://d94thh4m1x8qv.cloudfront.net/eyJidWNrZXQiOiJkaXktbWFnYXppbmUiLCJrZXkiOiJkL2RpeS9BcnRpc3RzL0ovSlVOR0xFL2p1bmdsZV8yMDE0MDUyOV8wMV8yMDQ4eDEzNjUuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4Mn0sInJlc2l6ZSI6eyJ3aWR0aCI6MjQwMCwiaGVpZ2h0IjoxMzUwLCJmaXQiOiJjb3ZlciJ9LCJzaGFycGVuIjp0cnVlfX0=",
+      likes: 12
     },
     {
-      nombre: "Porcupine Tree",
-      imagen: "https://porcupinetree.com/wp-content/uploads/2023/11/CleanShot-2023-11-05-at-12%E2%80%AF.55.41.jpg",
-      likes: 20
+      nombre: "Anderson.Paak",
+      imagen: "https://www.mrporter.com/content/images/cms/ycm/resource/blob/664354/86073e87643af619344b5087a2060d05/bc803557-7a5d-4c88-8fdd-8540652758ab-data.jpg/w1500_q80.jpg",
+      likes: 50
     },
     {
-      nombre: "Anomia",
-      imagen: "/Public/Anomia.jpg",
-      likes: 20
+      nombre: "Linkin Park",
+      imagen: "https://www.impericon.com/cdn/shop/articles/20250117_lppress_1_8b81abfe-74e8-41a0-a808-1ec07367f66f.png?v=1742368672&width=1000",
+      likes: 25
     },
     {
-      nombre: "Deftones",
-      imagen: "https://i.pinimg.com/736x/9d/d5/3d/9dd53d25fb2ddf28749b345a73114a61.jpg",
-      likes: 20
+      nombre: "Red Hot Chili Pepers",
+      imagen: "https://i.pinimg.com/736x/3f/13/1f/3f131ff8d90c170af9f89588dc00434a.jpg",
+      likes: 350
     },
     {
-      nombre: "Gojira",
-      imagen: "https://indierocks.sfo3.cdn.digitaloceanspaces.com/wp-content/uploads/bfi_thumb/Gojira-Band-3qy0hbhdhc8hrbpmhumk11ea0fuk5hg4s8vacgkl8swwqvkwhqf7x8q5jdkuf4.jpg",
-      likes: 20
+      nombre: "María Becerra",
+      imagen: "https://tn.com.ar/resizer/v2/la-artista-presenta-su-nueva-era-fuente-prensa-FBTCWZ6LJFGGHMHLCS6FHSEG2M.jpg?auth=03869da871f72c4dcf9cc5b8d64ecbaeaec17c2d64ef96b78438da94c7a68374&width=1440",
+      likes: 500
     },
 
   ];
