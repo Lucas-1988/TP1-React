@@ -4,7 +4,7 @@ import SectionMusicContainer from '../Componentes/SectionMusicContainer';
 import EncabezadoMusic from '../Componentes/EncabezadoMusic';
 import SidebarMusic from '../Componentes/SidebarMusic';
 import SidebarContainer from '../Componentes/SidebarContainer';
-import SectionMusicArtistas from '../Componentes/SectionMusicArtistas';
+import SectionMusic from '../Componentes/SectionMusic';
 import MusicBuscador from '../Componentes/MusicBuscador';
 import BarraReproduccion from '../Componentes/BarraReproduccion';
 import PiePagina from '../Componentes/PiePagina';
@@ -58,45 +58,11 @@ function Favoritos() {
     },
   ];
 
-  const artistas = [
-    {
-      nombre: "The Pineapple Thief",
-      imagen: "https://www.therockpit.net/wp-content/uploads/2018/07/news-thepineapplethief2.jpg",
-      likes: 20
-    },
-    {
-      nombre: "Tool",
-      imagen: "https://cdn.theatlantic.com/thumbor/zMv-9_ru-2uEFRFfLcGIdwG8jIo=/0x200:1920x1280/976x549/media/img/mt/2019/08/unnamed_16/original.jpg",
-      likes: 10
-    },
-    {
-      nombre: "Porcupine Tree",
-      imagen: "https://porcupinetree.com/wp-content/uploads/2023/11/CleanShot-2023-11-05-at-12%E2%80%AF.55.41.jpg",
-      likes: 20
-    },
-    {
-      nombre: "Anomia",
-      imagen: "/Public/Anomia.jpg",
-      likes: 20
-    },
-    {
-      nombre: "Deftones",
-      imagen: "https://i.pinimg.com/736x/9d/d5/3d/9dd53d25fb2ddf28749b345a73114a61.jpg",
-      likes: 20
-    },
-    {
-      nombre: "Gojira",
-      imagen: "https://indierocks.sfo3.cdn.digitaloceanspaces.com/wp-content/uploads/bfi_thumb/Gojira-Band-3qy0hbhdhc8hrbpmhumk11ea0fuk5hg4s8vacgkl8swwqvkwhqf7x8q5jdkuf4.jpg",
-      likes: 20
-    },
-
-  ];
-
-  const filteredArtistas = searchTerm 
-    ? artistas.filter(artista =>
-        artista.nombre.toLowerCase().includes(searchTerm.toLowerCase().trim())
-      )
-    : artistas;
+  const filteredCanciones = searchTerm 
+  ? canciones.filter(cancion =>
+      cancion.titulo.toLowerCase().includes(searchTerm.toLowerCase().trim())
+    )
+  : canciones;
 
   return (
     <div className="Pagina">
@@ -130,38 +96,22 @@ function Favoritos() {
         </SidebarContainer>
 
         <main className="Contenido">
-          <section>
-            <SectionMusicContainer Titulo="Canciones">
-              {filteredArtistas.map((artista, index) => (
-                <SectionMusicArtistas
+          <section className="seccion-favoritos">
+            <div className="encabezado-seccion">
+              <h2 className="titulo-seccion">Tus Canciones Favoritas</h2>              
+            </div>
+
+            <SectionMusicContainer Titulo="">
+              {filteredCanciones.map((cancion, index) => (
+                <SectionMusic
                   key={index}
-                  Titulo={artista.nombre}
-                  Artista={artista.imagen}
-                  Likes={artista.likes}
-                />
-              ))}
-            </SectionMusicContainer>
-          </section>
-          <section>
-            <SectionMusicContainer Titulo="Canciones">
-              {filteredArtistas.map((artista, index) => (
-                <SectionMusicArtistas
-                  key={index}
-                  Titulo={artista.nombre}
-                  Artista={artista.imagen}
-                  Likes={artista.likes}
-                />
-              ))}
-            </SectionMusicContainer>
-          </section>
-          <section>
-            <SectionMusicContainer Titulo="Canciones">
-              {filteredArtistas.map((artista, index) => (
-                <SectionMusicArtistas
-                  key={index}
-                  Titulo={artista.nombre}
-                  Artista={artista.imagen}
-                  Likes={artista.likes}
+                  Titulo={cancion.titulo}
+                  Arte={cancion.arte}
+                  Año={cancion.año}
+                  onPlay={() => {
+                    setCancionActual(cancion);
+                    setIsPlaying(true);
+                  }}
                 />
               ))}
             </SectionMusicContainer>

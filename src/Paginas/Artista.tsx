@@ -92,11 +92,51 @@ function Home() {
 
   ];
 
+    const artistasMasEscuchados = [
+    {
+      nombre: "Billie Eilish",
+      imagen: "https://www.therockpit.net/wp-content/uploads/2018/07/news-thepineapplethief2.jpg",
+      likes: 20
+    },
+    {
+      nombre: "Tool",
+      imagen: "https://cdn.theatlantic.com/thumbor/zMv-9_ru-2uEFRFfLcGIdwG8jIo=/0x200:1920x1280/976x549/media/img/mt/2019/08/unnamed_16/original.jpg",
+      likes: 10
+    },
+    {
+      nombre: "Porcupine Tree",
+      imagen: "https://porcupinetree.com/wp-content/uploads/2023/11/CleanShot-2023-11-05-at-12%E2%80%AF.55.41.jpg",
+      likes: 20
+    },
+    {
+      nombre: "Anomia",
+      imagen: "/Public/Anomia.jpg",
+      likes: 20
+    },
+    {
+      nombre: "Deftones",
+      imagen: "https://i.pinimg.com/736x/9d/d5/3d/9dd53d25fb2ddf28749b345a73114a61.jpg",
+      likes: 20
+    },
+    {
+      nombre: "Gojira",
+      imagen: "https://indierocks.sfo3.cdn.digitaloceanspaces.com/wp-content/uploads/bfi_thumb/Gojira-Band-3qy0hbhdhc8hrbpmhumk11ea0fuk5hg4s8vacgkl8swwqvkwhqf7x8q5jdkuf4.jpg",
+      likes: 20
+    },
+
+  ];
+
   const filteredArtistas = searchTerm 
     ? artistas.filter(artista =>
         artista.nombre.toLowerCase().includes(searchTerm.toLowerCase().trim())
       )
     : artistas;
+
+    const filteredArtistas_MasEscuchados = searchTerm 
+    ? artistasMasEscuchados.filter(artistasMasEscuchados =>
+        artistasMasEscuchados.nombre.toLowerCase().includes(searchTerm.toLowerCase().trim())
+      )
+    : artistasMasEscuchados;
 
   return (
     <div className="Pagina">
@@ -131,7 +171,7 @@ function Home() {
 
         <main className="Contenido">
           <section>
-            <SectionMusicContainer Titulo="Artistas">
+            <SectionMusicContainer Titulo="Tus Artistas Favoritos">
               {filteredArtistas.map((artista, index) => (
                 <SectionMusicArtistas
                   key={index}
@@ -143,8 +183,8 @@ function Home() {
             </SectionMusicContainer>
           </section>
           <section>
-            <SectionMusicContainer Titulo="Artistas">
-              {filteredArtistas.map((artista, index) => (
+            <SectionMusicContainer Titulo="Los mas escuchados">
+              {filteredArtistas_MasEscuchados.map((artista, index) => (
                 <SectionMusicArtistas
                   key={index}
                   Titulo={artista.nombre}
@@ -155,7 +195,7 @@ function Home() {
             </SectionMusicContainer>
           </section>
           <section>
-            <SectionMusicContainer Titulo="Artistas">
+            <SectionMusicContainer Titulo="Los mas odiados">
               {filteredArtistas.map((artista, index) => (
                 <SectionMusicArtistas
                   key={index}

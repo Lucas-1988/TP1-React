@@ -1,4 +1,3 @@
-// artistasData.ts
 export const artistas = [
   {
     id: "The Pineapple Thief",
