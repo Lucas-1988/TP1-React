@@ -89,30 +89,42 @@ export const artistas = [
     imagen: "../public/Maria Becerra_portada.png", 
   },
 
-      
-  {
-    id: "Gojira",
-    nombre: "Gojira",
-    descripcion: "Taking their name from the original Japanese pronunciation of Godzilla, French heavy metal quartet Gojira have gone from the utmost obscurity in the first half of their career to widespread global recognition in the second. Combining elements of thrash, death, math, groove, progressive, and post-metal with philosophical and environment-themed lyrics, the band found mainstream favor in 2012 with the release of their fifth long-player, L'Enfant Sauvage, and doubled-down on that success with 2016's Grammy-nominated Magma and 2021's hard-hitting and versatile Fortitude. In 2024, Gojira became the first heavy metal act to perform at an Olympic opening ceremony.Originating from the town of Bayonne on France's southernmost Atlantic Ocean coastline, Gojira recorded the first in a sequence of almost yearly demos in 1996, gradually honing their sound until the year 2000, when bandmembers Joe Duplantier (vocals/guitar), Christian Andreu (guitar), Jean-Michel Labadie (bass), and Mario Duplantier (drums), felt ready to record their first album, Terra Incognita, relying solely on their own devices. And despite its independent status, the aptly named LP made significant waves with its unpredictable blend of death, thrash, groove, progressive, and math metal - recalling bands as diverse as, Pantera,Meshuggah, Suffocation and Sepultura ",
-    imagen: "../public/Gojira_portada.png", 
+    {
+    id: "Cardellino",
+    nombre: "Cardellino",
+    descripcion: "Luego de varios años viviendo en Nueva York trabajando como productor, compositor y baterista, Cardellino regresó a su país natal Uruguay para lanzar su carrera como solista.Hoy con cinco álbumes de estudio editados y más de 300 millones de reproducciones en plataformas digitales, es desde el año 2021 uno de los diez artistas uruguayos más escuchados a nivel global.Desde su primera gira en el 2021, lleva agotadas las localidades en más de 200 shows, 15 países y más de 60 ciudades alrededor del mundo. Llenando lugares como como el Estadio Luna Park (Buenos Aires), Sala Razzmatazz (Barcelona) y el Lunario del Auditorio Nacional (CDMX) y próximamente el Movistar Arena de Buenos Aires.Sin perseguir tendencias, Cardellino va cultivando una obra atemporal. Lo cual queda en evidencia con su último trabajo discográfico SUKHA; un álbum conceptual acompañado de una película con el cual se afirma como uno de los artistas más frescos y completos de la música actual en español. ",
+    imagen: "../public/Cardellino_portada.png", 
   },
 
-      
-  {
-    id: "Gojira",
-    nombre: "Gojira",
-    descripcion: "Taking their name from the original Japanese pronunciation of Godzilla, French heavy metal quartet Gojira have gone from the utmost obscurity in the first half of their career to widespread global recognition in the second. Combining elements of thrash, death, math, groove, progressive, and post-metal with philosophical and environment-themed lyrics, the band found mainstream favor in 2012 with the release of their fifth long-player, L'Enfant Sauvage, and doubled-down on that success with 2016's Grammy-nominated Magma and 2021's hard-hitting and versatile Fortitude. In 2024, Gojira became the first heavy metal act to perform at an Olympic opening ceremony.Originating from the town of Bayonne on France's southernmost Atlantic Ocean coastline, Gojira recorded the first in a sequence of almost yearly demos in 1996, gradually honing their sound until the year 2000, when bandmembers Joe Duplantier (vocals/guitar), Christian Andreu (guitar), Jean-Michel Labadie (bass), and Mario Duplantier (drums), felt ready to record their first album, Terra Incognita, relying solely on their own devices. And despite its independent status, the aptly named LP made significant waves with its unpredictable blend of death, thrash, groove, progressive, and math metal - recalling bands as diverse as, Pantera,Meshuggah, Suffocation and Sepultura ",
-    imagen: "../public/Gojira_portada.png", 
+    {
+    id: "Conociendo Rusia",
+    nombre: "Conociendo Rusia",
+    descripcion: "Conociendo Rusia es el alter ego del cantautor y guitarrista argentino Mateo Sujatovich. Su primer álbum, Conociendo Rusia [2018] fue recibido con entusiasmo por la prensa y el público, logrando refundar la canción clásica argentina. Cabildo y Juramento [2019], segundo álbum de estudio, obtuvo siete nominaciones a los Premios Gardel y tres a los Latin Grammys.Su último álbum, La Dirección [2021], fue premiado a Mejor Álbum de Rock en los Premios Gardel y obtuvo nuevamente nominaciones a los Latin Grammys. Hacia el final del 2022, Conociendo Rusia celebró con dos épicos sold outs en el Movistar Arena de Buenos Aires.Durante 2023 presentó una propuesta nueva: el Solo Tour, que lo llevó de gira por veinte ciudades y seis países, además de llenar cinco funciones en el teatro Gran Rex. Acompañado de un piano y su guitarra, con una puesta escénica donde el relato toma protagonismo, Mateo inicia un recorrido por sus tres álbumes de estudio, conectando con el espectador desde la intimidad. Los últimos años el proyecto recorrió Argentina, Chile, Perú, Uruguay, México, Colombia, Ecuador, Brasil, Estados Unidos y España. Conociendo Rusia, consagrado como el representante del pop rock Argentino, se encuentra presentando su cuarto álbum de estudio Jet Love. ",
+    imagen: "../public/Conociendo Rusia_portada.png", 
   },
-
-      
-  {
-    id: "Gojira",
-    nombre: "Gojira",
-    descripcion: "Taking their name from the original Japanese pronunciation of Godzilla, French heavy metal quartet Gojira have gone from the utmost obscurity in the first half of their career to widespread global recognition in the second. Combining elements of thrash, death, math, groove, progressive, and post-metal with philosophical and environment-themed lyrics, the band found mainstream favor in 2012 with the release of their fifth long-player, L'Enfant Sauvage, and doubled-down on that success with 2016's Grammy-nominated Magma and 2021's hard-hitting and versatile Fortitude. In 2024, Gojira became the first heavy metal act to perform at an Olympic opening ceremony.Originating from the town of Bayonne on France's southernmost Atlantic Ocean coastline, Gojira recorded the first in a sequence of almost yearly demos in 1996, gradually honing their sound until the year 2000, when bandmembers Joe Duplantier (vocals/guitar), Christian Andreu (guitar), Jean-Michel Labadie (bass), and Mario Duplantier (drums), felt ready to record their first album, Terra Incognita, relying solely on their own devices. And despite its independent status, the aptly named LP made significant waves with its unpredictable blend of death, thrash, groove, progressive, and math metal - recalling bands as diverse as, Pantera,Meshuggah, Suffocation and Sepultura ",
-    imagen: "../public/Gojira_portada.png", 
+     {
+    id: "John Mayer",
+    nombre: "John Mayer",
+    descripcion: "After making his introduction as a sensitive, acoustic-styled songwriter on 2001's Room for Squares, John Mayer steadily widened his approach over the subsequent years, encompassing everything from blues-rock to adult contemporary in the process. As adept a guitarist as a singer, Mayer gained widespread attention, spiking his songcraft with jazz chords and literate turns of phrase. The combination proved to be quite popular, as Room for Squares went triple-platinum before its follow-up release, Heavier Things, arrived in 2003 at the top of the Billboard 200. Accolades followed, including Grammys for hits like Your Body Is a Wonderland and Daughters. He reached number two on the Billboard 200 with 2006's Continuum, an album that earned him further Grammy Awards for Best Pop Vocal Album and Best Male Pop Vocal Performance. Mayer continued to transform his sound with each album, moving beyond the material that had launched his career and adopting elements of rock, blues, and soul. ",
+    imagen: "../public/John Mayer_portada.png", 
   },
-
-
-
+    {
+    id: "Bersuit Vergarabat",
+    nombre: "Bersuit Vergarabat",
+    descripcion: "Bersuit Vergarabat cumplió más de 36 años atravesando diferentes etapas que los han llevado desde el under porteño más profundo a la consagración en el estadio River Plate, además de encontrar el éxito en todo el país fue cosechando seguidores en América Latina, así como España, Estados Unidos, Reino Unido, Alemania, Japón, entre otros.",
+    imagen: "../public/Bersuit Vergarabat_portada.png", 
+  },
+    {
+    id: "Dua Lipa",
+    nombre: "Dua Lipa",
+    descripcion: "Inspired by Dua’s own self-discovery, Radical Optimism (out May 3) is the third album from 3x GRAMMY and 7x BRIT Award-winning pop powerhouse Dua Lipa. Radical Optimism taps into the pure joy and happiness of having clarity in situations that once seemed impossible to face. The hard goodbyes and vulnerable beginnings that previously threatened to crush your soul, become milestones as you choose optimism and start to move with grace through the chaos. Rolling Stone has called the album “pop bliss,” while noting it is “uniquely and utterly Dua Lipa: confident dance pop full of witty Instagram-caption-ready one-liners.”",
+    imagen: "../public/Dua Lipa_portada.png", 
+  },
+  
+    {
+    id: "Doja Cat",
+    nombre: "Doja Cat",
+    descripcion: "orn and raised in L.A., Doja Cat made her first upload to Soundcloud in 2013 at just 16-years-old. She developed a knack for music by studying piano and dance as a kid and listening to the likes of Busta Rhymes, Erykah Badu, Nicki Minaj, Drake, and more. Soon, she went from obsessing over Catwoman (the Halle Berry version) to “crate digging” on YouTube. Signed to Kemosabe/RCA during 2014, she unveiled her acclaimed Purrr! EP. Its lead single “So High” impressively racked up over 30 million cumulative streams and garnered praise from tastemakers such as Fader, Vibe, Paper, Pigeons & Planes, and more.",
+    imagen: "../public/Doja Cat_portada.png", 
+  }
 ];

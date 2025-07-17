@@ -126,6 +126,43 @@ function Home() {
 
   ];
 
+  
+
+    const EscuchadosRecientemente = [
+    {
+      nombre: "Cardellino",
+      imagen: "https://billboard.ar/wp-content/uploads/2025/03/6740c2c937edc2da672d760a_cardellino.jpg",
+      likes: 400
+    },
+    {
+      nombre: "Conociendo Rusia",
+      imagen: "https://i0.wp.com/es.rollingstone.com/wp-content/uploads/2024/06/Conociendo-Rusia-vence-la-distancia-en-Jet-Love.jpg?w=1280&ssl=1",
+      likes: 12
+    },
+    {
+      nombre: "John Mayer",
+      imagen: "https://www.todomusica.org/imagenes/680x380/john_mayer.webp",
+      likes: 50
+    },
+    {
+      nombre: "Bersuit Vergarabat",
+      imagen: "https://cdn-images.dzcdn.net/images/artist/a29832fac03094740040ed78c8372ea2/500x500-000000-80-0-0.jpg",
+      likes: 25
+    },
+    {
+      nombre: "Dua Lipa",
+      imagen: "https://www.radiopuntorojo.com/wp-content/uploads/2025/05/dua-lipa-akbee75ukpi7cr1k-1024x576.jpg",
+      likes: 350
+    },
+    {
+      nombre: "Doja Cat",
+      imagen: "https://ichef.bbci.co.uk/news/1024/cpsprodpb/10FFC/production/_112482696_doja-cat-1392x1044.jpg.webp",
+      likes: 500
+    },
+
+  ];
+  
+
   const filteredArtistas = searchTerm 
     ? artistas.filter(artista =>
         artista.nombre.toLowerCase().includes(searchTerm.toLowerCase().trim())
@@ -137,6 +174,15 @@ function Home() {
         artistasMasEscuchados.nombre.toLowerCase().includes(searchTerm.toLowerCase().trim())
       )
     : artistasMasEscuchados;
+
+    const filteredEscuchadosRecientemente = searchTerm 
+    ? EscuchadosRecientemente.filter(EscuchadosRecientemente =>
+        EscuchadosRecientemente.nombre.toLowerCase().includes(searchTerm.toLowerCase().trim())
+      )
+    : EscuchadosRecientemente;
+
+
+    
 
   return (
     <div className="Pagina">
@@ -196,7 +242,7 @@ function Home() {
           </section>
           <section>
             <SectionMusicContainer Titulo="Los mas odiados">
-              {filteredArtistas.map((artista, index) => (
+              {filteredEscuchadosRecientemente.map((artista, index) => (
                 <SectionMusicArtistas
                   key={index}
                   Titulo={artista.nombre}
