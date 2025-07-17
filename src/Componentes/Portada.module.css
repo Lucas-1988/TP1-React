@@ -1,8 +1,8 @@
-.MusicContenedor {
-  position: relative;
-  width: 100%;  
+.Portada {
+  position:absolute;
+  width: 80%;  
   display: flex;  
-  left: 0vh;  
+  left: 20vh;  
   justify-content: center;
   gap: 16px;
   padding: 16px;
@@ -11,13 +11,13 @@
 }
 
 .Titulo {
-  position: relative;
-  left: 10vh;
+  position: absolute;
+  left: 55vh;
+  top: 28vh;
   color: #ffffff;
   text-align: left;
   margin: 24px 0 8px 24px;
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: bold;
   font-family: Arial;  
 }
-

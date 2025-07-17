@@ -1,5 +1,8 @@
 import '../Paginas/Home.css';
 import { useState } from 'react';
+
+import Portada from '../Componentes/Portada';
+import ContenedorPagina from '../Paginas/ContenedorPagina';
 import SectionMusicContainer from '../Componentes/SectionMusicContainer';
 import EncabezadoMusic from '../Componentes/EncabezadoMusic';
 import SidebarMusic from '../Componentes/SidebarMusic';
@@ -8,6 +11,7 @@ import SectionMusicArtistas from '../Componentes/SectionMusicArtistas';
 import MusicBuscador from '../Componentes/MusicBuscador';
 import BarraReproduccion from '../Componentes/BarraReproduccion';
 import PiePagina from '../Componentes/PiePagina';
+import styles from '../Paginas/Artista.module.css';
 
 function Home() {
 
@@ -92,7 +96,7 @@ function Home() {
 
   ];
 
-    const artistasMasEscuchados = [
+    const artistas_MasEscuchados = [
     {
       nombre: "Billie Eilish",
       imagen: "https://www.therockpit.net/wp-content/uploads/2018/07/news-thepineapplethief2.jpg",
@@ -126,6 +130,40 @@ function Home() {
 
   ];
 
+    const EscuchadosRecientemente = [
+    {
+      nombre: "Billie Eilish",
+      imagen: "https://www.therockpit.net/wp-content/uploads/2018/07/news-thepineapplethief2.jpg",
+      likes: 20
+    },
+    {
+      nombre: "Tool",
+      imagen: "https://cdn.theatlantic.com/thumbor/zMv-9_ru-2uEFRFfLcGIdwG8jIo=/0x200:1920x1280/976x549/media/img/mt/2019/08/unnamed_16/original.jpg",
+      likes: 10
+    },
+    {
+      nombre: "Porcupine Tree",
+      imagen: "https://porcupinetree.com/wp-content/uploads/2023/11/CleanShot-2023-11-05-at-12%E2%80%AF.55.41.jpg",
+      likes: 20
+    },
+    {
+      nombre: "Anomia",
+      imagen: "/Public/Anomia.jpg",
+      likes: 20
+    },
+    {
+      nombre: "Deftones",
+      imagen: "https://i.pinimg.com/736x/9d/d5/3d/9dd53d25fb2ddf28749b345a73114a61.jpg",
+      likes: 20
+    },
+    {
+      nombre: "Gojira",
+      imagen: "https://indierocks.sfo3.cdn.digitaloceanspaces.com/wp-content/uploads/bfi_thumb/Gojira-Band-3qy0hbhdhc8hrbpmhumk11ea0fuk5hg4s8vacgkl8swwqvkwhqf7x8q5jdkuf4.jpg",
+      likes: 20
+    },
+
+  ]
+
   const filteredArtistas = searchTerm 
     ? artistas.filter(artista =>
         artista.nombre.toLowerCase().includes(searchTerm.toLowerCase().trim())
@@ -133,10 +171,16 @@ function Home() {
     : artistas;
 
     const filteredArtistas_MasEscuchados = searchTerm 
-    ? artistasMasEscuchados.filter(artistasMasEscuchados =>
-        artistasMasEscuchados.nombre.toLowerCase().includes(searchTerm.toLowerCase().trim())
+    ? artistas_MasEscuchados.filter(artistas_MasEscuchados =>
+        artistas_MasEscuchados.nombre.toLowerCase().includes(searchTerm.toLowerCase().trim())
       )
-    : artistasMasEscuchados;
+    : artistas_MasEscuchados;
+
+    const filteredEscuchadosRecientemente = searchTerm 
+    ? EscuchadosRecientemente.filter(EscuchadosRecientemente =>
+        EscuchadosRecientemente.nombre.toLowerCase().includes(searchTerm.toLowerCase().trim())
+      )
+    : EscuchadosRecientemente;
 
   return (
     <div className="Pagina">
@@ -151,6 +195,11 @@ function Home() {
           onSearch={setSearchTerm}
         />
       </EncabezadoMusic>
+
+      <Portada
+        imagen="../Public/ImagenPortada.png"
+        Titulo="Tus me gusta"      
+      />
 
       <div className="Layout">
 
@@ -170,41 +219,40 @@ function Home() {
         </SidebarContainer>
 
         <main className="Contenido">
-          <section>
-            <SectionMusicContainer Titulo="Tus Artistas Favoritos">
-              {filteredArtistas.map((artista, index) => (
-                <SectionMusicArtistas
-                  key={index}
-                  Titulo={artista.nombre}
-                  Artista={artista.imagen}
-                  Likes={artista.likes}
-                />
-              ))}
-            </SectionMusicContainer>
-          </section>
-          <section>
-            <SectionMusicContainer Titulo="Los mas escuchados">
-              {filteredArtistas_MasEscuchados.map((artista, index) => (
-                <SectionMusicArtistas
-                  key={index}
-                  Titulo={artista.nombre}
-                  Artista={artista.imagen}
-                  Likes={artista.likes}
-                />
-              ))}
-            </SectionMusicContainer>
-          </section>
-          <section>
-            <SectionMusicContainer Titulo="Los mas odiados">
-              {filteredArtistas.map((artista, index) => (
-                <SectionMusicArtistas
-                  key={index}
-                  Titulo={artista.nombre}
-                  Artista={artista.imagen}
-                  Likes={artista.likes}
-                />
-              ))}
-            </SectionMusicContainer>
+          <section className={styles.MusicContenedorArtistas}>
+            <ContenedorPagina>             
+              <SectionMusicContainer Titulo="Tus Artistas Favoritos">
+                  {filteredArtistas.map((artista, index) => (
+                    <SectionMusicArtistas
+                      key={index}
+                      Titulo={artista.nombre}
+                      Artista={artista.imagen}
+                      Likes={artista.likes}
+                    />
+                  ))}
+              </SectionMusicContainer>           
+              <SectionMusicContainer Titulo="Los Mas Escuchados">
+                  {filteredArtistas_MasEscuchados.map((artista, index) => (
+                    <SectionMusicArtistas
+                      key={index}
+                      Titulo={artista.nombre}
+                      Artista={artista.imagen}
+                      Likes={artista.likes}
+                    />
+                  ))}
+              </SectionMusicContainer>
+              <SectionMusicContainer Titulo="Escuchados recientemente">
+                  {filteredEscuchadosRecientemente.map((artista, index) => (
+                    <SectionMusicArtistas
+                      key={index}
+                      Titulo={artista.nombre}
+                      Artista={artista.imagen}
+                      Likes={artista.likes}
+                    />
+                  ))}
+              </SectionMusicContainer>
+             
+            </ContenedorPagina>
           </section>
 
           <BarraReproduccion

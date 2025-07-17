@@ -1,4 +1,4 @@
-export const cancionesLista = [
+export const canciones = [
    {
       titulo: "The Incident - Porcupine Tree",
       audioUrl: "/Musica/porcupine_tree__the_incident.mp3",

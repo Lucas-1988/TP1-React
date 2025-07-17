@@ -100,8 +100,35 @@ function Favoritos() {
             <div className="encabezado-seccion">
               <h2 className="titulo-seccion">Tus Canciones Favoritas</h2>              
             </div>
-
             <SectionMusicContainer Titulo="">
+              {filteredCanciones.map((cancion, index) => (
+                <SectionMusic
+                  key={index}
+                  Titulo={cancion.titulo}
+                  Arte={cancion.arte}
+                  Año={cancion.año}
+                  onPlay={() => {
+                    setCancionActual(cancion);
+                    setIsPlaying(true);
+                  }}
+                />
+              ))}
+            </SectionMusicContainer>
+                        <SectionMusicContainer Titulo="">
+              {filteredCanciones.map((cancion, index) => (
+                <SectionMusic
+                  key={index}
+                  Titulo={cancion.titulo}
+                  Arte={cancion.arte}
+                  Año={cancion.año}
+                  onPlay={() => {
+                    setCancionActual(cancion);
+                    setIsPlaying(true);
+                  }}
+                />
+              ))}
+            </SectionMusicContainer>
+                        <SectionMusicContainer Titulo="">
               {filteredCanciones.map((cancion, index) => (
                 <SectionMusic
                   key={index}

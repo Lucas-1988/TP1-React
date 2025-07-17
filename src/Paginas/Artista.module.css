@@ -1,5 +1,6 @@
-.MusicContenedor {
-  position: relative;
+.MusicContenedorArtistas {
+  position: absolute;
+  top: 80vh;
   width: 100%;  
   display: flex;  
   left: 0vh;  
@@ -10,8 +11,8 @@
   
 }
 
-.Titulo {
-  position: relative;
+.TituloArtistas {
+  position: absolute;
   left: 10vh;
   color: #ffffff;
   text-align: left;
@@ -20,4 +21,3 @@
   font-weight: bold;
   font-family: Arial;  
 }
-
