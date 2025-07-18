@@ -50,6 +50,15 @@
   font-weight:lighter;
 }
 
+.AlbumFavoritos {
+  position: absolute;
+  left: 50%;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  font-weight:lighter;
+}
+
 .Duracion {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.8);

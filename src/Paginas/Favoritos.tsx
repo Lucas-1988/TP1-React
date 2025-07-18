@@ -72,6 +72,7 @@ function Favoritos() {
                   Titulo={cancion.titulo}
                   Arte={cancion.arte}
                   Año={cancion.año}
+                  Album={cancion.Album}
                   Duracion={cancion.Duracion}
                   onPlay={() => {
                     setCancionActual(cancion);

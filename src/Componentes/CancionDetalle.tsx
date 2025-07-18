@@ -5,12 +5,13 @@ type CancionDetalleProps = {
   Titulo: string;
   Arte: string;
   Año: string;
+  Album: string;
   onPlay?: () => void;
   Duracion: string;
 };
 
 function CancionDetalle(props: CancionDetalleProps) {
-  const { Orden, Titulo, Arte, Año, onPlay, Duracion } = props;
+  const { Orden, Titulo, Arte, Año, Album ,onPlay, Duracion } = props;
 
   return (
     <section className={styles.MusicContenedorCancion}>
@@ -29,6 +30,7 @@ function CancionDetalle(props: CancionDetalleProps) {
           <h5 className={styles.AñoFavoritos}>Año de lanzamiento: {Año}</h5>
         </div>
       </div>
+      <div className={styles.AlbumFavoritos}>{Album}</div>
       <div className={styles.Duracion}>{Duracion}</div>
     </section>
   );
