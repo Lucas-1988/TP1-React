@@ -1,89 +1,70 @@
-**♫ PROYECTO SPOTIFY CON REACT + VITE + TYPESCRIPT - ENTREGA 2**
+# 🎧 Entrega TP3 - React
 
-**DESCRIPCIÓN:**
+## 🚀 PROYECTO SPOTIFY CON REACT + VITE + TYPESCRIPT - ENTREGA 3
 
-**Este proyecto es un clon simple de la interfaz de Spotify creado con Vite + React y TypeScript. La aplicación muestra una lista de álbumes favoritos, artistas y canciones mas escuchadas como muestra la captura de pantalla proporcionada.**
+Este proyecto corresponde al TP3 del curso de React, donde incorporamos *rutas* para navegar entre distintas vistas de una aplicación musical inspirada en Spotify.
 
 ---
 
-**Integrantes**
+## 🧩 Funcionalidades principales
 
-* Leonczyk, Lucas Miguel
+- ✅ Página principal con listado de canciones (/)
+- ✅ Página por categoría (/category/:id)
+- ✅ Página de favoritas (/favoritos)
+- ✅ Navegación entre rutas utilizando react-router-dom
+- ✅ Componente Navbar para navegación global
+- ✅ Estilo uniforme con fuente Inter
 
-* Maldonado, Tania Elizabeth
+---
 
+## 📸 Capturas de pantalla
 
-Profesor: Iván Sevilla
+> 📷 Ver en la descripción del Pull Request las imágenes y/o video de funcionamiento.
+
+---
+
+## 🧠 Tecnologías utilizadas
+
+- React + Vite
+- TypeScript
+- React Router DOM
+- CSS Modules
+- @fontsource/inter (para tipografía personalizada)
   
 
 ---
 
-**Estructura del proyecto**  
-- Creado con [Vite](https://vite.dev/) + [React](https://react.dev/)
-- TypeScript para tipado estático
-- CSS Modules para estilos
+## 🛠 Cómo correr el proyecto
 
----
-
-**Componentes principales**  
-1. **Navbar:** Barra de navegación superior con fitro de busqueda de canciones
-2. **Sidebar:** Menú lateral con secciones de contenido
-3. **AlbumList:** Listado de álbumes favoritos (6 ítems)
-4. **ArtistList:** Listado de artistas (6 ítems)
-5. **Container:** Componente reutilizable para contenedores
-5. **Barra de reproduccion:** Player fijo que muestra:
-   - Reproducción en curso,
-   - Botones de play, Pausa, Siguiente, Anterior, Aleatorio y Repetir,
-   - Slider de avance y retroceso de la canción,
-   - Slider de volúmen.
-
-
----
-
-**Requisitos cumplidos en esta segunda entrega**
-- Buscador de canciones con filtro por nombre
-- Al hacer click en una canción el player muestra el nombre de la cancion y un botón de pausar y reproducir.
-- El player está siempre visible.
-- Slider para avanzar/retroceder la canción.
-
----
-
-**Estructura de tipos**
-
- ```bash
-
-type SectionMusic = {
-  titulo: string;
-  artista: string;
-  año: string;
-};
-
-   ```
-
----
-
-**Para poder ver el proyecto**  
-Segí estos pasos para instalar npm y poder ejecutar el proyecto de manera local:
-
-1. **Clonar el repositorio desde VSCode:**
-
-```bash
-git clone https://github.com/Lucas-1988/TP1-React.git
-```
-
-1. **Instalar** 
+1. Clonar el repositorio:
+   bash
+   git clone [https://github.com/usuario/Lucas-1988/TP1-React.git]
    
-```bash
-npm install
-```
 
-1. **Ejecutar**
+2. Instalar dependencias:
+   bash
+   npm install
    
-```bash
-npm run dev
-```
+
+3. Correr la app:
+   bash
+   npm run dev
+   
 
 ---
+
+## 🧑‍💻 Autores
+
+
+- Lucas Leonczyk
+- Tania Maldonado
+
+---
+
+## 📬 Entrega
+
+- 🗂 Rama de entrega: TP3-React
+- 🔀 Pull Request hacia main
 
 **Link del video de recorrido del proyecto**
 
