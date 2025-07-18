@@ -1,7 +1,6 @@
 .Cancion {
   text-align: center;
-  color: rgba(255, 255, 255, 0.5);
-  font-family: 'Poppins', sans-serif;
+  color: rgba(255, 255, 255, 0.5);  
   font-weight: 300;
   font-size: 15px;
   padding: 2px;
@@ -37,8 +36,7 @@
 .Titulo {
   align-content: center;
   color: rgba(255, 255, 255, 0.5);
-  font-style: Roboto light;
-}
+  }  
 
 .Arte {
   width: 220px;

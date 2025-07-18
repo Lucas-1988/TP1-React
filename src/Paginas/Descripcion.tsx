@@ -100,7 +100,10 @@ function Descripcion({ tipo }: { tipo: "artista" | "cancion" }) {
           "ramen_para_dos.png",
           "red_hot.png",
         ].map((img, index) => (
-          <SidebarMusic key={index} Lista={`/Public/${img}`} />
+          <SidebarMusic 
+          key={index} 
+          Lista={`/Public/${img}`} 
+          />
       ))}
       </SidebarContainer>
         <main className="Contenido">

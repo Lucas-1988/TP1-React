@@ -1,14 +1,15 @@
 import { type ReactNode } from 'react';
-import styles from './SectionMusicContainer.module.css';
+import styles from './SectionMusicContainer.module.css'; 
 
 type SectionMusicContainerProps = {
     Titulo: string
-    children: ReactNode;
-
+    children: ReactNode; 
 }
 
+
+
 function SectionMusicContainer(props: SectionMusicContainerProps) {
-    const {Titulo, children} = props;
+    const {Titulo, children} = props;    
     return (
         <section>
             <h2 className={styles.Titulo}>{Titulo}</h2>
@@ -19,3 +20,5 @@ function SectionMusicContainer(props: SectionMusicContainerProps) {
 }
 
 export default SectionMusicContainer;
+
+

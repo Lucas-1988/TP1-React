@@ -1,0 +1,16 @@
+.MusicContenedorFavoritos {
+  position: absolute;
+  width: 1600px;
+  height: 50px;
+  left: 20vh;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: flex-start;    
+}
+
+.MusicContenedorFavoritos:hover {
+  cursor: pointer;  
+  filter: brightness(1.1);
+}

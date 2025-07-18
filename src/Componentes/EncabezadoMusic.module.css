@@ -1,7 +1,6 @@
 .Encabezado {
   left: 20px;  
-  color: rgb(148, 148, 148);
-  font-family: Arial;
+  color: rgb(148, 148, 148);  
   font-size: 8px;  
   display: flex;
   align-items: center;  
@@ -50,8 +49,7 @@
 }
 
 .inicioSesion {
-  background-color: #1fd75f;
-  font-family: sans-serif;
+  background-color: #1fd75f;  
   font-size: 15px;
   font-weight: bold;
   padding: 10px 30px;

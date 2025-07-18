@@ -7,7 +7,7 @@
   justify-content: center;
   gap: 16px;
   padding: 16px;
-  font-family: Arial, sans-serif;
+  
   
 }
 
@@ -19,7 +19,7 @@
   margin: 24px 0 8px 24px;
   font-size: 3rem;
   font-weight: bold;
-  font-family: sans-serif; 
+   
 }
 
 .botonVolver {
@@ -31,8 +31,8 @@
   border: none;
   border-radius: 20px;
   padding: 0.5rem 1rem;
-  font-size: 1.0rem;
-  font-family: Arial;
+  font-family: 'Inter';
+  font-size: 1.0rem; 
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-bottom: 1rem;
@@ -43,3 +43,4 @@
   cursor: pointer;
   transform: scale(1.03);
 }
+

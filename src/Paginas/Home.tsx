@@ -12,8 +12,6 @@ import SectionMusicMasEscuchados from '../Componentes/SectionMusicMasEscuchados'
 import PiePagina from '../Componentes/PiePagina';
 import { Link } from 'react-router-dom';
 
-
-
 function Home() {
 
   const [cancionActual, setCancionActual] = useState<{

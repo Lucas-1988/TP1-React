@@ -8,6 +8,7 @@ import Artista from './Paginas/Artista.tsx';
 import Favoritos from './Paginas/Favoritos.tsx';
 import Descripcion from './Paginas/Descripcion.tsx';
 
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
@@ -24,8 +25,3 @@ createRoot(document.getElementById('root')!).render(
     </BrowserRouter>
   </StrictMode>
 );
-
-//<Route path="/artista/:nombre" element={<Descripcion tipo="artista" />} />
- 
-
-

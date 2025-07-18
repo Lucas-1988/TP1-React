@@ -1,3 +1,5 @@
+@import "@fontsource/inter/index.css";
+
 body, #body {
   background-color: rgba(0, 0, 0, 0.959);
   overflow-x: hidden;
@@ -6,6 +8,7 @@ body, #body {
   z-index: 0;
   height: 100%;
   margin: 0;
+  font-family: 'Inter';
 }
 
 .fondo-destello {
@@ -56,7 +59,7 @@ body, #body {
   margin: 24px 0 8px 24px;
   font-size: 3rem;
   font-weight: bold;
-  font-family: Arial; 
+  font-family: 'Inter'; 
 }
 
 .link-ver-todo {
@@ -64,7 +67,7 @@ body, #body {
   text-decoration: none;
   color: #ffffff;
   transition: color 0.2s ease;
-  font-family: Arial;
+  font-family: 'Inter';
 }
 
 .link-ver-todo:hover {
