@@ -9,6 +9,8 @@ import SectionMusicArtistas from '../Componentes/SectionMusicArtistas';
 import MusicBuscador from '../Componentes/MusicBuscador';
 import BarraReproduccion from '../Componentes/BarraReproduccion';
 import PiePagina from '../Componentes/PiePagina';
+import { useNavigate } from "react-router-dom";
+import styles from '../Paginas/Artista.module.css';
 
 function Home() {
 
@@ -19,6 +21,7 @@ function Home() {
 
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [searchTerm, setSearchTerm] = useState(''); 
+  const navigate = useNavigate();
 
   const canciones = [
     {
@@ -182,6 +185,7 @@ function Home() {
 
   return (
     <div className="Pagina">
+      <button className={styles.botonVolver} onClick={() => navigate(-1)}>Volver</button>
       <EncabezadoMusic
         Logo="../Public/logo.png"
         LogoHome="../Public/home.png"

@@ -1,9 +1,7 @@
-//import { type ReactNode } from 'react';
-import styles from './SectionMusicContainer.module.css';
+import styles from './Portada.module.css';
 
 type InformacionProps = {
-    texto: string
-    
+    texto: string 
 
 }
 

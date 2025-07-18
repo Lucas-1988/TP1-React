@@ -257,8 +257,6 @@ function Home() {
           />
         </main>
       </div>
-
-
       <PiePagina
         Logo="/Public/logo.png"
         Texto="© AntiCopyright ningún derecho reservado"

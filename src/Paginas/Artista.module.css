@@ -19,5 +19,27 @@
   margin: 24px 0 8px 24px;
   font-size: 3rem;
   font-weight: bold;
-  font-family: Arial;  
+  font-family: sans-serif; 
+}
+
+.botonVolver {
+  position: absolute;
+  top: 2vh;
+  left: 28VH;
+  background-color: #1fd75f;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 1.0rem;
+  font-family: Arial;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.botonVolver:hover {
+  cursor: pointer;
+  transform: scale(1.03);
 }

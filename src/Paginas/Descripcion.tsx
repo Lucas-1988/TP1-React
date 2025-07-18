@@ -10,10 +10,12 @@ import EncabezadoMusic from '../Componentes/EncabezadoMusic';
 import MusicBuscador from '../Componentes/MusicBuscador';
 import BarraReproduccion from '../Componentes/BarraReproduccion';
 import { useState } from 'react';
-
+import { useNavigate } from "react-router-dom";
+import styles from '../Paginas/Artista.module.css';
 
 function Descripcion({ tipo }: { tipo: "artista" | "cancion" }) {
   const { nombre } = useParams();
+  const navigate = useNavigate();
 
   const data = tipo === "artista"
     ? artistas.find(a => a.id === nombre)
@@ -71,61 +73,56 @@ function Descripcion({ tipo }: { tipo: "artista" | "cancion" }) {
 
 
   return (
-    <div className="detalles-layout">
-      <SidebarContainer 
+    <div className="Pagina">
+    <EncabezadoMusic
+      Logo="../Public/logo.png"
+      LogoHome="../Public/home.png"
+      inicioSesion="Iniciar Sesion"
+      Login="https://accounts.spotify.com/es/login?continue=https%3A%2F%2Fopen.spotify.com%2Fintl-es"
+      variant="artista"
+    >
+      <MusicBuscador
+          placeholder="Buscar canciones, artistas y álbumes"
+          onSearch={setSearchTerm}             
+      />
+    </EncabezadoMusic>
+
+      <div className="Layout">
+
+        <SidebarContainer 
         Biblioteca="/Public/Biblioteca2.png"
         Playlist="/Public/Playlist2.png"
       >
-        {[
+      {[
           "tus_me_gusta.png",
           "tus episodios.png",
           "The Emptiness Machine.png",
           "ramen_para_dos.png",
           "red_hot.png",
-          "gojira.png",
-          "play_list.png",
-          "nirvana.png",
-          "gorillaz.png"
         ].map((img, index) => (
           <SidebarMusic key={index} Lista={`/Public/${img}`} />
-        ))}
+      ))}
       </SidebarContainer>
-
-      <main className="Contenido">
-        <EncabezadoMusic
-          Logo="../Public/logo.png"
-          LogoHome="../Public/home.png"
-          inicioSesion="Iniciar Sesión"
-          Login="https://accounts.spotify.com/es/login?continue=https%3A%2F%2Fopen.spotify.com%2Fintl-es"
-        >
-          <MusicBuscador
-            placeholder="Buscar canciones, artistas y álbumes"
-            onSearch={setSearchTerm}             
-          />
-        </EncabezadoMusic>
-        
-        <Portada imagen={data.imagen} Titulo={data.nombre}>
-          {/* cualquier contenido opcional dentro de Portada */}
-        </Portada>
-        <Informacion texto={data.descripcion} 
-        />
-        {/* otros componentes opcionales */}
+        <main className="Contenido">
+          <Portada imagen={data.imagen}></Portada>
+          <Informacion texto={data.descripcion}/> 
+          <button className={styles.botonVolver} onClick={() => navigate(-1)}>Volver</button>              
 
           <BarraReproduccion
-        BotonAleatorio="/Public/Aleatorio.png"
-        BotonPlay="/Public/Play.png"
-        BotonSiguiente="/Public/Siguiente.png"
-        BotonAnterior="/Public/Anterior.png"
-        BotonRepetir="/Public/Repetir.png"
-        cancionActual={cancionActual}
-        setCancionActual={setCancionActual}
-        isPlaying={isPlaying}
-        setIsPlaying={setIsPlaying}
-        listaCanciones={cancionesLista}
-      />
+            BotonAleatorio="/Public/Aleatorio.png"
+            BotonPlay="/Public/Play.png"
+            BotonSiguiente="/Public/Siguiente.png"
+            BotonAnterior="/Public/Anterior.png"
+            BotonRepetir="/Public/Repetir.png"
+            cancionActual={cancionActual}
+            setCancionActual={setCancionActual}
+            isPlaying={isPlaying}
+            setIsPlaying={setIsPlaying}
+            listaCanciones={cancionesLista}
+          />
 
-      </main>
-
+        </main>
+      </div>
       <PiePagina
         Logo="/Public/logo.png"
         Texto="© AntiCopyright ningún derecho reservado"

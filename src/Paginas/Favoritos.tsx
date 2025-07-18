@@ -8,6 +8,8 @@ import SectionMusic from '../Componentes/SectionMusic';
 import MusicBuscador from '../Componentes/MusicBuscador';
 import BarraReproduccion from '../Componentes/BarraReproduccion';
 import PiePagina from '../Componentes/PiePagina';
+import { useNavigate } from "react-router-dom";
+import styles from '../Paginas/Artista.module.css';
 
 function Favoritos() {
 
@@ -16,8 +18,11 @@ function Favoritos() {
     audioUrl: string;
   } | null>(null);
 
+  const navigate = useNavigate();
+
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [searchTerm, setSearchTerm] = useState(''); 
+  
 
   const canciones = [
     {
@@ -66,6 +71,7 @@ function Favoritos() {
 
   return (
     <div className="Pagina">
+      <button className={styles.botonVolver} onClick={() => navigate(-1)}>Volver</button> 
       <EncabezadoMusic
         Logo="../Public/logo.png"
         LogoHome="../Public/home.png"
@@ -77,7 +83,7 @@ function Favoritos() {
           onSearch={setSearchTerm}
         />
       </EncabezadoMusic>
-
+      
       <div className="Layout">
 
         <SidebarContainer 
