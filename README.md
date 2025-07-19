@@ -71,9 +71,13 @@ Este proyecto corresponde al TP3 del curso de React, donde incorporamos *rutas* 
 https://drive.google.com/file/d/1S4DeN1gJDCeUPvZKPgNjJWKxTtL7q-ps/view?usp=sharing
 
 **Capturas de la interfaz**  
-![Browser principal](./media/Browser_1.JPG)
+![Home](./media/Home-TP3.JPG)
   
-![Browser 2](./media/Browser_2.JPG)
+![Artistas](./media/Tus_artistas-TP3.JPG)
+
+![Artistas](./media/Tus_artistas_2-TP3.jpg)
+
+![Artistas/artista](./media/Tus_canciones_favoritas_TP3.jpg)
 
 
 

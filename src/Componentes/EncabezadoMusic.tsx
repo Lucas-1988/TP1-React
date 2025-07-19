@@ -8,19 +8,28 @@ type EncabezadoMusicProps = {
   inicioSesion: string;
   Login: string;
   children: ReactNode;
-  variant?: 'default' | 'artista'; 
+  variant?: 'default' | 'artista' | 'Favoritos'; 
+  
 };
 
 function EncabezadoMusic({ Logo, LogoHome, inicioSesion, Login, children, variant = 'default' }: EncabezadoMusicProps) {
   return (
     <section
-      className={`${styles.Encabezado} ${variant === 'artista' ? styles.EncabezadoArtista : ''}`}
+      className={`${styles.Encabezado} 
+      ${variant === 'artista' ? styles.EncabezadoArtista : ''}
+      ${variant === 'Favoritos' ? styles.EncabezadoFavoritos : ''}`}
+      
     >
       <img src={Logo} alt="Logo" className={styles.Logo} />
       <Link to="/">
         <img src={LogoHome} alt="LogoHome" className={styles.LogoHome} />
       </Link>
-      <div className={`${styles.MusicBuscador} ${variant === 'artista' ? styles.MusicBuscadorEncabezado : ''}`}>{children}</div>
+      <div className={`
+        ${styles.MusicBuscador}
+        ${variant === 'artista' ? styles.MusicBuscadorEncabezado : ''}
+        ${variant === 'Favoritos' ? styles.MusicBuscadorFavoritos : ''}`}>
+        {children}
+      </div>
       <a href={Login} className={styles.inicioSesion} target="_blank" rel="noopener noreferrer">
         {inicioSesion}
       </a>

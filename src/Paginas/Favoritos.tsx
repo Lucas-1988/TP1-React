@@ -39,6 +39,7 @@ function Favoritos() {
         LogoHome="../Public/home.png"
         inicioSesion="Iniciar Sesión"
         Login="https://accounts.spotify.com/es/login?continue=https%3A%2F%2Fopen.spotify.com%2Fintl-es"
+        variant="Favoritos"
       >
         <MusicBuscador 
           placeholder="Buscar canciones, artistas y álbumes"
@@ -62,7 +63,12 @@ function Favoritos() {
         <main className="Contenido">
           
             <div className="encabezado-seccion">
-              <h2 className="titulo-seccion">Tus Canciones Favoritas</h2>              
+              <h2 className="titulo-seccion">Tus Canciones Favoritas</h2>                          
+            </div>
+            <div className={styles.CamposCanciones}>
+              <span>Título</span>
+              <span>Álbum</span>
+              <span>Duración</span>
             </div>
             <CancionDetalleContainer>
               {filteredCanciones.map((cancion) => (
