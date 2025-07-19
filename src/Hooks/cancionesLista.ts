@@ -108,15 +108,6 @@ export function cancionesLista(): Cancion[] {
       año: "2021",
       Album: 'Fortitude',
       Duracion: '5:01',
-    },
-    {
-      Orden: "12",
-      titulo: "Right Now - Korn",
-      audioUrl: "/Musica/Right Now.mp3",
-      arte: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYvE2QubOUC1KgRD-a52OjcO28LJ2C_cMIQQ&s",
-      año: "2024",
-      Album: 'Take A Look In The Mirror',
-      Duracion: '3:09',
     },   
 ];
 }
