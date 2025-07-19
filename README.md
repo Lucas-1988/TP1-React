@@ -68,7 +68,7 @@ Este proyecto corresponde al TP3 del curso de React, donde incorporamos *rutas* 
 
 **Link del video de recorrido del proyecto**
 
-https://drive.google.com/file/d/1S4DeN1gJDCeUPvZKPgNjJWKxTtL7q-ps/view?usp=sharing
+https://drive.google.com/file/d/18q7sE-5cwyyHVieJfQ3mGA4q3Daz8Jr7/view?usp=drive_link
 
 **Capturas de la interfaz**  
 ![Home](./media/Home-TP3.JPG)
