@@ -77,7 +77,7 @@ https://drive.google.com/file/d/1S4DeN1gJDCeUPvZKPgNjJWKxTtL7q-ps/view?usp=shari
 
 ![Artistas](./media/Tus_artistas_2-TP3.jpg)
 
-![Artistas/artista](./media/Tus_canciones_favoritas_TP3.jpg)
+![Artistas/artista](./media/Tus_canciones_favoritas_TP3.JPG)
 
 
 
