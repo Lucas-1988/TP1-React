@@ -1,0 +1,77 @@
+@import "@fontsource/inter/index.css";
+
+body, #body {
+  background-color: rgba(0, 0, 0, 0.959);
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  z-index: 0;
+  height: 100%;
+  margin: 0;
+  font-family: 'Inter';
+}
+
+.fondo-destello {
+  position: fixed;
+  top: 90%;
+  left: 10%;
+  width: 95%;
+  height: 80px;
+  background: linear-gradient(transparent, #1fd75f88, transparent);
+  filter: blur(90px);
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.Pagina {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.Layout {
+  display: flex;
+  flex: 1;
+  height: 100vh;
+}
+
+.seccion-favoritas {
+  margin-bottom: 2rem;
+}
+
+.seccion-artistas {
+  margin-bottom: 2rem;
+}
+
+.encabezado-seccion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.titulo-seccion {
+  position: relative;
+  left: 10vh;
+  color: #ffffff;
+  text-align: left;
+  margin: 24px 0 8px 24px;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Inter'; 
+}
+
+.link-ver-todo {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.2s ease;
+  font-family: 'Inter';
+}
+
+.link-ver-todo:hover {
+  color: #1ed760;
+  text-decoration: underline;
+}
+

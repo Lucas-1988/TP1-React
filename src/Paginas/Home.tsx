@@ -1,17 +1,18 @@
-import './App.css';
+import '../Paginas/Home.css';
 import { useState } from 'react';
-import SectionMusic from './Componentes/SectionMusic';
-import SectionMusicContainer from './Componentes/SectionMusicContainer';
-import EncabezadoMusic from './Componentes/EncabezadoMusic';
-import SidebarMusic from './Componentes/SidebarMusic';
-import SidebarContainer from './Componentes/SidebarContainer';
-import SectionMusicArtistas from './Componentes/SectionMusicArtistas';
-import MusicBuscador from './Componentes/MusicBuscador';
-import BarraReproduccion from './Componentes/BarraReproduccion';
-import SectionMusicMasEscuchados from './Componentes/SectionMusicMasEscuchados';
-import PiePagina from './Componentes/PiePagina';
+import SectionMusic from '../Componentes/SectionMusic';
+import SectionMusicContainer from '../Componentes/SectionMusicContainer';
+import EncabezadoMusic from '../Componentes/EncabezadoMusic';
+import SidebarMusic from '../Componentes/SidebarMusic';
+import SidebarContainer from '../Componentes/SidebarContainer';
+import SectionMusicArtistas from '../Componentes/SectionMusicArtistas';
+import MusicBuscador from '../Componentes/MusicBuscador';
+import BarraReproduccion from '../Componentes/BarraReproduccion';
+import SectionMusicMasEscuchados from '../Componentes/SectionMusicMasEscuchados';
+import PiePagina from '../Componentes/PiePagina';
+import { Link } from 'react-router-dom';
 
-function App() {
+function Home() {
 
   const [cancionActual, setCancionActual] = useState<{
     titulo: string;
@@ -111,6 +112,7 @@ function App() {
     <div className="Pagina">
     <EncabezadoMusic
       Logo="../Public/logo.png"
+      LogoHome="../Public/home.png"
       inicioSesion="Iniciar Sesión"
       Login="https://accounts.spotify.com/es/login?continue=https%3A%2F%2Fopen.spotify.com%2Fintl-es"
     >
@@ -157,8 +159,13 @@ function App() {
         
 
         <main className="Contenido">
-          <section>
-            <SectionMusicContainer Titulo="Tus Canciones Favoritas">
+          <section className="seccion-favoritos">
+            <div className="encabezado-seccion">
+              <h2 className="titulo-seccion">Tus Canciones Favoritas</h2>
+              <Link to="/Favoritos" className="link-ver-todo">Ver todas</Link>
+            </div>
+
+            <SectionMusicContainer Titulo="">
               {filteredCanciones.map((cancion, index) => (
                 <SectionMusic
                   key={index}
@@ -174,8 +181,13 @@ function App() {
             </SectionMusicContainer>
           </section>
 
-          <section>
-            <SectionMusicContainer Titulo="Artistas">
+          <section className="seccion-artistas">
+            <div className="encabezado-seccion">
+              <h2 className="titulo-seccion">Artistas</h2>
+              <Link to="/Artista" className="link-ver-todo">Ver todos</Link>
+            </div>
+
+            <SectionMusicContainer Titulo="">
               {filteredArtistas.map((artista, index) => (
                 <SectionMusicArtistas
                   key={index}
@@ -189,45 +201,43 @@ function App() {
 
           <section>
             <SectionMusicContainer Titulo="Los más escuchados">
-
-          <SectionMusicMasEscuchados
-            Cancion="The Pot"
-            Autor="Tool"
-            Imagen="https://cdn-images.dzcdn.net/images/cover/c7a6f1259a8f9df284168a28988b8ad7/500x500-000000-80-0-0.jpg"
-            Año="Publicado el 28/04/2006"
-          />
-          <SectionMusicMasEscuchados
-            Cancion="Aenima"
-            Autor="Tool"
-            Imagen="https://lastfm.freetls.fastly.net/i/u/770x0/011b818d46c10cb5e15a4a7663fca054.jpg#011b818d46c10cb5e15a4a7663fca054"
-            Año="Publicado el 17/09/1996"        
-          />
-          <SectionMusicMasEscuchados
-            Cancion="Spiders"
-            Autor="System of a Down"
-            Imagen="https://images.genius.com/263bf7683bab544908e6fe6087d04a98.1000x1000x1.png"
-            Año="Publicado el 30/06/1998"       
-          />
-          <SectionMusicMasEscuchados
-            Cancion="The Chant"
-            Autor="Gojira"
-            Imagen="https://m.media-amazon.com/images/I/41Z-tcO9X7L._AC_UF1000,1000_QL80_.jpg"
-            Año="Publicado el 25/04/2021"        
-          />
-          <SectionMusicMasEscuchados
-            Cancion="Flying Whales"
-            Autor="Gojira"
-            Imagen="https://i1.sndcdn.com/artworks-000162552693-ouc73j-t1080x1080.jpg"
-            Año="Publicado el 07/09/2006"   
-          />
-          <SectionMusicMasEscuchados
-            Cancion="Armenia"
-            Autor="Anomia"
-            Imagen="/Public/Armenia.jpg"
-            Año="Publicado el 18/08/2018"       
-
-          />
-          </SectionMusicContainer>
+              <SectionMusicMasEscuchados
+                Cancion="The Pot"
+                Autor="Tool"
+                Imagen="https://cdn-images.dzcdn.net/images/cover/c7a6f1259a8f9df284168a28988b8ad7/500x500-000000-80-0-0.jpg"
+                Año="Publicado el 28/04/2006"
+              />
+              <SectionMusicMasEscuchados
+                Cancion="Aenima"
+                Autor="Tool"
+                Imagen="https://lastfm.freetls.fastly.net/i/u/770x0/011b818d46c10cb5e15a4a7663fca054.jpg#011b818d46c10cb5e15a4a7663fca054"
+                Año="Publicado el 17/09/1996"        
+              />
+              <SectionMusicMasEscuchados
+                Cancion="Spiders"
+                Autor="System of a Down"
+                Imagen="https://images.genius.com/263bf7683bab544908e6fe6087d04a98.1000x1000x1.png"
+                Año="Publicado el 30/06/1998"       
+              />
+              <SectionMusicMasEscuchados
+                Cancion="The Chant"
+                Autor="Gojira"
+                Imagen="https://m.media-amazon.com/images/I/41Z-tcO9X7L._AC_UF1000,1000_QL80_.jpg"
+                Año="Publicado el 25/04/2021"        
+              />
+              <SectionMusicMasEscuchados
+                Cancion="Flying Whales"
+                Autor="Gojira"
+                Imagen="https://i1.sndcdn.com/artworks-000162552693-ouc73j-t1080x1080.jpg"
+                Año="Publicado el 07/09/2006"   
+              />
+              <SectionMusicMasEscuchados
+                Cancion="Armenia"
+                Autor="Anomia"
+                Imagen="/Public/Armenia.jpg"
+                Año="Publicado el 18/08/2018"    
+              />
+            </SectionMusicContainer>
           </section>
 
 
@@ -245,8 +255,6 @@ function App() {
           />
         </main>
       </div>
-
-
       <PiePagina
         Logo="/Public/logo.png"
         Texto="© AntiCopyright ningún derecho reservado"
@@ -255,5 +263,5 @@ function App() {
     </div>
   );
 }
-export default App;
+export default Home;
 

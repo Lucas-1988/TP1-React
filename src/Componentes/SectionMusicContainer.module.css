@@ -5,8 +5,7 @@
   left: 0vh;  
   justify-content: center;
   gap: 16px;
-  padding: 16px;
-  font-family: Arial, sans-serif;
+  padding: 16px;  
   
 }
 
@@ -18,5 +17,6 @@
   margin: 24px 0 8px 24px;
   font-size: 3rem;
   font-weight: bold;
-  font-family: Arial;  
+    
 }
+

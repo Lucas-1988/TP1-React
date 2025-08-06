@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import styles from './SectionMusic.module.css';
-
 import heartGray from '/Corazon_unlike.png';
 import heartGreen from '/Corazon_like.png';
 
@@ -8,11 +7,11 @@ type SectionMusic = {
   Titulo: string;
   Arte: string;
   Año: string;
-  onPlay?: () => void;
+  onPlay?: () => void;  
 };
 
 function SectionMusic(props: SectionMusic) {
-  const { Titulo, Arte, Año, onPlay } = props;
+  const { Titulo, Arte, Año, onPlay} = props;
   const [liked, setLiked] = useState(false);  
 
   const toggleLike = (e: React.MouseEvent) => {
@@ -26,7 +25,7 @@ return (
         <img 
           src={Arte} 
           alt={Titulo} 
-          className={styles.Arte}          
+          className={styles.Arte}        
         />
       )}
       <h2 className={styles.Cancion}>{Titulo}</h2>
@@ -43,3 +42,4 @@ return (
 }
 
 export default SectionMusic;
+

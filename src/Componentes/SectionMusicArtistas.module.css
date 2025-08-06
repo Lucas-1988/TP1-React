@@ -51,6 +51,23 @@
   margin-top: 0%;
 }
 
+.TituloLink {
+  text-decoration: none; 
+  color: white;             
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.TituloLink:hover {
+  color: #868686;            
+}
+
+.TituloLink:visited {
+  color: white;
+}
+
+
 
 
 
