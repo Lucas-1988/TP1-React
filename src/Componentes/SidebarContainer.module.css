@@ -1,0 +1,15 @@
+.SidebarContainer {  
+  width: 250px;
+  display: flex;
+  flex-direction: column;  
+  background-color: #121212;
+}
+
+.Contenido {
+  flex: 1;
+  overflow-y: auto;
+}
+
+
+
+

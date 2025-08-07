@@ -1,0 +1,76 @@
+.MusicContenedorArtistas {
+  position: absolute;
+  top: 80vh;
+  width: 100%;  
+  display: flex;  
+  left: 0vh;  
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;  
+}
+
+.TituloArtistas {
+  position: absolute;
+  left: 10vh;
+  color: #ffffff;
+  text-align: left;
+  margin: 24px 0 8px 24px;
+  font-size: 3rem;
+  font-weight:lighter;
+   
+}
+
+.CamposCanciones { 
+  font-family: 'Inter';
+  font-weight:lighter; 
+  position: relative;
+  left: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 100px;  
+  width: 265%;
+  height: 30px;
+  padding: 5px;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 18px;  
+  border-bottom: 0.8px solid rgba(253, 253, 253, 0.747);
+  padding-bottom: 1px;
+}
+
+.botonVolver {
+  position: absolute;
+  top: 2vh;
+  left: 28VH;
+  background-color: #1fd75f;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-family: 'Inter';
+  font-size: 1.0rem; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.botonVolver:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.loadingMessage {
+  text-align: center;
+  margin-top: 2rem;
+  color: #1fd75f;
+  font-size: 1.2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.errorMessage {
+  text-align: center;
+  margin-top: 2rem;
+  color: #ff4d4f;
+  font-size: 1.2rem;
+  font-family: 'Inter', sans-serif;
+}

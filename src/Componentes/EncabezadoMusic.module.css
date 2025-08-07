@@ -1,0 +1,77 @@
+.Encabezado {
+  left: 20px;  
+  color: rgb(148, 148, 148);  
+  font-size: 8px;  
+  display: flex;
+  align-items: center;  
+  padding: 10px;
+  border-radius: 30px;  
+  gap: 20px;
+}
+
+.EncabezadoArtista {  
+  top: 6vh;
+  left: 0;
+  width: 100%;  
+  color: rgba(255, 255, 255, 0);
+}
+
+.MusicBuscadorEncabezado {
+  position: absolute;
+  left: 50%;
+  top: 4%;
+  transform: translate(-50%, -50%); 
+  width: 100%;
+  max-width: 600px;
+  padding: 0.5rem;
+}
+
+.MusicBuscadorFavoritos{
+  position: absolute;
+  left: 50%;
+  top: 4%;
+  transform: translate(-50%, -50%); 
+  width: 100%;
+  max-width: 600px;
+  padding: 0.5rem;
+}
+
+.Logo {
+  position: relative;
+  left: 2vh;
+  height: 40px;
+  object-fit: cover;
+}
+
+.LogoHome {
+  position: relative;
+  left: 3vh;
+  height: 45px;
+  object-fit: cover;
+  transition: transform 0.3s ease;  
+}
+
+.LogoHome:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  filter: brightness(1.1);  
+}
+
+.inicioSesion {
+  background-color: #1fd75f;  
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 30px;
+  margin-left: auto;
+  cursor: pointer;
+  border-color: rgba(85, 85, 85, 0); 
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: black;  
+}
+
+.inicioSesion:hover {
+  cursor: pointer;
+  transform: scale(1.03);  
+}
