@@ -6,16 +6,17 @@ type CancionDetalleProps = {
   Arte: string;
   Año: string;
   Album: string;
-  onPlay?: () => void;
   Duracion: string;
+  onPlay?: () => void;
+  onDelete?: () => void;  // Agregado prop opcional para eliminar
 };
 
 function CancionDetalle(props: CancionDetalleProps) {
-  const { Orden, Titulo, Arte, Año, Album ,onPlay, Duracion } = props;
+  const { Orden, Titulo, Arte, Año, Album, Duracion, onPlay, onDelete } = props;
 
   return (
-    <section className={styles.MusicContenedorCancion}>
-      <div className={styles.LeftContent}>
+    <section className={styles.MusicContenedorCancion} style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+      <div className={styles.LeftContent} style={{ flex: 1, display: 'flex', alignItems: 'center', gap: '1rem' }}>
         <span className={styles.OrdenFavoritos}>{Orden}</span>
         {Arte && (
           <img
@@ -23,6 +24,7 @@ function CancionDetalle(props: CancionDetalleProps) {
             src={Arte}
             alt={Titulo}
             className={styles.ArteFavoritos}
+            style={{ cursor: onPlay ? 'pointer' : 'default' }}
           />
         )}
         <div className={styles.Textos}>
@@ -30,8 +32,31 @@ function CancionDetalle(props: CancionDetalleProps) {
           <h5 className={styles.AñoFavoritos}>Año de lanzamiento: {Año}</h5>
         </div>
       </div>
+
       <div className={styles.AlbumFavoritos}>{Album}</div>
       <div className={styles.Duracion}>{Duracion}</div>
+
+      {/* Botón eliminar */}
+      {onDelete && (
+        <button
+          onClick={onDelete}
+          style={{
+            backgroundColor: 'transparent',
+            border: 'none',
+            color: 'red',
+            fontWeight: 'bold',
+            fontSize: '1.2rem',
+            cursor: 'pointer',
+            padding: 0,
+            marginLeft: '1rem',
+          }}
+          title="Eliminar canción"
+          aria-label={`Eliminar canción ${Titulo}`}
+          type="button"
+        >
+          ×
+        </button>
+      )}
     </section>
   );
 }
