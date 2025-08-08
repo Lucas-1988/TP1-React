@@ -26,25 +26,18 @@ type Cancion = {
 function Favoritos() {
 
   const [canciones, setCanciones] = useState<Cancion[]>(cancionesLista());
-
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-
   const [cancionActual, setCancionActual] = useState<{ titulo: string; audioUrl: string } | null>(null);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
-  const [searchTerm, setSearchTerm] = useState('');
-
-  // Estado para mostrar/ocultar modal de agregar canción
-  const [mostrarFormulario, setMostrarFormulario] = useState(false);
-
-  // Campos para agregar nueva canción
+  const [searchTerm, setSearchTerm] = useState('');  
+  const [mostrarFormulario, setMostrarFormulario] = useState(false);  
   const [tituloNueva, setTituloNueva] = useState('');
   const [audioUrlNueva, setAudioUrlNueva] = useState('');
   const [arteNueva, setArteNueva] = useState('');
   const [anioNuevo, setAnioNuevo] = useState('');
   const [albumNuevo, setAlbumNuevo] = useState('');
   const [duracionNueva, setDuracionNueva] = useState('');
-
   const filteredCanciones = searchTerm 
     ? canciones.filter(cancion =>
         cancion.titulo.toLowerCase().includes(searchTerm.toLowerCase().trim())
@@ -61,7 +54,7 @@ function Favoritos() {
         })
         .catch((err: any) => setError(err.message))
         .finally(() => setLoading(false));
-    }, 1500);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -89,17 +82,14 @@ function Favoritos() {
       Duracion: duracionNueva,
     };
 
-    setCanciones([...canciones, nuevaCancion]);
-
-    // Resetear inputs
+    setCanciones([...canciones, nuevaCancion]);    
     setTituloNueva('');
     setAudioUrlNueva('');
     setArteNueva('');
     setAnioNuevo('');
     setAlbumNuevo('');
     setDuracionNueva('');
-
-    setMostrarFormulario(false); // Cierra modal tras agregar
+    setMostrarFormulario(false); 
   };
 
   const eliminarCancion = (orden: number) => {
@@ -146,12 +136,15 @@ function Favoritos() {
               <main className="Contenido">
                 <div className="encabezado-seccion">
                   <h2 className="titulo-seccion">Tus Canciones Favoritas</h2>
-                  <button onClick={() => setMostrarFormulario(true)} className={styles.botonAgregar}>
-                    Agregar canción
-                  </button>
+                </div>
+                <div className={styles.CamposCanciones}>
+                  <span>Título</span>
+                  <span>Álbum</span>
+                  <span>Duración</span>
                 </div>
 
                 <CancionDetalleContainer>
+                  <div className={styles.listadoCanciones}>
                   {filteredCanciones.map((cancion) => (
                     <CancionDetalle
                       key={cancion.Orden}
@@ -168,9 +161,17 @@ function Favoritos() {
                       onDelete={() => eliminarCancion(Number(cancion.Orden))}
                     />
                   ))}
+                  </div>
                 </CancionDetalleContainer>
-
-                {/* Modal para agregar canción */}
+                {!mostrarFormulario && (
+                  <button
+                    onClick={() => setMostrarFormulario(true)}
+                    className={styles.botonAgregar}
+                  >
+                    Agregar canción
+                  </button>
+                )}
+                
                 {mostrarFormulario && (
                   <div className={styles.modalOverlay} onClick={() => setMostrarFormulario(false)}>
                     <section className={styles.modalContent} onClick={e => e.stopPropagation()}>
@@ -211,11 +212,12 @@ function Favoritos() {
                         value={duracionNueva}
                         onChange={(e) => setDuracionNueva(e.target.value)}
                       />
-                      <div style={{ marginTop: '1rem' }}>
-                        <button onClick={agregarCancion}>Agregar Canción</button>
-                        <button onClick={() => setMostrarFormulario(false)} style={{ marginLeft: '1rem' }}>
-                          Cancelar
-                        </button>
+                                           
+                      <div className={styles.modalContent}>
+                        <div className={styles.botonesformulario}>
+                          <button className={styles.botonform} onClick={agregarCancion}>Agregar Canción</button>
+                          <button className={styles.botonform} onClick={() => setMostrarFormulario(false)}>Cancelar</button>
+                        </div>
                       </div>
                     </section>
                   </div>

@@ -5,8 +5,8 @@ let musicDB =  [
       audioUrl: "/Musica/porcupine_tree__the_incident.mp3",
       arte: "https://m.media-amazon.com/images/I/41kBPpqJbiL._SX300_SY300_QL70_FMwebp_.jpg",
       año: "2009",
-      Album: 'The Incident',
-      Duracion: '5:19',
+      Album: "The Incident",
+      Duracion: "5:19",
     },
     {
       Orden: "2",

@@ -16,8 +16,8 @@ export function cancionesLista(): Cancion[] {
       audioUrl: "/Musica/porcupine_tree__the_incident.mp3",
       arte: "https://m.media-amazon.com/images/I/41kBPpqJbiL._SX300_SY300_QL70_FMwebp_.jpg",
       año: "2009",
-      Album: 'The Incident',
-      Duracion: '5:19',
+      Album: "The Incident",
+      Duracion: "5:19",
     },
     {
       Orden: "2",
@@ -25,8 +25,8 @@ export function cancionesLista(): Cancion[] {
       audioUrl: "/Musica/Sextape.mp3",
       arte: "https://images.squarespace-cdn.com/content/v1/5147d98fe4b0e61bb0ab60ec/1363845787383-JGAGB2GKWBGOEL08VMHZ/Deftones+DE+Cover+300+rgb.jpg?format=1500w",
       año: "2000",
-      Album: 'Diamond Eyes',
-      Duracion: '4:01',
+      Album: "Diamond Eyes",
+      Duracion: "4:01",
     },
     {
       Orden: "3",
@@ -34,8 +34,8 @@ export function cancionesLista(): Cancion[] {
       audioUrl: "/Musica/Parabola.mp3",
       arte: "https://lastfm.freetls.fastly.net/i/u/770x0/ec676167abeb99f85d6fee875d55251e.jpg",
       año: "2001",
-      Album: 'Lateralus',
-      Duracion: '6:03',
+      Album: "Lateralus",
+      Duracion: "6:03",
     },
     {
       Orden: "4",
@@ -97,8 +97,8 @@ export function cancionesLista(): Cancion[] {
       audioUrl: "/Musica/Losing My Religion.mp3",
       arte: "https://quesuenelabocina.com/wp-content/uploads/rem-losing-my-religion-1024x1024.jpeg",
       año: "1991",
-      Album: 'Out Of Time',
-      Duracion: '4:28',
+      Album: "Out Of Time",
+      Duracion: "4:28",
     },
     {
       Orden: "11",
@@ -106,8 +106,8 @@ export function cancionesLista(): Cancion[] {
       audioUrl: "/Musica/Amazonia.mp3",
       arte: "https://cdn-images.dzcdn.net/images/cover/58c0fc2ba2dc8f529a9907be600c2944/500x500-000000-80-0-0.jpg",
       año: "2021",
-      Album: 'Fortitude',
-      Duracion: '5:01',
+      Album: "Fortitude",
+      Duracion: "5:01",
     },   
 ];
 }

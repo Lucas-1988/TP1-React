@@ -35,6 +35,7 @@
   font-size: 18px;  
   border-bottom: 0.8px solid rgba(253, 253, 253, 0.747);
   padding-bottom: 1px;
+   grid-template-columns: 1fr 1fr 180px; /* aumenta 100px a 120px o más */
 }
 
 .botonVolver {
@@ -73,4 +74,124 @@
   color: #ff4d4f;
   font-size: 1.2rem;
   font-family: 'Inter', sans-serif;
+}
+
+.listadoCanciones {
+  max-height: 60vh; 
+  overflow-y: auto;
+  width: 120vw;
+  padding-right: 12px; 
+  box-sizing: content-box; 
+}
+
+.botonAgregar {
+  position: fixed;
+  bottom: 20px;
+  left: 150px;
+  background-color: #1db954; 
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 12px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  z-index: 1000; /* encima de todo */
+}
+
+.botonAgregar:hover {
+  background-color: #17a444;
+  transform: translateY(-2px);
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeIn 0.3s ease;
+}
+
+.modalContent {
+  background-color: #121212;
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;  
+  animation: slideIn 0.3s ease;
+}
+
+.modalContent h3 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.modalContent input {  
+  width: 95%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: none;
+  background-color: #1e1e1e;
+  color: white;
+  font-size: 14px;
+}
+
+.modalContent input::placeholder {
+  color: #aaa;
+}
+
+.modalContent {
+  background-color: #121212;
+  padding: 2rem;
+  border-radius: 12px;
+  
+}
+
+.botonesformulario {
+  display: flex;
+  gap: 2rem;  
+  justify-content: center;
+}
+
+.botonform {
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #444;
+  transition: background-color 0.2s ease;
+}
+
+.botonform:first-child {
+  background-color: #1db954;
+}
+
+.botonform:first-child:hover {
+  background-color: #17a444;
+}
+
+.botonform:last-child:hover {
+  background-color: #555;
+}
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }

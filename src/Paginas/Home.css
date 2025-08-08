@@ -83,49 +83,6 @@ body, #body {
 }
 
 /* Estilo para agregar canciones */
-.agregar-cancion {
-  position: fixed;
-  bottom: 5vh;
-  background-color: #111;
-  color: #fff;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-  max-width: 500px;
-}
-
-.agregar-cancion input {
-  display: block;
-  width: 100%;
-  margin-bottom: 0.5rem;
-  padding: 0.5rem;
-  border-radius: 5px;
-  border: none;
-  background-color: #222;
-  color: #eee;
-}
-
-.agregar-cancion button {
-  background-color: #1db954;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  color: white;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.agregar-cancion button:hover {
-  background-color: #17a44b;
-}
- /*eliminar canciones */
- .cancion-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 0.5rem;
-}
 
 .btneliminar {
   position: absolute;
@@ -142,3 +99,4 @@ body, #body {
 .btneliminar:hover {
   background-color: #b53030;
 }
+
