@@ -145,24 +145,25 @@ function Favoritos() {
 
                 <CancionDetalleContainer>
                   <div className={styles.listadoCanciones}>
-                  {filteredCanciones.map((cancion) => (
-                    <CancionDetalle
-                      key={cancion.Orden}
-                      Orden={String(cancion.Orden)}
-                      Titulo={cancion.titulo}
-                      Arte={cancion.arte}
-                      Año={cancion.año}
-                      Album={cancion.Album}
-                      Duracion={cancion.Duracion}
-                      onPlay={() => {
-                        setCancionActual(cancion);
-                        setIsPlaying(true);
-                      }}
-                      onDelete={() => eliminarCancion(Number(cancion.Orden))}
-                    />
-                  ))}
+                    {filteredCanciones.map((cancion) => (
+                      <CancionDetalle
+                        key={cancion.Orden} className={styles.filaCancion}
+                        Orden={String(cancion.Orden)}
+                        Titulo={cancion.titulo}
+                        Arte={cancion.arte || 'https://images.icon-icons.com/1736/PNG/512/4043278-avatar-male-ozzy-rock-singer_113287.png'}
+                        Año={cancion.año}
+                        Album={cancion.Album}
+                        Duracion={cancion.Duracion}
+                        onPlay={() => {
+                          setCancionActual(cancion);
+                          setIsPlaying(true);
+                        }}
+                        onDelete={() => eliminarCancion(Number(cancion.Orden))}
+                      />
+                    ))}
                   </div>
                 </CancionDetalleContainer>
+
                 {!mostrarFormulario && (
                   <button
                     onClick={() => setMostrarFormulario(true)}

@@ -8,7 +8,8 @@ type CancionDetalleProps = {
   Album: string;
   Duracion: string;
   onPlay?: () => void;
-  onDelete?: () => void;  // Agregado prop opcional para eliminar
+  onDelete?: () => void;  
+  className?: string;
 };
 
 function CancionDetalle(props: CancionDetalleProps) {

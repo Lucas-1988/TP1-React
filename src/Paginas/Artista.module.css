@@ -26,7 +26,7 @@
   position: relative;
   left: 10vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 100px;  
+  grid-template-columns: 1fr 1fr 180px;  
   width: 265%;
   height: 30px;
   padding: 5px;
@@ -36,6 +36,12 @@
   border-bottom: 0.8px solid rgba(253, 253, 253, 0.747);
   padding-bottom: 1px;
    grid-template-columns: 1fr 1fr 180px; /* aumenta 100px a 120px o más */
+}
+
+.filaCancion {
+  display: grid;
+  grid-template-columns: 1fr 1fr 180px; /* Importante: Usa los mismos valores que en .CamposCanciones */
+  /* Otros estilos para la fila, como padding, border-bottom, etc. */
 }
 
 .botonVolver {
