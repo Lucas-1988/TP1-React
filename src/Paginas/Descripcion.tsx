@@ -75,8 +75,8 @@ function Descripcion({ tipo }: { tipo: "artista" | "cancion" }) {
   return (
     <div className="Pagina">
     <EncabezadoMusic
-      Logo="../Public/logo.png"
-      LogoHome="../Public/home.png"
+      Logo="../assets/images/logo.png"
+      LogoHome="../assets/images/home.png"
       inicioSesion="Iniciar Sesion"
       Login="https://accounts.spotify.com/es/login?continue=https%3A%2F%2Fopen.spotify.com%2Fintl-es"
       variant="artista"
@@ -90,8 +90,8 @@ function Descripcion({ tipo }: { tipo: "artista" | "cancion" }) {
       <div className="Layout">
 
         <SidebarContainer 
-        Biblioteca="/Public/Biblioteca2.png"
-        Playlist="/Public/Playlist2.png"
+        Biblioteca="../assets/images/Biblioteca2.png"
+        Playlist="../assets/images/Playlist2.png"
       >
       {[
           "tus_me_gusta.png",
@@ -112,11 +112,11 @@ function Descripcion({ tipo }: { tipo: "artista" | "cancion" }) {
           <button className={styles.botonVolver} onClick={() => navigate(-1)}>Volver</button>              
 
           <BarraReproduccion
-            BotonAleatorio="/Public/Aleatorio.png"
-            BotonPlay="/Public/Play.png"
-            BotonSiguiente="/Public/Siguiente.png"
-            BotonAnterior="/Public/Anterior.png"
-            BotonRepetir="/Public/Repetir.png"
+            BotonAleatorio="../assets/images/Aleatorio.png"
+            BotonPlay="../assets/images/Play.png"
+            BotonSiguiente="../assets/images/Siguiente.png"
+            BotonAnterior="../assets/images/Anterior.png"
+            BotonRepetir="../assets/images/Repetir.png"
             cancionActual={cancionActual}
             setCancionActual={setCancionActual}
             isPlaying={isPlaying}
@@ -127,7 +127,7 @@ function Descripcion({ tipo }: { tipo: "artista" | "cancion" }) {
         </main>
       </div>
       <PiePagina
-        Logo="/Public/logo.png"
+        Logo="../assets/images/logo.png"
         Texto="© AntiCopyright ningún derecho reservado"
         Texto2="Hecho por Lucas Leonczyk y Tania Maldonado para Informatorio"
       />

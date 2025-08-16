@@ -61,8 +61,8 @@ const { data: canciones = [], isLoading, isError, error } = useQuery<Cancion[]>(
     <>
       <div className="Pagina">
         <EncabezadoMusic
-          Logo="/logo.png"
-          LogoHome="/home.png"
+          Logo="../assets/images/logo.png"
+          LogoHome="../assets/images/home.png"
           inicioSesion="Iniciar Sesión"
           Login="https://accounts.spotify.com/es/login?continue=https%3A%2F%2Fopen.spotify.com%2Fintl-es"
         >
@@ -74,8 +74,8 @@ const { data: canciones = [], isLoading, isError, error } = useQuery<Cancion[]>(
 
         <div className="Layout">
           <SidebarContainer
-            Biblioteca="/Biblioteca2.png"
-            Playlist="/Playlist2.png"
+            Biblioteca="../assets/images/Biblioteca2.png"
+            Playlist="../assets/images/Playlist2.png"
           >
             {[
               "tus_me_gusta.png",
@@ -142,11 +142,11 @@ const { data: canciones = [], isLoading, isError, error } = useQuery<Cancion[]>(
 
            
             <BarraReproduccion
-              BotonAleatorio="public/Aleatorio.png"
-              BotonPlay="../Play.png"
-              BotonSiguiente="../Siguiente.png"
-              BotonAnterior="../Anterior.png"
-              BotonRepetir="../Repetir.png"
+              BotonAleatorio="../assets/images/Aleatorio.png"
+              BotonPlay="../assets/images/Play.png"
+              BotonSiguiente="../assets/images/Siguiente.png"
+              BotonAnterior="../assets/images/Anterior.png"
+              BotonRepetir="../assets/images/Repetir.png"
               cancionActual={cancionActual}
               setCancionActual={setCancionActual}
               isPlaying={isPlaying}
@@ -157,7 +157,7 @@ const { data: canciones = [], isLoading, isError, error } = useQuery<Cancion[]>(
         </div>
 
         <PiePagina
-          Logo="/Public/logo.png"
+          Logo="../assets/images/logo.png"
           Texto="© AntiCopyright ningún derecho reservado"
           Texto2="Hecho por Lucas Leonczyk y Tania Maldonado para Informatorio"
         />
