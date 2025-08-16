@@ -75,8 +75,6 @@ body, #body {
   text-decoration: underline;
 }
 
-<<<<<<< HEAD
-=======
 .cancion-item {
   display: flex;
   align-items: center;
@@ -102,4 +100,3 @@ body, #body {
   background-color: #b53030;
 }
 
->>>>>>> TP4-React
