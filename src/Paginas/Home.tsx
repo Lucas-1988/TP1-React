@@ -61,8 +61,8 @@ const { data: canciones = [], isLoading, isError, error } = useQuery<Cancion[]>(
     <>
       <div className="Pagina">
         <EncabezadoMusic
-          Logo="../Public/logo.png"
-          LogoHome="../Public/home.png"
+          Logo="/logo.png"
+          LogoHome="/home.png"
           inicioSesion="Iniciar Sesión"
           Login="https://accounts.spotify.com/es/login?continue=https%3A%2F%2Fopen.spotify.com%2Fintl-es"
         >
@@ -74,21 +74,21 @@ const { data: canciones = [], isLoading, isError, error } = useQuery<Cancion[]>(
 
         <div className="Layout">
           <SidebarContainer
-            Biblioteca="../Public/Biblioteca2.png"
-            Playlist="../Public/Playlist2.png"
+            Biblioteca="/Biblioteca2.png"
+            Playlist="/Playlist2.png"
           >
             {[
               "tus_me_gusta.png",
-              "tus episodios.png",
-              "The Emptiness Machine.png",
+              "tus episodios.png", 
+              "The Emptiness Machine.png", 
               "ramen_para_dos.png",
               "red_hot.png",
               "gojira.png",
               "play_list.png",
-              //"nirvana.png",
-              //"gorillaz.png",
+              // "nirvana.png",
+              // "gorillaz.png",
             ].map((img, index) => (
-              <SidebarMusic key={index} Lista={`../Public/${img}`} />
+              <SidebarMusic key={index} Lista={`/${img}`} />
             ))}
           </SidebarContainer>
 
@@ -142,11 +142,11 @@ const { data: canciones = [], isLoading, isError, error } = useQuery<Cancion[]>(
 
            
             <BarraReproduccion
-              BotonAleatorio="/Public/Aleatorio.png"
-              BotonPlay="/Public/Play.png"
-              BotonSiguiente="/Public/Siguiente.png"
-              BotonAnterior="/Public/Anterior.png"
-              BotonRepetir="/Public/Repetir.png"
+              BotonAleatorio="/Aleatorio.png"
+              BotonPlay="/Play.png"
+              BotonSiguiente="/Siguiente.png"
+              BotonAnterior="/Anterior.png"
+              BotonRepetir="/Repetir.png"
               cancionActual={cancionActual}
               setCancionActual={setCancionActual}
               isPlaying={isPlaying}
