@@ -86,8 +86,8 @@ function Artista() {
               Volver
             </button>
             <EncabezadoMusic
-              Logo="../assets/images/logo.png"
-              LogoHome="../assets/images/home.png"
+              Logo="/logo.png"
+              LogoHome="/home.png"
               inicioSesion="Iniciar Sesión"
               Login="https://accounts.spotify.com/es/login?continue=https%3A%2F%2Fopen.spotify.com%2Fintl-es"
             >
@@ -99,18 +99,18 @@ function Artista() {
 
             <div className="Layout">
               <SidebarContainer
-                Biblioteca="../assets/images/Biblioteca2.png"
-                Playlist="../assets/images/Playlist2.png"
+                Biblioteca="/Biblioteca2.png"
+                Playlist="/Playlist2.png"
               >
-                <SidebarMusic Lista="../assets/images/tus_me_gusta.png" />
-                <SidebarMusic Lista="../assets/images/tus episodios.png" />
-                <SidebarMusic Lista="../assets/images/The Emptiness Machine.png" />
-                <SidebarMusic Lista="../assets/images/ramen_para_dos.png" />
-                <SidebarMusic Lista="../assets/images/red_hot.png" />
-                <SidebarMusic Lista="../assets/images/gojira.png" />
-                <SidebarMusic Lista="../assets/images/play_list.png" />
-                <SidebarMusic Lista="../assets/images/nirvana.png" />
-                <SidebarMusic Lista="../assets/images/gorillaz.png" />
+                <SidebarMusic Lista="/tus_me_gusta.png" />
+                <SidebarMusic Lista="/tus episodios.png" />
+                <SidebarMusic Lista="/The Emptiness Machine.png" />
+                <SidebarMusic Lista="/ramen_para_dos.png" />
+                <SidebarMusic Lista="/red_hot.png" />
+                <SidebarMusic Lista="/gojira.png" />
+                <SidebarMusic Lista="/play_list.png" />
+                <SidebarMusic Lista="/nirvana.png" />
+                <SidebarMusic Lista="/gorillaz.png" />
               </SidebarContainer>
 
               <main className="Contenido">
@@ -148,11 +148,11 @@ function Artista() {
                 </section>
 
                 <BarraReproduccion
-                  BotonAleatorio="../assets/images/Aleatorio.png"
-                  BotonPlay="../assets/images/Play.png"
-                  BotonSiguiente="../assets/images/Siguiente.png"
-                  BotonAnterior="../assets/images/Anterior.png"
-                  BotonRepetir="../assets/images/Repetir.png"
+                  BotonAleatorio="/Aleatorio.png"
+                  BotonPlay="/Play.png"
+                  BotonSiguiente="/Siguiente.png"
+                  BotonAnterior="/Anterior.png"
+                  BotonRepetir="/Repetir.png"
                   cancionActual={cancionActual}
                   setCancionActual={setCancionActual}
                   isPlaying={isPlaying}
@@ -163,7 +163,7 @@ function Artista() {
             </div>
 
             <PiePagina
-              Logo="../assets/images/logo.png"
+              Logo="/logo.png"
               Texto="© AntiCopyright ningún derecho reservado"
               Texto2="Hecho por Lucas Leonczyk y Tania Maldonado para Informatorio"
             />

@@ -109,8 +109,8 @@ function Favoritos() {
           <div className="Pagina">
             <button className={styles.botonVolver} onClick={() => navigate(-1)}>Volver</button>
             <EncabezadoMusic
-              Logo="../Public/logo.png"
-              LogoHome="../Public/home.png"
+              Logo="/logo.png"
+              LogoHome="/home.png"
               inicioSesion="Iniciar Sesión"
               Login="https://accounts.spotify.com/es/login?continue=https%3A%2F%2Fopen.spotify.com%2Fintl-es"
               variant="Favoritos"
@@ -123,14 +123,14 @@ function Favoritos() {
 
             <div className="Layout">
               <SidebarContainer
-                Biblioteca="../Public/Biblioteca2.png"
-                Playlist="../Public/Playlist2.png"
+                Biblioteca="/Biblioteca2.png"
+                Playlist="/Playlist2.png"
               >
-                <SidebarMusic Lista="../Public/tus_me_gusta.png" />
-                <SidebarMusic Lista="../Public/tus episodios.png" />
-                <SidebarMusic Lista="../Public/The Emptiness Machine.png" />
-                <SidebarMusic Lista="../Public/ramen_para_dos.png" />
-                <SidebarMusic Lista="../Public/red_hot.png" />
+                <SidebarMusic Lista="/tus_me_gusta.png" />
+                <SidebarMusic Lista="/tus episodios.png" />
+                <SidebarMusic Lista="/The Emptiness Machine.png" />
+                <SidebarMusic Lista="/ramen_para_dos.png" />
+                <SidebarMusic Lista="/red_hot.png" />
               </SidebarContainer>
 
               <main className="Contenido">
@@ -225,11 +225,11 @@ function Favoritos() {
                 )}
 
                 <BarraReproduccion
-                  BotonAleatorio="/Public/Aleatorio.png"
-                  BotonPlay="/Public/Play.png"
-                  BotonSiguiente="/Public/Siguiente.png"
-                  BotonAnterior="/Public/Anterior.png"
-                  BotonRepetir="/Public/Repetir.png"
+                  BotonAleatorio="/Aleatorio.png"
+                  BotonPlay="/Play.png"
+                  BotonSiguiente="/Siguiente.png"
+                  BotonAnterior="/Anterior.png"
+                  BotonRepetir="/Repetir.png"
                   cancionActual={cancionActual}
                   setCancionActual={setCancionActual}
                   isPlaying={isPlaying}
@@ -240,7 +240,7 @@ function Favoritos() {
             </div>
 
             <PiePagina
-              Logo="/Public/logo.png"
+              Logo="/logo.png"
               Texto="© AntiCopyright ningún derecho reservado"
               Texto2="Hecho por Lucas Leonczyk y Tania Maldonado para Informatorio"
             />

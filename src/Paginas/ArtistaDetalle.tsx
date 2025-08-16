@@ -20,8 +20,8 @@ function ArtistaDetalle() {
   return (
     <div className="Pagina">
       <EncabezadoMusic
-        Logo="../assets/images/logo.png"
-        LogoHome="../assets/images/home.png"
+        Logo="/logo.png"
+        LogoHome="/home.png"
         inicioSesion="Iniciar Sesion"
         Login="https://accounts.spotify.com/es/login?continue=https%3A%2F%2Fopen.spotify.com%2Fintl-es"
         variant="artista"
@@ -34,8 +34,8 @@ function ArtistaDetalle() {
 
       <div className="Layout">
         <SidebarContainer
-          Biblioteca="../assets/images/Biblioteca2.png"
-          Playlist="../assets/images/Playlist2.png"
+          Biblioteca="/Biblioteca2.png"
+          Playlist="/Playlist2.png"
         >
           {[
             "tus_me_gusta.png",
@@ -46,7 +46,7 @@ function ArtistaDetalle() {
           ].map((img, index) => (
             <SidebarMusic
               key={index}
-              Lista={`/Public/${img}`}
+              Lista={`/${img}`}
             />
           ))}
         </SidebarContainer>
@@ -59,7 +59,7 @@ function ArtistaDetalle() {
         </main>
       </div>
       <PiePagina
-        Logo="../assets/images/logo.png"
+        Logo="/logo.png"
         Texto="© AntiCopyright ningún derecho reservado"
         Texto2="Hecho por Lucas Leonczyk y Tania Maldonado para Informatorio"
       />
