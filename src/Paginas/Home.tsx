@@ -61,8 +61,8 @@ const { data: canciones = [], isLoading, isError, error } = useQuery<Cancion[]>(
     <>
       <div className="Pagina">
         <EncabezadoMusic
-          Logo="../assets/images/logo.png"
-          LogoHome="../assets/images/home.png"
+          Logo="/logo.png"
+          LogoHome="/home.png"
           inicioSesion="Iniciar Sesión"
           Login="https://accounts.spotify.com/es/login?continue=https%3A%2F%2Fopen.spotify.com%2Fintl-es"
         >
@@ -74,8 +74,8 @@ const { data: canciones = [], isLoading, isError, error } = useQuery<Cancion[]>(
 
         <div className="Layout">
           <SidebarContainer
-            Biblioteca="../assets/images/Biblioteca2.png"
-            Playlist="../assets/images/Playlist2.png"
+            Biblioteca="/Biblioteca2.png"
+            Playlist="/Playlist2.png"
           >
             {[
               "tus_me_gusta.png",
@@ -142,11 +142,11 @@ const { data: canciones = [], isLoading, isError, error } = useQuery<Cancion[]>(
 
            
             <BarraReproduccion
-              BotonAleatorio="/Musica/Aleatorio.png"
-              BotonPlay="/Musica/Play.svg"
-              BotonSiguiente="../Musica/Siguiente.png"
-              BotonAnterior="../public/Musica/Anterior.png"
-              BotonRepetir="/public/Musica/Repetir.png"
+              BotonAleatorio="/Aleatorio.png"
+              BotonPlay="/Play.svg"
+              BotonSiguiente="/Siguiente.png"
+              BotonAnterior="/Anterior.png"
+              BotonRepetir="/Repetir.png"
               cancionActual={cancionActual}
               setCancionActual={setCancionActual}
               isPlaying={isPlaying}
@@ -157,7 +157,7 @@ const { data: canciones = [], isLoading, isError, error } = useQuery<Cancion[]>(
         </div>
 
         <PiePagina
-          Logo="../assets/images/logo.png"
+          Logo="/logo.png"
           Texto="© AntiCopyright ningún derecho reservado"
           Texto2="Hecho por Lucas Leonczyk y Tania Maldonado para Informatorio"
         />
