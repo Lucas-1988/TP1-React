@@ -75,3 +75,31 @@ body, #body {
   text-decoration: underline;
 }
 
+<<<<<<< HEAD
+=======
+.cancion-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilo para agregar canciones */
+
+.btneliminar {
+  position: absolute;
+  background-color: #e03e3e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.btneliminar:hover {
+  background-color: #b53030;
+}
+
+>>>>>>> TP4-React
