@@ -142,7 +142,7 @@ const { data: canciones = [], isLoading, isError, error } = useQuery<Cancion[]>(
 
            
             <BarraReproduccion
-              BotonAleatorio="../Aleatorio.png"
+              BotonAleatorio="public/Aleatorio.png"
               BotonPlay="../Play.png"
               BotonSiguiente="../Siguiente.png"
               BotonAnterior="../Anterior.png"
